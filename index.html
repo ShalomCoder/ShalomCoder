@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shalom Agbongo | Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            cursive: ['Pacifico', 'cursive']
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white font-sans transition-colors duration-300">
+  <header class="flex justify-between items-center px-6 py-4 shadow-md sticky top-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur z-50">
+    <h1 class="text-2xl font-cursive">Shalom</h1>
+    <button id="toggleTheme" class="text-xl">🌙</button>
+  </header>
+
+  <section class="min-h-screen flex flex-col justify-center items-center text-center p-6">
+    <h2 class="text-4xl md:text-6xl font-extrabold">Hey, I'm Shalom 👋</h2>
+    <p class="mt-4 text-lg max-w-xl">I'm a 14 y/o, Jesus-powered full stack developer building cloud OSes, IDEs, and tools that make tech easier, faster, and just a bit more fun.</p>
+    <div class="mt-6 space-x-4">
+      <a href="https://github.com/shalomcoder" class="px-4 py-2 rounded bg-gray-800 text-white dark:bg-white dark:text-gray-900">GitHub</a>
+      <a href="https://linkedin.com/in/shalomcoder" class="px-4 py-2 rounded border border-gray-800 dark:border-white">LinkedIn</a>
+    </div>
+  </section>
+
+  <section id="about" class="p-6 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold mb-4">About Me</h3>
+    <p class="text-lg">I'm a full-stack developer with a love for web and system-level projects. I create things like <strong>WebOS</strong> (a browser-based cloud OS), <strong>WeaverBird</strong> (an IDE for web devs), and <strong>BrowserAppKit.js</strong> (a lightweight framework for browser apps). I also play keyboard in church, mess with electronics, and explore low-level programming. Still learning. Still lethal.</p>
+  </section>
+
+  <section id="projects" class="p-6 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold mb-4">Projects</h3>
+    <ul class="grid gap-4 md:grid-cols-2">
+      <li class="p-4 border rounded dark:border-gray-700">
+        <h4 class="text-xl font-semibold">WebOS</h4>
+        <p class="text-sm">A browser-based operating system that runs user-installed apps from a shared `/apps` folder using JSON-based user configs.</p>
+      </li>
+      <li class="p-4 border rounded dark:border-gray-700">
+        <h4 class="text-xl font-semibold">WeaverBird</h4>
+        <p class="text-sm">A full-blown IDE for web developers. Built with Tauri, written with care, and designed for speed.</p>
+      </li>
+      <li class="p-4 border rounded dark:border-gray-700">
+        <h4 class="text-xl font-semibold">BrowserAppKit.js</h4>
+        <p class="text-sm">Tiny but mighty JavaScript library that powers modular browser apps. Lightweight, zero-config, and extensible.</p>
+      </li>
+      <li class="p-4 border rounded dark:border-gray-700">
+        <h4 class="text-xl font-semibold">DisturbMe</h4>
+        <p class="text-sm">A disturbing-thought generator with cursed content, all rendered beautifully in Tailwind.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact" class="p-6 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold mb-4">Contact</h3>
+    <p>If you want to reach out, collaborate, chat, or just send memes:</p>
+    <ul class="mt-2">
+      <li>Email: <a href="mailto:shalomaskvd@gmail.com" class="underline">shalomaskvd@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/shalomcoder" class="underline">@shalomcoder</a></li>
+    </ul>
+  </section>
+
+  <footer class="text-center py-6 mt-10 border-t dark:border-gray-800 text-sm">
+    © 2025 Shalom Agbongo. Built with Tailwind. Jesus is Lord ✝️
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('toggleTheme');
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      toggle.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+
+</html>
