@@ -11,7 +11,7 @@
 - 🔭 I’m currently building: **WebOS** — a web-based cloud OS with VM access and user-installed apps.
 - 🧠 I’m learning: **Assembly**, **OS Development**, and advanced **Applied Psychology** (yes, I want to understand why you blinked).
 - ⚒️ I work with: **JavaScript**, **PHP**, **SQL**, **Python**, **Rust**, **TailwindCSS**, and friends.
-- 🎬 Running a faceless YouTube channel: [`@tech.alchemy.channel`](https://youtube.com/@tech.alchemy.channel) — low-level dev, hardware hacks, and web wizardry.
+- 🎬 Running a faceless YouTube channel soon: [`@tech.alchemy.channel`](https://youtube.com/@tech.alchemy.channel) — low-level dev, hardware hacks, and web wizardry.
 - 🧪 Passion projects: IDEs, frameworks, AI, disturbing thought generators, and of course, **"dave"**, my AI assistant idea from age 9.
 - ✝️ I love Jesus. Deal with it.
 
@@ -30,8 +30,8 @@
 ### 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight" alt="stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=YOUR_USERNAME&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="streaks" />
+  <img src="https://github-readme-stats.vercel.app/api?username=shalomcoder&show_icons=true&theme=tokyonight" alt="stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=shalomcoder&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="streaks" />
 </p>
 
 ---
