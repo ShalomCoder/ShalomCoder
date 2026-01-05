@@ -4,123 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shalom Agbongo — Full Stack & Embedded Wizard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      scroll-behavior: smooth;
+    }
     .circular-progress {
       position: relative;
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
-      background: conic-gradient(#F472B6 calc(var(--progress) * 1%), #4B5563 0);
+      background: conic-gradient(#6366f1 calc(var(--progress) * 1%), #e5e7eb 0);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: bold;
-      color: #F472B6;
-      font-size: 1.25rem;
+      font-weight: 700;
+      color: #111827;
+      font-size: 1.2rem;
     }
     .circular-progress span {
       position: absolute;
     }
   </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans">
+<body class="bg-gray-50 text-gray-900">
 
-  <!-- Header -->
-  <header class="p-12 text-center bg-gradient-to-r from-purple-700 via-pink-600 to-red-500">
-    <h1 class="text-5xl font-extrabold mb-4">Shalom Agbongo</h1>
-    <p class="text-xl italic">Full Stack Developer • Embedded Systems Tinkerer • SaaS & WebOS Wizard</p>
-    <p class="mt-2">Email: youremail@example.com | <a href="#" class="underline">LinkedIn</a> | <a href="#" class="underline">GitHub</a></p>
-  </header>
+  <!-- Intro Section -->
+  <section class="p-16 text-center max-w-3xl mx-auto">
+    <h1 class="text-5xl font-bold mb-4">Shalom Agbongo</h1>
+    <p class="text-xl text-gray-700 mb-6">Full Stack Developer • Embedded Systems & IoT • SaaS & WebOS Enthusiast</p>
+    <p class="text-gray-500">I build scalable web apps, embedded systems, and cross-platform tools that solve real problems. Below is a scrollable showcase of everything I’ve built so far—no fluff, just projects.</p>
+  </section>
 
-  <!-- WeaverBird Web -->
-  <section class="p-12 max-w-5xl mx-auto my-12 bg-gray-800 rounded-3xl shadow-xl">
-    <h2 class="text-4xl font-bold mb-4 text-pink-400">WeaverBird Web — Web IDE & SaaS Tool</h2>
-    <p class="mb-4 text-lg">
-      WeaverBird Web is my ultra-flexible web development IDE built on Tauri. It’s designed to handle full projects, live preview, and advanced file management. I’m also future-proofing it for Python and Robotics development.
+  <!-- Project Section Template -->
+  <section class="max-w-4xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-md">
+    <h2 class="text-3xl font-bold mb-3">WeaverBird Web — Web IDE & SaaS Tool</h2>
+    <p class="mb-4 text-gray-700">
+      WeaverBird Web is a lightweight, modern web development IDE built with Tauri. Handles live previews, project management, and file handling with a clean, minimal interface. Future-ready for Python and Robotics development.
     </p>
-    <p class="mb-4"><strong>Tech & Tools:</strong> HTML, CSS, JavaScript, TailwindCSS, Tauri, Rust (future), FastAPI, Git, VSCode for code editing</p>
-    <div class="flex items-center space-x-6 mt-6">
+    <p class="mb-4 text-gray-600"><strong>Tech & Tools:</strong> HTML, CSS, JavaScript, TailwindCSS, Tauri, Rust (future), FastAPI, Git</p>
+    <div class="flex items-center space-x-8 mt-6">
       <div class="circular-progress" style="--progress: 85;">
         <span>85%</span>
       </div>
-      <p class="text-lg max-w-xl">
-        Completion Status: Core IDE features are 85% complete. Live preview, project handling, and file management are fully functional. Upcoming: multi-language expansion (Python & Robotics).
+      <p class="text-gray-700 max-w-xl">
+        Completion Status: Core IDE features 85% complete. Live preview, file management functional. Upcoming: multi-language support and enhanced extensions.
       </p>
     </div>
   </section>
 
-  <!-- DocKing -->
-  <section class="p-12 max-w-5xl mx-auto my-12 bg-gray-800 rounded-3xl shadow-xl">
-    <h2 class="text-4xl font-bold mb-4 text-pink-400">DocKing — Cross-Platform Document Management</h2>
-    <p class="mb-4 text-lg">
-      DocKing opens any type of document on web, desktop, or mobile. It securely stores and retrieves files and is optimized for multiple platforms. Designed to handle real-world document chaos like a boss.
+  <section class="max-w-4xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-md">
+    <h2 class="text-3xl font-bold mb-3">DocKing — Cross-Platform Document Management</h2>
+    <p class="mb-4 text-gray-700">
+      DocKing opens any type of document across web, desktop, or mobile. Secure storage, fast retrieval, and future-ready editing. Built to handle chaos and keep files under control.
     </p>
-    <p class="mb-4"><strong>Tech & Tools:</strong> HTML, CSS, JavaScript, TailwindCSS, Tauri, FastAPI, Python, Git, Cloud Storage APIs</p>
-    <div class="flex items-center space-x-6 mt-6">
+    <p class="mb-4 text-gray-600"><strong>Tech & Tools:</strong> HTML, CSS, JavaScript, TailwindCSS, Tauri, FastAPI, Python, Git, Cloud Storage APIs</p>
+    <div class="flex items-center space-x-8 mt-6">
       <div class="circular-progress" style="--progress: 70;">
         <span>70%</span>
       </div>
-      <p class="text-lg max-w-xl">
-        Completion Status: Backend integration and cross-platform testing are 70% done. Core file handling is functional; upcoming features: advanced editing and annotation support.
+      <p class="text-gray-700 max-w-xl">
+        Completion Status: Backend integration and cross-platform functionality 70% done. Core file handling functional. Next: annotation, advanced editing.
       </p>
     </div>
   </section>
 
-  <!-- WebOS -->
-  <section class="p-12 max-w-5xl mx-auto my-12 bg-gray-800 rounded-3xl shadow-xl">
-    <h2 class="text-4xl font-bold mb-4 text-pink-400">WebOS — Browser-Based Cloud OS</h2>
-    <p class="mb-4 text-lg">
-      WebOS is a browser-based cloud OS that lets users create accounts, access virtual machines, and install apps. It supports offline use, push notifications, secure permissions, and single-file `.webapp` apps.
+  <section class="max-w-4xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-md">
+    <h2 class="text-3xl font-bold mb-3">WebOS — Browser-Based Cloud OS</h2>
+    <p class="mb-4 text-gray-700">
+      WebOS is a browser OS with virtual machines, single-file `.webapp` apps, offline mode, and push notifications. Secure permissions and a customizable ecosystem make it ready for real users.
     </p>
-    <p class="mb-4"><strong>Tech & Tools:</strong> JavaScript, HTML, CSS, TailwindCSS, JSON-based backend, FastAPI, Git, Cloud Storage, Hash-based folder system, Push Notification API</p>
-    <div class="flex items-center space-x-6 mt-6">
+    <p class="mb-4 text-gray-600"><strong>Tech & Tools:</strong> JavaScript, HTML, CSS, TailwindCSS, FastAPI, JSON-based backend, Cloud Storage, Push Notification API</p>
+    <div class="flex items-center space-x-8 mt-6">
       <div class="circular-progress" style="--progress: 80;">
         <span>80%</span>
       </div>
-      <p class="text-lg max-w-xl">
-        Completion Status: Core WebOS functionality is 80% complete. Single-file apps, offline mode, and push notifications are done. Upcoming: enhanced security and third-party app ecosystem.
+      <p class="text-gray-700 max-w-xl">
+        Completion Status: Core OS features 80% complete. Offline mode, app handling, and notifications functional. Upcoming: security and third-party app integration.
       </p>
     </div>
   </section>
 
-  <!-- Automated Watering System -->
-  <section class="p-12 max-w-5xl mx-auto my-12 bg-gray-800 rounded-3xl shadow-xl">
-    <h2 class="text-4xl font-bold mb-4 text-pink-400">Automated Watering System — Raspberry Pi & IoT</h2>
-    <p class="mb-4 text-lg">
-      Fully automated plant watering using soil moisture sensors and weather API integration. Includes remote web dashboard control and upcoming live camera feed monitoring.
+  <section class="max-w-4xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-md">
+    <h2 class="text-3xl font-bold mb-3">Automated Watering System — Raspberry Pi & IoT</h2>
+    <p class="mb-4 text-gray-700">
+      Fully automated garden watering using soil sensors, weather API integration, and a web dashboard. Designed for remote monitoring, with live camera feed planned next.
     </p>
-    <p class="mb-4"><strong>Tech & Tools:</strong> Raspberry Pi, Python, FastAPI, HTML, CSS, JavaScript, TailwindCSS, Sensors, IoT libraries, Git</p>
-    <div class="flex items-center space-x-6 mt-6">
+    <p class="mb-4 text-gray-600"><strong>Tech & Tools:</strong> Raspberry Pi, Python, FastAPI, HTML, CSS, JavaScript, TailwindCSS, IoT libraries, Git</p>
+    <div class="flex items-center space-x-8 mt-6">
       <div class="circular-progress" style="--progress: 75;">
         <span>75%</span>
       </div>
-      <p class="text-lg max-w-xl">
-        Completion Status: Core watering and remote dashboard 75% complete. Upcoming: live camera feed, notifications, and optimization for multiple gardens.
+      <p class="text-gray-700 max-w-xl">
+        Completion Status: Core watering and remote dashboard functional at 75%. Next: live feed, notifications, multi-garden support.
       </p>
     </div>
   </section>
 
-  <!-- ChemLib -->
-  <section class="p-12 max-w-5xl mx-auto my-12 bg-gray-800 rounded-3xl shadow-xl">
-    <h2 class="text-4xl font-bold mb-4 text-pink-400">ChemLib — Python Chemistry Library</h2>
-    <p class="mb-4 text-lg">
-      ChemLib is a Python library for chemistry computations, formula calculations, and chemical data handling. Built for students and enthusiasts who want accurate results fast.
+  <section class="max-w-4xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-md">
+    <h2 class="text-3xl font-bold mb-3">ChemLib — Python Chemistry Library</h2>
+    <p class="mb-4 text-gray-700">
+      ChemLib is a Python library for chemistry computations, formulas, and data handling. Built for students and enthusiasts who want fast and accurate results.
     </p>
-    <p class="mb-4"><strong>Tech & Tools:</strong> Python, Git, VSCode, PyPI (future publishing), CLI tools</p>
-    <div class="flex items-center space-x-6 mt-6">
+    <p class="mb-4 text-gray-600"><strong>Tech & Tools:</strong> Python, Git, VSCode, CLI tools, PyPI (future publishing)</p>
+    <div class="flex items-center space-x-8 mt-6">
       <div class="circular-progress" style="--progress: 90;">
         <span>90%</span>
       </div>
-      <p class="text-lg max-w-xl">
-        Completion Status: Core library 90% complete. Computation functions and formula handling fully implemented. Upcoming: additional chemical databases and documentation.
+      <p class="text-gray-700 max-w-xl">
+        Completion Status: 90% complete. Computation functions and formula handling done. Upcoming: chemical database expansion and documentation.
       </p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="p-12 text-center bg-gradient-to-r from-purple-700 via-pink-600 to-red-500">
-    <p class="text-lg">Recruiters, beware. You just scrolled through the best 14-year-old tech wizard alive. 🤓</p>
+  <footer class="p-16 text-center text-gray-500">
+    <p>Scroll through all my projects. This is just the beginning. Every section is a flex—full stack, embedded, SaaS, IoT—made by me, Shalom Agbongo.</p>
   </footer>
 
 </body>
