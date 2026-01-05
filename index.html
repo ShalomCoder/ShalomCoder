@@ -1,89 +1,127 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shalom Agbongo | Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shalom Agbongo — Full Stack & Embedded Wizard</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Plus Jakarta Sans', 'sans-serif'],
-            cursive: ['Pacifico', 'cursive']
-          }
-        }
-      }
-    };
-  </script>
+  <style>
+    .circular-progress {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: conic-gradient(#F472B6 calc(var(--progress) * 1%), #4B5563 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #F472B6;
+      font-size: 1.25rem;
+    }
+    .circular-progress span {
+      position: absolute;
+    }
+  </style>
 </head>
+<body class="bg-gray-900 text-gray-100 font-sans">
 
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white font-sans transition-colors duration-300">
-  <header class="flex justify-between items-center px-6 py-4 shadow-md sticky top-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur z-50">
-    <h1 class="text-2xl font-cursive">Askvd</h1>
-    <button id="toggleTheme" class="text-xl">🌙</button>
+  <!-- Header -->
+  <header class="p-12 text-center bg-gradient-to-r from-purple-700 via-pink-600 to-red-500">
+    <h1 class="text-5xl font-extrabold mb-4">Shalom Agbongo</h1>
+    <p class="text-xl italic">Full Stack Developer • Embedded Systems Tinkerer • SaaS & WebOS Wizard</p>
+    <p class="mt-2">Email: youremail@example.com | <a href="#" class="underline">LinkedIn</a> | <a href="#" class="underline">GitHub</a></p>
   </header>
 
-  <section class="min-h-screen flex flex-col justify-center items-center text-center p-6">
-    <h2 class="text-4xl md:text-6xl font-extrabold">Hey, I'm Shalom 👋</h2>
-    <p class="mt-4 text-lg max-w-xl">I'm a 14 y/o, Jesus-powered full stack developer building cloud OSes, IDEs, and tools that make tech easier, faster, and just a bit more fun.</p>
-    <div class="mt-6 space-x-4">
-      <a href="https://github.com/shalomcoder" class="px-4 py-2 rounded bg-gray-800 text-white dark:bg-white dark:text-gray-900">GitHub</a>
-      <a href="https://www.linkedin.com/in/shalom-agbongo-585bb7327/" class="px-4 py-2 rounded border border-gray-800 dark:border-white">LinkedIn</a>
+  <!-- WeaverBird Web -->
+  <section class="p-12 max-w-5xl mx-auto my-12 bg-gray-800 rounded-3xl shadow-xl">
+    <h2 class="text-4xl font-bold mb-4 text-pink-400">WeaverBird Web — Web IDE & SaaS Tool</h2>
+    <p class="mb-4 text-lg">
+      WeaverBird Web is my ultra-flexible web development IDE built on Tauri. It’s designed to handle full projects, live preview, and advanced file management. I’m also future-proofing it for Python and Robotics development.
+    </p>
+    <p class="mb-4"><strong>Tech & Tools:</strong> HTML, CSS, JavaScript, TailwindCSS, Tauri, Rust (future), FastAPI, Git, VSCode for code editing</p>
+    <div class="flex items-center space-x-6 mt-6">
+      <div class="circular-progress" style="--progress: 85;">
+        <span>85%</span>
+      </div>
+      <p class="text-lg max-w-xl">
+        Completion Status: Core IDE features are 85% complete. Live preview, project handling, and file management are fully functional. Upcoming: multi-language expansion (Python & Robotics).
+      </p>
     </div>
   </section>
 
-  <section id="about" class="p-6 max-w-4xl mx-auto">
-    <h3 class="text-3xl font-bold mb-4">About Me</h3>
-    <p class="text-lg">I'm a full-stack developer with a love for web and system-level projects. I create things like <strong>WebOS</strong> (a browser-based cloud OS), <strong>WeaverBird</strong> (an IDE for web devs), and <strong>BrowserAppKit.js</strong> (a lightweight framework for WebOS). I also mess with electronics a bit and explore low-level programming. Still learning. Still lethal.</p>
+  <!-- DocKing -->
+  <section class="p-12 max-w-5xl mx-auto my-12 bg-gray-800 rounded-3xl shadow-xl">
+    <h2 class="text-4xl font-bold mb-4 text-pink-400">DocKing — Cross-Platform Document Management</h2>
+    <p class="mb-4 text-lg">
+      DocKing opens any type of document on web, desktop, or mobile. It securely stores and retrieves files and is optimized for multiple platforms. Designed to handle real-world document chaos like a boss.
+    </p>
+    <p class="mb-4"><strong>Tech & Tools:</strong> HTML, CSS, JavaScript, TailwindCSS, Tauri, FastAPI, Python, Git, Cloud Storage APIs</p>
+    <div class="flex items-center space-x-6 mt-6">
+      <div class="circular-progress" style="--progress: 70;">
+        <span>70%</span>
+      </div>
+      <p class="text-lg max-w-xl">
+        Completion Status: Backend integration and cross-platform testing are 70% done. Core file handling is functional; upcoming features: advanced editing and annotation support.
+      </p>
+    </div>
   </section>
 
-  <section id="projects" class="p-6 max-w-4xl mx-auto">
-    <h3 class="text-3xl font-bold mb-4">Projects</h3>
-    <ul class="grid gap-4 md:grid-cols-2">
-      <li class="p-4 border rounded dark:border-gray-700">
-        <h4 class="text-xl font-semibold">WebOS</h4>
-        <p class="text-sm">A browser-based operating system that runs user-installed apps from a shared `/apps` folder using JSON-based user configs.</p>
-      </li>
-      <li class="p-4 border rounded dark:border-gray-700">
-        <h4 class="text-xl font-semibold">WeaverBird</h4>
-        <p class="text-sm">A full-blown IDE for web developers. Built with Tauri, written with care, and designed for speed.</p>
-      </li>
-      <li class="p-4 border rounded dark:border-gray-700">
-        <h4 class="text-xl font-semibold">BrowserAppKit.js</h4>
-        <p class="text-sm">Tiny but mighty JavaScript library that powers modular browser apps. Lightweight, zero-config, and extensible.</p>
-      </li>
-      <li class="p-4 border rounded dark:border-gray-700">
-        <h4 class="text-xl font-semibold">DisturbMe</h4>
-        <p class="text-sm">A disturbing-thought generator with cursed content, all rendered beautifully in Tailwind.</p>
-      </li>
-    </ul>
+  <!-- WebOS -->
+  <section class="p-12 max-w-5xl mx-auto my-12 bg-gray-800 rounded-3xl shadow-xl">
+    <h2 class="text-4xl font-bold mb-4 text-pink-400">WebOS — Browser-Based Cloud OS</h2>
+    <p class="mb-4 text-lg">
+      WebOS is a browser-based cloud OS that lets users create accounts, access virtual machines, and install apps. It supports offline use, push notifications, secure permissions, and single-file `.webapp` apps.
+    </p>
+    <p class="mb-4"><strong>Tech & Tools:</strong> JavaScript, HTML, CSS, TailwindCSS, JSON-based backend, FastAPI, Git, Cloud Storage, Hash-based folder system, Push Notification API</p>
+    <div class="flex items-center space-x-6 mt-6">
+      <div class="circular-progress" style="--progress: 80;">
+        <span>80%</span>
+      </div>
+      <p class="text-lg max-w-xl">
+        Completion Status: Core WebOS functionality is 80% complete. Single-file apps, offline mode, and push notifications are done. Upcoming: enhanced security and third-party app ecosystem.
+      </p>
+    </div>
   </section>
 
-  <section id="contact" class="p-6 max-w-4xl mx-auto">
-    <h3 class="text-3xl font-bold mb-4">Contact</h3>
-    <p>If you want to reach out, collaborate, chat, or just send memes:</p>
-    <ul class="mt-2">
-      <li>Email: <a href="mailto:shalomaskvd@gmail.com" class="underline">shalomaskvd@gmail.com</a></li>
-      <li>GitHub: <a href="https://github.com/shalomcoder" class="underline">@shalomcoder</a></li>
-    </ul>
+  <!-- Automated Watering System -->
+  <section class="p-12 max-w-5xl mx-auto my-12 bg-gray-800 rounded-3xl shadow-xl">
+    <h2 class="text-4xl font-bold mb-4 text-pink-400">Automated Watering System — Raspberry Pi & IoT</h2>
+    <p class="mb-4 text-lg">
+      Fully automated plant watering using soil moisture sensors and weather API integration. Includes remote web dashboard control and upcoming live camera feed monitoring.
+    </p>
+    <p class="mb-4"><strong>Tech & Tools:</strong> Raspberry Pi, Python, FastAPI, HTML, CSS, JavaScript, TailwindCSS, Sensors, IoT libraries, Git</p>
+    <div class="flex items-center space-x-6 mt-6">
+      <div class="circular-progress" style="--progress: 75;">
+        <span>75%</span>
+      </div>
+      <p class="text-lg max-w-xl">
+        Completion Status: Core watering and remote dashboard 75% complete. Upcoming: live camera feed, notifications, and optimization for multiple gardens.
+      </p>
+    </div>
   </section>
 
-  <footer class="text-center py-6 mt-10 border-t dark:border-gray-800 text-sm">
-    © 2025 Shalom Agbongo. Built with Tailwind. Jesus is Lord ✝️
+  <!-- ChemLib -->
+  <section class="p-12 max-w-5xl mx-auto my-12 bg-gray-800 rounded-3xl shadow-xl">
+    <h2 class="text-4xl font-bold mb-4 text-pink-400">ChemLib — Python Chemistry Library</h2>
+    <p class="mb-4 text-lg">
+      ChemLib is a Python library for chemistry computations, formula calculations, and chemical data handling. Built for students and enthusiasts who want accurate results fast.
+    </p>
+    <p class="mb-4"><strong>Tech & Tools:</strong> Python, Git, VSCode, PyPI (future publishing), CLI tools</p>
+    <div class="flex items-center space-x-6 mt-6">
+      <div class="circular-progress" style="--progress: 90;">
+        <span>90%</span>
+      </div>
+      <p class="text-lg max-w-xl">
+        Completion Status: Core library 90% complete. Computation functions and formula handling fully implemented. Upcoming: additional chemical databases and documentation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-12 text-center bg-gradient-to-r from-purple-700 via-pink-600 to-red-500">
+    <p class="text-lg">Recruiters, beware. You just scrolled through the best 14-year-old tech wizard alive. 🤓</p>
   </footer>
 
-  <script>
-    const toggle = document.getElementById('toggleTheme');
-    toggle.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-      toggle.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
-    });
-  </script>
 </body>
-
 </html>
