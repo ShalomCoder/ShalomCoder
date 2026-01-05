@@ -1,190 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shalom Agbongo — Full Stack & Embedded Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      scroll-behavior: smooth;
-    }
-    .circular-progress {
-      position: relative;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background: conic-gradient(#6366f1 calc(var(--progress) * 1%), #e5e7eb 0);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      color: #111827;
-      font-size: 1.2rem;
-    }
-    .circular-progress span {
-      position: absolute;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shalom Agbongo — Full Stack & Embedded Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+  .progress-container { background-color: #e5e7eb; border-radius: 9999px; height: 8px; overflow: hidden; }
+  .progress-bar { height: 8px; border-radius: 9999px; background: linear-gradient(90deg, #6366f1, #8b5cf6); transition: width 0.5s ease; }
+</style>
 </head>
 <body class="bg-gray-50 text-gray-900">
 
-  <!-- Navbar -->
-  <nav class="sticky top-0 z-50 bg-white shadow-sm">
-    <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
-      <div class="text-xl font-bold">Shalom Agbongo</div>
-      <div class="space-x-6 text-gray-700 font-medium">
-        <a href="#about" class="hover:text-indigo-600">About</a>
-        <a href="#projects" class="hover:text-indigo-600">Projects</a>
-        <a href="#contact" class="hover:text-indigo-600">Contact</a>
-      </div>
+<!-- Navbar -->
+<nav class="sticky top-0 z-50 bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+    <div class="text-xl font-bold">Shalom Agbongo</div>
+    <div class="space-x-6 text-gray-700 font-medium">
+      <a href="#about" class="hover:text-indigo-600">About</a>
+      <a href="#projects" class="hover:text-indigo-600">Projects</a>
+      <a href="#contact" class="hover:text-indigo-600">Contact</a>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="p-16 text-center max-w-4xl mx-auto flex flex-col items-center space-y-8">
-    <div class="w-40 h-40 bg-gray-200 rounded-full flex items-center justify-center text-gray-400 font-bold">Your Pic</div>
-    <h1 class="text-5xl font-bold">Shalom Agbongo</h1>
-    <p class="text-xl text-gray-700 max-w-2xl">
-      I am a 14-year-old full stack developer, embedded systems enthusiast, and SaaS creator. I love building tools, web apps, and automation systems that actually solve real problems. 
-      My focus is always on clean design, functional code, and shipping projects that make people say “how does he know that?”
-    </p>
-    <p class="text-gray-500">Scroll down to see my projects, from full-stack web apps to Raspberry Pi IoT systems. Each one is a labor of love.</p>
-  </section>
+<!-- Hero Section -->
+<section class="p-16 text-center max-w-4xl mx-auto flex flex-col items-center space-y-8">
+  <div class="w-40 h-40 bg-gray-200 rounded-full flex items-center justify-center text-gray-400 font-bold">Your Pic</div>
+  <h1 class="text-5xl font-bold">Shalom Agbongo</h1>
+  <p class="text-xl text-gray-700 max-w-2xl">
+    I am a 14-year-old full stack developer, embedded systems enthusiast, and SaaS creator. 
+    I build apps, systems, and tools that solve real problems with clean, modern design.
+  </p>
+  <p class="text-gray-500">Scroll down to see my full portfolio: main projects, mini-projects, all of it.</p>
+</section>
 
-  <!-- About Me -->
-  <section id="about" class="max-w-4xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-md">
-    <h2 class="text-3xl font-bold mb-4">About Me</h2>
-    <p class="mb-4 text-gray-700">
-      I started coding in 6th grade and quickly developed a passion for full stack development, embedded systems, and SaaS products. 
-      I’m independent, self-taught, and love tackling problems that others overlook. 
-      My goal is to create apps, systems, and tools that are simple, powerful, and beautiful.
-    </p>
-    <p class="mb-4 text-gray-700">
-      I’m currently building multiple projects across different domains: a web-based IDE, cross-platform document management tool, browser cloud OS, and automated IoT systems. 
-      Along the way, I learn new technologies, push the limits of what I can do, and always make sure my projects are functional and polished.
-    </p>
-  </section>
+<!-- About Me -->
+<section id="about" class="max-w-4xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-md">
+  <h2 class="text-3xl font-bold mb-4">About Me</h2>
+  <p class="mb-4 text-gray-700">
+    I started coding in 6th grade and quickly developed a passion for full stack development, embedded systems, and SaaS products. 
+    I am self-taught, independent, and love building things that work beautifully.
+  </p>
+  <p class="mb-4 text-gray-700">
+    Currently, I’m building projects across web, SaaS, and embedded domains. Each project reflects my focus on clean design, functional code, and practical solutions.
+  </p>
+</section>
 
-  <!-- Projects -->
-  <section id="projects" class="max-w-5xl mx-auto my-16 space-y-12">
-    
-    <!-- WeaverBird Web -->
+<!-- Projects -->
+<section id="projects" class="max-w-5xl mx-auto my-16 space-y-12">
+
+  <!-- Main Projects -->
+  <div class="space-y-8">
     <div class="p-8 bg-white rounded-2xl shadow-md flex flex-col lg:flex-row lg:space-x-8">
       <div class="flex-1 flex flex-col justify-between">
         <h3 class="text-3xl font-bold mb-3">WeaverBird Web — Web IDE & SaaS Tool</h3>
-        <p class="mb-4 text-gray-700">
-          A lightweight web IDE built with Tauri. Handles live previews, project management, and file handling with a clean interface. Future-ready for Python and Robotics.
-        </p>
-        <p class="mb-4 text-gray-600"><strong>Tech & Tools:</strong> HTML, CSS, JavaScript, TailwindCSS, Tauri, Rust (future), FastAPI, Git</p>
-        <div class="flex items-center space-x-6 mt-6">
-          <div class="circular-progress" style="--progress: 85;">
-            <span>85%</span>
-          </div>
-          <p class="text-gray-700 max-w-xl">
-            Completion: Core IDE features 85% done. Upcoming: multi-language support, extensions.
-          </p>
+        <p class="mb-2 text-gray-700">Lightweight IDE built with Tauri for live previews and project management. Future-ready for Python & Robotics.</p>
+        <p class="mb-2 text-gray-600"><strong>Tech:</strong> HTML, CSS, JS, Tailwind, Tauri, Rust, FastAPI, Git</p>
+        <div class="progress-container mt-2">
+          <div class="progress-bar" style="width:85%"></div>
         </div>
+        <p class="text-gray-500 text-sm mt-1">85% Complete</p>
       </div>
       <div class="flex-1 mt-6 lg:mt-0 bg-gray-200 rounded-xl flex items-center justify-center text-gray-400 font-bold">Screenshot</div>
     </div>
 
-    <!-- DocKing -->
     <div class="p-8 bg-white rounded-2xl shadow-md flex flex-col lg:flex-row lg:space-x-8">
       <div class="flex-1 flex flex-col justify-between">
         <h3 class="text-3xl font-bold mb-3">DocKing — Cross-Platform Document Management</h3>
-        <p class="mb-4 text-gray-700">
-          Opens any type of document across web, desktop, or mobile. Secure storage, fast retrieval, and editing features planned for future.
-        </p>
-        <p class="mb-4 text-gray-600"><strong>Tech & Tools:</strong> HTML, CSS, JavaScript, TailwindCSS, Tauri, FastAPI, Python, Git, Cloud Storage APIs</p>
-        <div class="flex items-center space-x-6 mt-6">
-          <div class="circular-progress" style="--progress: 70;">
-            <span>70%</span>
-          </div>
-          <p class="text-gray-700 max-w-xl">
-            Completion: Backend integration and cross-platform functionality 70% done. Next: advanced editing, annotations.
-          </p>
+        <p class="mb-2 text-gray-700">Opens any document type across web, desktop, and mobile. Secure storage and fast retrieval.</p>
+        <p class="mb-2 text-gray-600"><strong>Tech:</strong> HTML, CSS, JS, Tailwind, Tauri, FastAPI, Python, Cloud APIs</p>
+        <div class="progress-container mt-2">
+          <div class="progress-bar" style="width:70%"></div>
         </div>
+        <p class="text-gray-500 text-sm mt-1">70% Complete</p>
       </div>
       <div class="flex-1 mt-6 lg:mt-0 bg-gray-200 rounded-xl flex items-center justify-center text-gray-400 font-bold">Screenshot</div>
     </div>
 
-    <!-- WebOS -->
     <div class="p-8 bg-white rounded-2xl shadow-md flex flex-col lg:flex-row lg:space-x-8">
       <div class="flex-1 flex flex-col justify-between">
         <h3 class="text-3xl font-bold mb-3">WebOS — Browser-Based Cloud OS</h3>
-        <p class="mb-4 text-gray-700">
-          Browser OS with virtual machines, single-file `.webapp` apps, offline mode, push notifications, and secure permissions.
-        </p>
-        <p class="mb-4 text-gray-600"><strong>Tech & Tools:</strong> JavaScript, HTML, CSS, TailwindCSS, FastAPI, JSON backend, Cloud Storage, Push Notification API</p>
-        <div class="flex items-center space-x-6 mt-6">
-          <div class="circular-progress" style="--progress: 80;">
-            <span>80%</span>
-          </div>
-          <p class="text-gray-700 max-w-xl">
-            Completion: Core OS features 80% complete. Offline mode and app handling done. Next: security, third-party apps.
-          </p>
+        <p class="mb-2 text-gray-700">Cloud OS with virtual machines, offline mode, push notifications, and single-file `.webapp` apps.</p>
+        <p class="mb-2 text-gray-600"><strong>Tech:</strong> JS, HTML, CSS, Tailwind, FastAPI, JSON backend, Cloud Storage</p>
+        <div class="progress-container mt-2">
+          <div class="progress-bar" style="width:80%"></div>
         </div>
+        <p class="text-gray-500 text-sm mt-1">80% Complete</p>
       </div>
       <div class="flex-1 mt-6 lg:mt-0 bg-gray-200 rounded-xl flex items-center justify-center text-gray-400 font-bold">Screenshot</div>
     </div>
 
-    <!-- Automated Watering System -->
     <div class="p-8 bg-white rounded-2xl shadow-md flex flex-col lg:flex-row lg:space-x-8">
       <div class="flex-1 flex flex-col justify-between">
         <h3 class="text-3xl font-bold mb-3">Automated Watering System — Raspberry Pi & IoT</h3>
-        <p class="mb-4 text-gray-700">
-          Automatically waters plants using soil sensors and weather API integration. Remote dashboard and live camera feed planned.
-        </p>
-        <p class="mb-4 text-gray-600"><strong>Tech & Tools:</strong> Raspberry Pi, Python, FastAPI, HTML, CSS, JavaScript, TailwindCSS, IoT libraries, Git</p>
-        <div class="flex items-center space-x-6 mt-6">
-          <div class="circular-progress" style="--progress: 75;">
-            <span>75%</span>
-          </div>
-          <p class="text-gray-700 max-w-xl">
-            Completion: Core watering and remote dashboard 75% complete. Next: live feed, notifications, multi-garden support.
-          </p>
+        <p class="mb-2 text-gray-700">Automatic plant watering via soil sensors, weather API, and a web dashboard.</p>
+        <p class="mb-2 text-gray-600"><strong>Tech:</strong> Raspberry Pi, Python, FastAPI, JS, Tailwind, IoT libraries</p>
+        <div class="progress-container mt-2">
+          <div class="progress-bar" style="width:75%"></div>
         </div>
+        <p class="text-gray-500 text-sm mt-1">75% Complete</p>
       </div>
       <div class="flex-1 mt-6 lg:mt-0 bg-gray-200 rounded-xl flex items-center justify-center text-gray-400 font-bold">Screenshot</div>
     </div>
 
-    <!-- ChemLib -->
     <div class="p-8 bg-white rounded-2xl shadow-md flex flex-col lg:flex-row lg:space-x-8">
       <div class="flex-1 flex flex-col justify-between">
         <h3 class="text-3xl font-bold mb-3">ChemLib — Python Chemistry Library</h3>
-        <p class="mb-4 text-gray-700">
-          Python library for chemistry computations, formulas, and data handling. Built for students and enthusiasts.
-        </p>
-        <p class="mb-4 text-gray-600"><strong>Tech & Tools:</strong> Python, Git, VSCode, CLI tools, PyPI (future)</p>
-        <div class="flex items-center space-x-6 mt-6">
-          <div class="circular-progress" style="--progress: 90;">
-            <span>90%</span>
-          </div>
-          <p class="text-gray-700 max-w-xl">
-            Completion: Core library 90% done. Upcoming: chemical database expansion and documentation.
-          </p>
+        <p class="mb-2 text-gray-700">Python library for chemistry computations, formulas, and data handling.</p>
+        <p class="mb-2 text-gray-600"><strong>Tech:</strong> Python, Git, VSCode, CLI tools</p>
+        <div class="progress-container mt-2">
+          <div class="progress-bar" style="width:90%"></div>
         </div>
+        <p class="text-gray-500 text-sm mt-1">90% Complete</p>
       </div>
       <div class="flex-1 mt-6 lg:mt-0 bg-gray-200 rounded-xl flex items-center justify-center text-gray-400 font-bold">Screenshot</div>
     </div>
+  </div>
 
-  </section>
+  <!-- Mini Projects -->
+  <div class="mt-12 space-y-6">
+    <h2 class="text-3xl font-bold mb-4 text-gray-800">Mini Projects</h2>
 
-  <!-- Contact Section -->
-  <section id="contact" class="max-w-4xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-md text-center">
-    <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
-    <p class="mb-4 text-gray-700">Interested in working with me or want to see more projects? Reach out!</p>
-    <p class="mb-2 text-gray-700"><strong>Email:</strong> youremail@example.com</p>
-    <p class="mb-2 text-gray-700"><strong>LinkedIn:</strong> <a href="#" class="text-indigo-600 underline">Your Profile</a></p>
-    <p class="mb-2 text-gray-700"><strong>GitHub:</strong> <a href="#" class="text-indigo-600 underline">Your Repo</a></p>
-  </section>
+    <div class="p-4 bg-white rounded-xl shadow flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <p class="text-gray-700"><strong>Zero-residue Tooltip Micro-library:</strong> Lightweight JS library for tooltips.</p>
+      <div class="progress-container mt-2 sm:mt-0 w-full sm:w-1/3">
+        <div class="progress-bar" style="width:95%"></div>
+      </div>
+    </div>
 
-  <footer class="p-16 text-center text-gray-500">
-    <p>© 2026 Shalom Agbongo. All projects built by me, from web to embedded systems.</p>
-  </footer>
+    <div class="p-4 bg-white rounded-xl shadow flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <p class="text-gray-700"><strong>VSCode Snippet Manager Extension:</strong> Organize reusable code snippets.</p>
+      <div class="progress-container mt-2 sm:mt-0 w-full sm:w-1/3">
+        <div class="progress-bar" style="width:60%"></div>
+      </div>
+    </div>
+
+    <div class="p-4 bg-white rounded-xl shadow flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <p class="text-gray-700"><strong>WebOS Calendar App:</strong> Built with dayjs for date handling.</p>
+      <div class="progress-container mt-2 sm:mt-0 w-full sm:w-1/3">
+        <div class="progress-bar" style="width:85%"></div>
+      </div>
+    </div>
+
+    <div class="p-4 bg-white rounded-xl shadow flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <p class="text-gray-700"><strong>WebOS Notes App:</strong> Note-taking app with offline support.</p>
+      <div class="progress-container mt-2 sm:mt-0 w-full sm:w-1/3">
+        <div class="progress-bar" style="width:80%"></div>
+      </div>
+    </div>
+
+    <div class="p-4 bg-white rounded-xl shadow flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <p class="text-gray-700"><strong>Push Notification System for WebOS:</strong> Real-time notifications infrastructure.</p>
+      <div class="progress-container mt-2 sm:mt-0 w-full sm:w-1/3">
+        <div class="progress-bar" style="width:75%"></div>
+      </div>
+    </div>
+
+    <div class="p-4 bg-white rounded-xl shadow flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <p class="text-gray-700"><strong>MIDI Keyboard Controller Experiments:</strong> Virtual & hardware MIDI integration.</p>
+      <div class="progress-container mt-2 sm:mt-0 w-full sm:w-1/3">
+        <div class="progress-bar" style="width:70%"></div>
+      </div>
+    </div>
+
+    <div class="p-4 bg-white rounded-xl shadow flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <p class="text-gray-700"><strong>Fire 7 Custom ROM Tweaks:</strong> Lawnchair modding & launcher customization.</p>
+      <div class="progress-container mt-2 sm:mt-0 w-full sm:w-1/3">
+        <div class="progress-bar" style="width:65%"></div>
+      </div>
+    </div>
+
+    <div class="p-4 bg-white rounded-xl shadow flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <p class="text-gray-700"><strong>MIDI VST Setup with Cantabile Lite:</strong> Free VST integration experiments.</p>
+      <div class="progress-container mt-2 sm:mt-0 w-full sm:w-1/3">
+        <div class="progress-bar" style="width:60%"></div>
+      </div>
+    </div>
+
+    <div class="p-4 bg-white rounded-xl shadow flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <p class="text-gray-700"><strong>Worship Keyboard Style Exploration:</strong> Praise chopping technique practice.</p>
+      <div class="progress-container mt-2 sm:mt-0 w-full sm:w-1/3">
+        <div class="progress-bar" style="width:50%"></div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="max-w-4xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-md text-center">
+  <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+  <p class="mb-4 text-gray-700">Interested in working together or seeing more projects? Reach out!</p>
+  <p class="mb-2 text-gray-700"><strong>Email:</strong> youremail@example.com</p>
+  <p class="mb-2 text-gray-700"><strong>LinkedIn:</strong> <a href="#" class="text-indigo-600 underline">Your Profile</a></p>
+  <p class="mb-2 text-gray-700"><strong>GitHub:</strong> <a href="#" class="text-indigo-600 underline">Your Repo</a></p>
+</section>
+
+<footer class="p-16 text-center text-gray-500">
+  <p>© 2026 Shalom Agbongo. All projects built by me, from web to embedded systems.</p>
+</footer>
 
 </body>
 </html>
