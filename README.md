@@ -40,8 +40,9 @@
 
 - I can build an app, fix a bug, rewrite the README and play gospel "praises" on the keyboard before lunch.
 - I named my IDE after a bird. A *weaverbird*. Because I’m building nests of code.
-- I'm 14. Yes, 14. Now go cry in your terminal.
+- I'm 15. Yes, 15.
 - My projects aren’t perfect. Neither are you. But we’re growing, bro.
+- VD is my nickname. See what it means here: [askvd.rf.gd/vd](https://askvd.rf.gd/vd)
 
 ---
 
@@ -49,7 +50,7 @@
 
 - 🐦 Twitter (X? whatever): [@shalom.codes](https://twitter.com/shalom.codes)
 - 📺 YouTube: [@tech.alchemy.channel](https://youtube.com/@tech.alchemy.channel)
-- 🌍 Personal site coming soon... if I don’t get distracted by a random AI idea.
+- 🌍 Personal site: [askvd.vercel.app](https://askvd.vercel.app)
 
 ---
 
