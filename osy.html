@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shalom OS Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body { margin:0; overflow:hidden; font-family:sans-serif; background:#0f172a; color:white; }
+
+/* BOOT SCREEN */
+#boot {
+ position:fixed; inset:0; display:flex; align-items:center; justify-content:center;
+ background:black; z-index:9999; font-size:2rem;
+ animation: bootOut 2.5s forwards 2s;
+}
+@keyframes bootOut { to { opacity:0; visibility:hidden; } }
+
+/* DESKTOP */
+#desktop { position:relative; width:100vw; height:100vh; }
+
+/* WINDOW */
+.window {
+ position:absolute; width:400px; background:#1e293b; border-radius:12px;
+ box-shadow:0 20px 50px rgba(0,0,0,0.5);
+ overflow:hidden; cursor:grab;
+}
+
+.window-header {
+ background:#0f172a; padding:10px; font-weight:bold;
+ display:flex; justify-content:space-between; cursor:grab;
+}
+
+.window-body { padding:1rem; }
+
+/* DOCK */
+#dock {
+ position:fixed; bottom:20px; left:50%; transform:translateX(-50%);
+ display:flex; gap:20px; background:rgba(255,255,255,0.1);
+ padding:10px 20px; border-radius:20px; backdrop-filter:blur(10px);
+}
+
+.dock-item {
+ width:50px; height:50px; background:#6366f1;
+ border-radius:12px; display:flex; align-items:center; justify-content:center;
+ cursor:pointer; transition:0.2s;
+}
+
+.dock-item:hover { transform:scale(1.2); }
+
+/* TERMINAL */
+#terminal {
+ position:fixed; inset:0; background:black; color:#00ff88;
+ font-family:monospace; padding:20px; display:none;
+}
+</style>
+</head>
+<body>
+
+<div id="boot">Booting ShalomOS...</div>
+
+<div id="desktop"></div>
+
+<div id="dock">
+ <div class="dock-item" onclick="openApp('about')">A</div>
+ <div class="dock-item" onclick="openApp('projects')">P</div>
+ <div class="dock-item" onclick="openApp('contact')">C</div>
+ <div class="dock-item" onclick="openTerminal()">T</div>
+</div>
+
+<div id="terminal"></div>
+
+<script>
+const desktop = document.getElementById('desktop');
+
+function createWindow(title, content) {
+ const win = document.createElement('div');
+ win.className = 'window';
+ win.style.top = Math.random()*200+100+'px';
+ win.style.left = Math.random()*300+100+'px';
+
+ win.innerHTML = `
+  <div class="window-header">${title}<span onclick="this.closest('.window').remove()">✕</span></div>
+  <div class="window-body">${content}</div>
+ `;
+
+ desktop.appendChild(win);
+ drag(win);
+}
+
+function openApp(app) {
+ if(app==='about') createWindow('About', 'I build insane systems.');
+ if(app==='projects') createWindow('Projects', 'WebOS, WeaverBird, IoT stuff.');
+ if(app==='contact') createWindow('Contact', 'shalomaskvd@gmail.com');
+}
+
+function drag(el) {
+ let isDown=false, offsetX, offsetY;
+ const header = el.querySelector('.window-header');
+
+ header.onmousedown = e => {
+  isDown=true;
+  offsetX = e.clientX - el.offsetLeft;
+  offsetY = e.clientY - el.offsetTop;
+ };
+
+ document.onmousemove = e => {
+  if(!isDown) return;
+  el.style.left = e.clientX - offsetX + 'px';
+  el.style.top = e.clientY - offsetY + 'px';
+ };
+
+ document.onmouseup = () => isDown=false;
+}
+
+function openTerminal() {
+ const term = document.getElementById('terminal');
+ term.style.display='block';
+ term.innerHTML = 'user@shalom:~$ whoami<br>Full-stack dev + builder<br><br>user@shalom:~$';
+}
+
+</script>
+
+</body>
+</html>
