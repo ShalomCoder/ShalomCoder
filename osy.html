@@ -4,120 +4,159 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shalom OS Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
 <style>
-body { margin:0; overflow:hidden; font-family:sans-serif; background:#0f172a; color:white; }
-
-/* BOOT SCREEN */
-#boot {
- position:fixed; inset:0; display:flex; align-items:center; justify-content:center;
- background:black; z-index:9999; font-size:2rem;
- animation: bootOut 2.5s forwards 2s;
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  color: white;
+  overflow-x: hidden;
 }
-@keyframes bootOut { to { opacity:0; visibility:hidden; } }
 
-/* DESKTOP */
-#desktop { position:relative; width:100vw; height:100vh; }
-
-/* WINDOW */
 .window {
- position:absolute; width:400px; background:#1e293b; border-radius:12px;
- box-shadow:0 20px 50px rgba(0,0,0,0.5);
- overflow:hidden; cursor:grab;
+  background: rgba(20,20,20,0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
 
-.window-header {
- background:#0f172a; padding:10px; font-weight:bold;
- display:flex; justify-content:space-between; cursor:grab;
+.titlebar {
+  display:flex;
+  gap:8px;
+  padding:10px;
 }
 
-.window-body { padding:1rem; }
-
-/* DOCK */
-#dock {
- position:fixed; bottom:20px; left:50%; transform:translateX(-50%);
- display:flex; gap:20px; background:rgba(255,255,255,0.1);
- padding:10px 20px; border-radius:20px; backdrop-filter:blur(10px);
+.dot {
+  width:10px;
+  height:10px;
+  border-radius:50%;
 }
 
-.dock-item {
- width:50px; height:50px; background:#6366f1;
- border-radius:12px; display:flex; align-items:center; justify-content:center;
- cursor:pointer; transition:0.2s;
-}
+.red { background:#ff5f57 }
+.yellow { background:#febc2e }
+.green { background:#28c840 }
 
-.dock-item:hover { transform:scale(1.2); }
-
-/* TERMINAL */
-#terminal {
- position:fixed; inset:0; background:black; color:#00ff88;
- font-family:monospace; padding:20px; display:none;
+.section {
+  height: 120vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 </style>
 </head>
+
 <body>
 
-<div id="boot">Booting ShalomOS...</div>
+<!-- HERO WINDOW -->
+<section class="section">
+  <div class="window w-[80%] p-6" id="hero">
+    <div class="titlebar">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+    </div>
 
-<div id="desktop"></div>
+    <h1 class="text-5xl font-semibold mt-4">Shalom Agbongo</h1>
+    <p class="text-gray-400 mt-2">Full-stack developer • System builder • Future founder</p>
 
-<div id="dock">
- <div class="dock-item" onclick="openApp('about')">A</div>
- <div class="dock-item" onclick="openApp('projects')">P</div>
- <div class="dock-item" onclick="openApp('contact')">C</div>
- <div class="dock-item" onclick="openTerminal()">T</div>
-</div>
+    <div class="mt-6 grid grid-cols-3 gap-4">
+      <div class="bg-white/5 p-4 rounded-xl">WeaverBird IDE</div>
+      <div class="bg-white/5 p-4 rounded-xl">WebOS</div>
+      <div class="bg-white/5 p-4 rounded-xl">DocKing</div>
+    </div>
+  </div>
+</section>
 
-<div id="terminal"></div>
+<!-- ABOUT WINDOW -->
+<section class="section">
+  <div class="window w-[70%] p-6" id="about">
+    <div class="titlebar">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+    </div>
+
+    <h2 class="text-3xl font-semibold">About</h2>
+    <p class="text-gray-400 mt-4">
+      I'm a developer who builds full systems, not just websites. From WebOS to IDEs, I focus on creating products that feel like real software.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECT WINDOW -->
+<section class="section">
+  <div class="window w-[75%] p-6" id="projects">
+    <div class="titlebar">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+    </div>
+
+    <h2 class="text-3xl font-semibold">Projects</h2>
+
+    <div class="mt-6 space-y-4">
+      <div class="bg-white/5 p-4 rounded-xl">WebOS - Browser based operating system</div>
+      <div class="bg-white/5 p-4 rounded-xl">WeaverBird - Custom IDE platform</div>
+      <div class="bg-white/5 p-4 rounded-xl">DocKing - Universal document opener</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT WINDOW -->
+<section class="section">
+  <div class="window w-[60%] p-6" id="contact">
+    <div class="titlebar">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+    </div>
+
+    <h2 class="text-3xl font-semibold">Contact</h2>
+    <p class="text-gray-400 mt-4">Email: shalom@example.com</p>
+  </div>
+</section>
 
 <script>
-const desktop = document.getElementById('desktop');
+gsap.registerPlugin(ScrollTrigger);
 
-function createWindow(title, content) {
- const win = document.createElement('div');
- win.className = 'window';
- win.style.top = Math.random()*200+100+'px';
- win.style.left = Math.random()*300+100+'px';
+// HERO animation
+gsap.from("#hero", {
+  y: 200,
+  opacity: 0,
+  duration: 1,
+});
 
- win.innerHTML = `
-  <div class="window-header">${title}<span onclick="this.closest('.window').remove()">✕</span></div>
-  <div class="window-body">${content}</div>
- `;
+// SCROLL WINDOWS
+document.querySelectorAll(".window").forEach((el) => {
+  gsap.from(el, {
+    scrollTrigger: {
+      trigger: el,
+      start: "top 80%",
+    },
+    y: 100,
+    opacity: 0,
+    duration: 1
+  });
+});
 
- desktop.appendChild(win);
- drag(win);
-}
-
-function openApp(app) {
- if(app==='about') createWindow('About', 'I build insane systems.');
- if(app==='projects') createWindow('Projects', 'WebOS, WeaverBird, IoT stuff.');
- if(app==='contact') createWindow('Contact', 'shalomaskvd@gmail.com');
-}
-
-function drag(el) {
- let isDown=false, offsetX, offsetY;
- const header = el.querySelector('.window-header');
-
- header.onmousedown = e => {
-  isDown=true;
-  offsetX = e.clientX - el.offsetLeft;
-  offsetY = e.clientY - el.offsetTop;
- };
-
- document.onmousemove = e => {
-  if(!isDown) return;
-  el.style.left = e.clientX - offsetX + 'px';
-  el.style.top = e.clientY - offsetY + 'px';
- };
-
- document.onmouseup = () => isDown=false;
-}
-
-function openTerminal() {
- const term = document.getElementById('terminal');
- term.style.display='block';
- term.innerHTML = 'user@shalom:~$ whoami<br>Full-stack dev + builder<br><br>user@shalom:~$';
-}
+// PARALLAX SECTIONS
+gsap.utils.toArray(".section").forEach((section, i) => {
+  gsap.to(section, {
+    scrollTrigger: {
+      trigger: section,
+      start: "top top",
+      scrub: true
+    },
+    y: i * -50
+  });
+});
 
 </script>
 
