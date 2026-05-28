@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shalom Agbongo — Full Stack, Native & Embedded Developer</title>
+<link rel='favicon' href="https://i.ibb.co/1JqfR53Q/Chat-GPT-Image-Jan-5-2026-03-30-55-PM.png">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0a;
+  --fg: #ffffff;
+  --muted: #666666;
+  --accent: #ffffff;
+  --card: rgba(255,255,255,0.03);
+  --card-hover: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.08);
+  --border-strong: rgba(255,255,255,0.15);
+  --glass: rgba(255,255,255,0.02);
+  --grid-unit: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Global Grid Overlay */
+.global-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: calc(var(--grid-unit) * 8) calc(var(--grid-unit) * 8);
+}
+
+/* Liquid Glass Effect */
+.liquid-glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.05) 0%,
+    rgba(255,255,255,0.02) 50%,
+    rgba(255,255,255,0.04) 100%
+  );
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid-glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255,255,255,0.3) 20%,
+    rgba(255,255,255,0.5) 50%,
+    rgba(255,255,255,0.3) 80%,
+    transparent
+  );
+}
+
+.liquid-glass::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 30% 0%,
+    rgba(255,255,255,0.08) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+}
+
+/* Grid-aligned rectangular cards */
+.grid-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.grid-card:hover {
+  background: var(--card-hover);
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+}
+
+.grid-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--fg);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid-card:hover::before {
+  opacity: 1;
+}
+
+/* Progress bar - monochrome */
+.progress-container {
+  background: rgba(255,255,255,0.05);
+  height: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 4px;
+  background: var(--fg);
+  transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Animations */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lineGrow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-in {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.animate-in.visible {
+  animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Stagger delays */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+.delay-6 { animation-delay: 0.6s; }
+
+/* Button styles */
+.btn-outline {
+  border: 1px solid var(--border-strong);
+  background: transparent;
+  color: var(--fg);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-outline::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--fg);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.btn-outline:hover::before {
+  transform: translateY(0);
+}
+
+.btn-outline:hover {
+  color: var(--bg);
+}
+
+.btn-outline span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Tags */
+.tag {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: var(--border-strong);
+}
+
+/* Section dividers */
+.section-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
+}
+
+/* Floating social bar */
+.social-bar {
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.08) 0%,
+    rgba(255,255,255,0.03) 100%
+  );
+  backdrop-filter: blur(30px);
+  border: 1px solid var(--border);
+}
+
+.social-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+}
+
+/* Nav styles */
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--fg);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.1);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Portrait image */
+.portrait-frame {
+  position: relative;
+  border: 1px solid var(--border-strong);
+  background: rgba(255,255,255,0.02);
+}
+
+.portrait-frame::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border: 1px solid var(--border);
+  pointer-events: none;
+}
+
+/* Project images */
+.project-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(10,10,10,0.3) 100%
+  );
+}
+
+/* Shimmer effect on cards */
+.shimmer-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.05),
+    transparent
+  );
+  transform: translateX(-100%);
+}
+
+.shimmer-effect:hover::before {
+  animation: shimmer 0.8s ease;
+}
+</style>
+</head>
+<body class="min-h-screen">
+
+<!-- Global Grid Overlay -->
+<div class="global-grid"></div>
+
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 right-0 z-50 liquid-glass">
+  <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+    <div class="text-lg font-semibold tracking-tight font-mono">SHALOM_AGBONGO</div>
+    <div class="hidden md:flex space-x-8 text-sm tracking-wide">
+      <a href="#about" class="text-gray-400 hover:text-white transition-colors">ABOUT</a>
+      <a href="#projects" class="text-gray-400 hover:text-white transition-colors">PROJECTS</a>
+      <a href="#contact" class="text-gray-400 hover:text-white transition-colors">CONTACT</a>
+      <a href="./Shalom Agbongo's Resume.pdf" class="text-gray-400 hover:text-white transition-colors">RESUME</a>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden text-2xl">
+      <i class="bi-list"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed inset-0 z-40 bg-black/95 backdrop-blur-xl hidden flex-col items-center justify-center space-y-8">
+  <a href="#about" class="text-2xl text-gray-300 hover:text-white transition-colors">ABOUT</a>
+  <a href="#projects" class="text-2xl text-gray-300 hover:text-white transition-colors">PROJECTS</a>
+  <a href="#contact" class="text-2xl text-gray-300 hover:text-white transition-colors">CONTACT</a>
+  <a href="./Shalom Agbongo's Resume.pdf" class="text-2xl text-gray-300 hover:text-white transition-colors">RESUME</a>
+</div>
+
+<!-- Floating Social Bar -->
+<div class="fixed bottom-6 left-6 z-40 social-bar rounded-none p-4 flex flex-col space-y-4">
+  <a href="http://github.com/ShalomCoder/ShalomCoder" class="text-xl text-gray-400 hover:text-white transition-colors hover:scale-110 transform" title="Github">
+    <i class="bi-github"></i>
+  </a>
+  <a href="http://linkedin.com/in/shalom-agbongo-585bb7327" class="text-xl text-gray-400 hover:text-white transition-colors hover:scale-110 transform" title="LinkedIn">
+    <i class="bi-linkedin"></i>
+  </a>
+  <a href="./Shalom Agbongo's Resume.pdf" download class="text-xl text-gray-400 hover:text-white transition-colors hover:scale-110 transform" title="Resume">
+    <i class="bi-file-earmark-arrow-down"></i>
+  </a>
+</div>
+
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center justify-center px-8 pt-24">
+  <div class="max-w-6xl w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
+      
+      <!-- Left: Portrait -->
+      <div class="animate-in visible delay-1 order-2 lg:order-1 flex justify-center lg:justify-end">
+        <div class="portrait-frame w-64 h-64 lg:w-80 lg:h-80 overflow-hidden">
+          <img src="https://i.ibb.co/1JqfR53Q/Chat-GPT-Image-Jan-5-2026-03-30-55-PM.png" alt="Portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+        </div>
+      </div>
+      
+      <!-- Right: Text Content -->
+      <div class="order-1 lg:order-2 space-y-8 animate-in visible delay-2">
+        <div class="space-y-2">
+          <p class="text-gray-500 font-mono text-sm tracking-widest">FULL STACK / NATIVE / EMBEDDED</p>
+          <h1 class="text-5xl lg:text-7xl font-bold tracking-tight leading-none">
+            SHALOM<br>
+            <span class="text-gray-500">(KWAME)</span><br>
+            AGBONGO
+          </h1>
+        </div>
+        
+        <p class="text-gray-400 text-lg leading-relaxed max-w-xl border-l-2 border-gray-700 pl-6">
+          Full stack developer, embedded systems & IoT enthusiast, SaaS creator and student. I build web & native apps, tools, and automation systems that are clean, functional, and powerful.
+        </p>
+        
+        <div class="flex flex-wrap gap-4">
+          <button class="btn-outline px-6 py-3 font-mono text-sm tracking-wide" onclick="window.open('https://linkedin.com/in/shalom-agbongo-585bb7327')">
+            <span><i class="bi-linkedin mr-2"></i>LINKEDIN</span>
+          </button>
+          <button class="btn-outline px-6 py-3 font-mono text-sm tracking-wide" onclick="window.open('https://github.com/ShalomCoder')">
+            <span><i class="bi-github mr-2"></i>GITHUB</span>
+          </button>
+          <button class="btn-outline px-6 py-3 font-mono text-sm tracking-wide" onclick="window.open('./Shalom Agbongo\'s Resume.pdf')">
+            <span><i class="bi-file-earmark-ruled mr-2"></i>RESUME</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-line mt-16 animate-in visible delay-3"></div>
+    
+    <p class="text-center text-gray-600 text-sm mt-8 animate-in visible delay-4">
+      Scroll down for a complete portfolio of my main projects, mini projects, skills, and experience.
+    </p>
+  </div>
+</section>
+
+<!-- About Me -->
+<section id="about" class="py-24 px-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+      
+      <div class="lg:col-span-3 animate-in">
+        <h2 class="text-2xl font-bold tracking-tight border-b-2 border-white pb-4 inline-block">ABOUT_ME</h2>
+      </div>
+      
+      <div class="lg:col-span-9 lg:pl-16 mt-8 lg:mt-0">
+        <div class="grid-card p-8 animate-in">
+          <p class="text-gray-300 leading-relaxed text-lg">
+            I build stuff—systems, interfaces, and little digital ecosystems. I code, design, and animate interactions, and I enjoy thinking about how all the pieces fit together so that everything just works. I like exploring both the big picture and the tiny details—how a system behaves, how an interface flows, how motion can make something feel alive. I experiment across development, UI/UX, and motion to create experiences that feel smooth, intuitive, and intentional. Mostly, I just like building things from start to finish, connecting different skills, and seeing how far I can push an idea while keeping it usable and enjoyable. If something seems simple on the surface, I like to know exactly what makes it tick—and make it tick better.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-24 px-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+      
+      <div class="lg:col-span-3 animate-in">
+        <h2 class="text-2xl font-bold tracking-tight border-b-2 border-white pb-4 inline-block">SKILLS</h2>
+      </div>
+      
+      <div class="lg:col-span-9 lg:pl-16 mt-8 lg:mt-0">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-0 animate-in">
+          <div class="grid-card p-4 text-center border-r border-b">
+            <span class="font-mono text-sm">HTML</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r border-b">
+            <span class="font-mono text-sm">CSS</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r border-b">
+            <span class="font-mono text-sm">JavaScript</span>
+          </div>
+          <div class="grid-card p-4 text-center border-b">
+            <span class="font-mono text-sm">TailwindCSS</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r border-b">
+            <span class="font-mono text-sm">Vue</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r border-b">
+            <span class="font-mono text-sm">Fastify</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r border-b">
+            <span class="font-mono text-sm">PHP</span>
+          </div>
+          <div class="grid-card p-4 text-center border-b">
+            <span class="font-mono text-sm">MySQL</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r border-b">
+            <span class="font-mono text-sm">Python</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r border-b">
+            <span class="font-mono text-sm">FastAPI</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r border-b">
+            <span class="font-mono text-sm">Arduino</span>
+          </div>
+          <div class="grid-card p-4 text-center border-b">
+            <span class="font-mono text-sm">Raspberry Pi</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r border-b">
+            <span class="font-mono text-sm">Git</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r border-b">
+            <span class="font-mono text-sm">Kotlin</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r border-b">
+            <span class="font-mono text-sm">Android Studio</span>
+          </div>
+          <div class="grid-card p-4 text-center border-b">
+            <span class="font-mono text-sm">Photoshop</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r">
+            <span class="font-mono text-sm">Figma</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r">
+            <span class="font-mono text-sm">Canva</span>
+          </div>
+          <div class="grid-card p-4 text-center border-r">
+            <span class="font-mono text-sm">Illustrator</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-24 px-8">
+  <div class="max-w-6xl mx-auto">
+    
+    <h2 class="text-2xl font-bold tracking-tight border-b-2 border-white pb-4 inline-block mb-16 animate-in">MAIN_PROJECTS</h2>
+    
+    <!-- WebOS -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 mb-16 animate-in">
+      <div class="lg:col-span-7 grid-card p-8 shimmer-effect">
+        <div class="flex flex-col h-full justify-between">
+          <div>
+            <div class="flex items-center gap-4 mb-4">
+              <span class="font-mono text-xs text-gray-500 tracking-widest">01</span>
+              <div class="h-px flex-1 bg-gray-800"></div>
+            </div>
+            <h3 class="text-3xl font-bold mb-4">WebOS</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed">Browser-based OS with windowing system, notifications, dock and fully functional apps.</p>
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="tag px-3 py-1">JavaScript</span>
+              <span class="tag px-3 py-1">HTML</span>
+              <span class="tag px-3 py-1">CSS</span>
+              <span class="tag px-3 py-1">TailwindCSS</span>
+              <span class="tag px-3 py-1">FastAPI</span>
+              <span class="tag px-3 py-1">JSON Backend</span>
+            </div>
+          </div>
+          
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <span class="text-gray-500 font-mono">Progress</span>
+              <span class="text-white font-mono">60%</span>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width:60%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lg:col-span-5 project-image border border-l-0">
+        <img src="https://i.ibb.co/pvs8sC07/image.png" alt="WebOS Screenshot" class="w-full h-full object-cover min-h-64">
+      </div>
+    </div>
+    
+    <!-- WeaverBird Web -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 mb-16 animate-in">
+      <div class="lg:col-span-5 project-image border">
+        <img src="https://i.ibb.co/B5vNyR6X/weaverbird-ui.png" alt="WeaverBird Screenshot" class="w-full h-full object-cover min-h-64">
+      </div>
+      
+      <div class="lg:col-span-7 grid-card p-8 border-l-0 shimmer-effect">
+        <div class="flex flex-col h-full justify-between">
+          <div>
+            <div class="flex items-center gap-4 mb-4">
+              <span class="font-mono text-xs text-gray-500 tracking-widest">02</span>
+              <div class="h-px flex-1 bg-gray-800"></div>
+            </div>
+            <h3 class="text-3xl font-bold mb-4">WeaverBird Web</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed">Lightweight browser-based cloud IDE built with Vue. Comes with live previews, project management, multi-filetype support, syntax coloring, etc.</p>
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="tag px-3 py-1">HTML</span>
+              <span class="tag px-3 py-1">CSS</span>
+              <span class="tag px-3 py-1">JavaScript</span>
+              <span class="tag px-3 py-1">TailwindCSS</span>
+              <span class="tag px-3 py-1">Tauri</span>
+              <span class="tag px-3 py-1">Rust</span>
+            </div>
+          </div>
+          
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <span class="text-gray-500 font-mono">Progress</span>
+              <span class="text-white font-mono">40%</span>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width:40%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- DocKing -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 mb-16 animate-in">
+      <div class="lg:col-span-7 grid-card p-8 shimmer-effect">
+        <div class="flex flex-col h-full justify-between">
+          <div>
+            <div class="flex items-center gap-4 mb-4">
+              <span class="font-mono text-xs text-gray-500 tracking-widest">03</span>
+              <div class="h-px flex-1 bg-gray-800"></div>
+            </div>
+            <h3 class="text-3xl font-bold mb-4">DocKing</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed">Opens any document/file type across web, desktop, and mobile. Secure storage and fast retrieval.</p>
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="tag px-3 py-1">HTML</span>
+              <span class="tag px-3 py-1">CSS</span>
+              <span class="tag px-3 py-1">JavaScript</span>
+              <span class="tag px-3 py-1">TailwindCSS</span>
+              <span class="tag px-3 py-1">Tauri</span>
+              <span class="tag px-3 py-1">FastAPI</span>
+            </div>
+          </div>
+          
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <span class="text-gray-500 font-mono">Progress</span>
+              <span class="text-white font-mono">10%</span>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width:10%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lg:col-span-5 grid-card border-l-0 flex items-center justify-center min-h-64">
+        <span class="text-gray-600 font-mono text-sm">NO SCREENSHOT YET</span>
+      </div>
+    </div>
+    
+    <!-- Automated Watering System -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 mb-16 animate-in">
+      <div class="lg:col-span-5 project-image border">
+        <img src="https://i.ibb.co/S41gjc0C/image.png" alt="Watering System" class="w-full h-full object-cover min-h-64">
+      </div>
+      
+      <div class="lg:col-span-7 grid-card p-8 border-l-0 shimmer-effect">
+        <div class="flex flex-col h-full justify-between">
+          <div>
+            <div class="flex items-center gap-4 mb-4">
+              <span class="font-mono text-xs text-gray-500 tracking-widest">04</span>
+              <div class="h-px flex-1 bg-gray-800"></div>
+            </div>
+            <h3 class="text-3xl font-bold mb-4">Automated Watering System</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed">Automatic plant watering via soil sensors, weather API, and a web dashboard.</p>
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="tag px-3 py-1">Raspberry Pi</span>
+              <span class="tag px-3 py-1">Python</span>
+              <span class="tag px-3 py-1">FastAPI</span>
+              <span class="tag px-3 py-1">HTML</span>
+              <span class="tag px-3 py-1">JS</span>
+              <span class="tag px-3 py-1">IoT</span>
+            </div>
+          </div>
+          
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <span class="text-gray-500 font-mono">Progress</span>
+              <span class="text-white font-mono">95%</span>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width:95%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ChemLib -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 mb-16 animate-in">
+      <div class="lg:col-span-7 grid-card p-8 shimmer-effect">
+        <div class="flex flex-col h-full justify-between">
+          <div>
+            <div class="flex items-center gap-4 mb-4">
+              <span class="font-mono text-xs text-gray-500 tracking-widest">05</span>
+              <div class="h-px flex-1 bg-gray-800"></div>
+            </div>
+            <h3 class="text-3xl font-bold mb-4">ChemLib</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed">Python library for chemistry computations, formulas, and data handling.</p>
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="tag px-3 py-1">Python</span>
+              <span class="tag px-3 py-1">Git</span>
+              <span class="tag px-3 py-1">VSCode</span>
+              <span class="tag px-3 py-1">CLI Tools</span>
+            </div>
+          </div>
+          
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <span class="text-gray-500 font-mono">Progress</span>
+              <span class="text-white font-mono">83%</span>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width:83%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lg:col-span-5 project-image border-l-0">
+        <img src="https://i.ibb.co/zWN0b9mK/Chem-Lib-on-Mac-Book-Air.png" alt="ChemLib" class="w-full h-full object-cover min-h-64">
+      </div>
+    </div>
+    
+    <!-- Mini Projects -->
+    <div class="mt-24">
+      <h2 class="text-2xl font-bold tracking-tight border-b-2 border-white pb-4 inline-block mb-8 animate-in">MINI_PROJECTS</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+        
+        <div class="grid-card p-6 border-r animate-in shimmer-effect">
+          <div class="flex items-center gap-4 mb-4">
+            <span class="font-mono text-xs text-gray-500">01</span>
+            <div class="h-px flex-1 bg-gray-800"></div>
+          </div>
+          <h4 class="font-bold mb-2">Zero-residue Tooltip Micro-library</h4>
+          <p class="text-gray-400 text-sm mb-4">Lightweight JS library for tooltips.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag px-2 py-1 text-xs">JS</span>
+            <span class="tag px-2 py-1 text-xs">HTML</span>
+          </div>
+          <div class="mt-4">
+            <div class="progress-container">
+              <div class="progress-bar" style="width:100%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="grid-card p-6 animate-in shimmer-effect">
+          <div class="flex items-center gap-4 mb-4">
+            <span class="font-mono text-xs text-gray-500">02</span>
+            <div class="h-px flex-1 bg-gray-800"></div>
+          </div>
+          <h4 class="font-bold mb-2">VSCode Snippet Manager Extension</h4>
+          <p class="text-gray-400 text-sm mb-4">Organize reusable code snippets.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag px-2 py-1 text-xs">JS</span>
+            <span class="tag px-2 py-1 text-xs">VSCode</span>
+          </div>
+          <div class="mt-4">
+            <div class="progress-container">
+              <div class="progress-bar" style="width:10%"></div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-24 px-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+      
+      <div class="lg:col-span-3 animate-in">
+        <h2 class="text-2xl font-bold tracking-tight border-b-2 border-white pb-4 inline-block">CONTACT</h2>
+      </div>
+      
+      <div class="lg:col-span-9 lg:pl-16 mt-8 lg:mt-0">
+        <div class="grid-card p-8 animate-in">
+          <p class="text-gray-400 mb-8 leading-relaxed">Interested in working together or seeing more projects? Reach out!</p>
+          
+          <div class="space-y-6">
+            <div class="flex items-center gap-4 border-b border-gray-800 pb-4">
+              <span class="text-gray-500 w-24 font-mono text-sm">EMAIL</span>
+              <a href="mailto:shalomaskvd@gmail.com" class="text-white hover:text-gray-400 transition-colors font-mono">shalomaskvd@gmail.com</a>
+            </div>
+            
+            <div class="flex items-center gap-4 border-b border-gray-800 pb-4">
+              <span class="text-gray-500 w-24 font-mono text-sm">LINKEDIN</span>
+              <a href="https://linkedin.com/in/shalom-agbongo-585bb7327" class="text-white hover:text-gray-400 transition-colors font-mono">Shalom (Kwame) Agbongo</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+              <span class="text-gray-500 w-24 font-mono text-sm">GITHUB</span>
+              <a href="https://github.com/ShalomCoder/ShalomCoder" class="text-white hover:text-gray-400 transition-colors font-mono">ShalomCoder</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-16 px-8 border-t border-gray-900">
+  <div class="max-w-6xl mx-auto text-center">
+    <p class="text-gray-600 text-sm font-mono">
+      2026 SHALOM AGBONGO. ALL PROJECTS BUILT BY ME, FROM WEB TO EMBEDDED SYSTEMS.
+    </p>
+  </div>
+</footer>
+
+<script>
+// Intersection Observer for scroll animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.animate-in').forEach(el => {
+  observer.observe(el);
+});
+
+// Mobile menu toggle
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (mobileMenuBtn && mobileMenu) {
+  mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+  });
+  
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('flex');
+    });
+  });
+}
+
+// Smooth scroll for navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// Progress bar animation on scroll
+const progressBars = document.querySelectorAll('.progress-bar');
+const progressObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const width = entry.target.style.width;
+      entry.target.style.width = '0%';
+      setTimeout(() => {
+        entry.target.style.width = width;
+      }, 200);
+    }
+  });
+}, { threshold: 0.5 });
+
+progressBars.forEach(bar => progressObserver.observe(bar));
+
+// Parallax effect on scroll
+let ticking = false;
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      const scrolled = window.pageYOffset;
+      const globalGrid = document.querySelector('.global-grid');
+      if (globalGrid) {
+        globalGrid.style.transform = `translateY(${scrolled * 0.1}px)`;
+      }
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
+</script>
+
+</body>
+</html>
