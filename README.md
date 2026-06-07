@@ -18,13 +18,12 @@ A browser-accessible cloud operating system featuring:
 
 * User accounts
 * App installation system
-* Virtual machine support
 * Modular architecture
 * Browser-based desktop experience
 
 ### 💻 WeaverBird Web
 
-A modern web IDE built with Tauri and inspired by desktop-grade developer tools.
+A modern web IDE inspired by desktop-grade developer tools.
 
 ---
 
