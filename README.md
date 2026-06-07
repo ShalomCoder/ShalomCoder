@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### Full-Stack Developer • Builder • Keyboardist • Jesus Follower ✝️
+### Full-Stack Developer • Builder • Musician • Tech Swiss Army Knife • Jesus Follower ✝️
 
 Building weird, useful, and occasionally over-engineered things.
 
