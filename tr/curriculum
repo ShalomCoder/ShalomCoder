@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robotics Club Curriculum</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Inter", Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+    }
+
+    .card {
+      width: min(90%, 500px);
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 24px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,.3);
+    }
+
+    .icon {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    p {
+      color: #cbd5e1;
+      line-height: 1.6;
+      margin: 20px 0 30px;
+    }
+
+    .details {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .detail {
+      background: rgba(255,255,255,.08);
+      padding: 12px;
+      border-radius: 12px;
+      font-size: 14px;
+    }
+
+    .download {
+      display: inline-block;
+      background: #22c55e;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .download:hover {
+      transform: translateY(-3px);
+      background: #16a34a;
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="icon">🤖</div>
+
+    <h1>Robotics Club Curriculum</h1>
+
+    <p>
+      Explore the official robotics training roadmap covering Arduino,
+      electronics, programming, sensors, automation, and competition projects.
+    </p>
+
+    <div class="details">
+      <div class="detail">⚡ Arduino & Embedded Programming</div>
+      <div class="detail">🔌 Electronics & Sensors</div>
+      <div class="detail">🏆 Competition Preparation</div>
+      <div class="detail">🛠 Practical Robotics Projects</div>
+    </div>
+
+    <a class="download" href="robotics-club-curriculum.pdf" download>
+      Download Curriculum PDF
+    </a>
+
+    <footer>
+      Robotics Club • Learning • Building • Innovating
+    </footer>
+
+  </div>
+
+</body>
+</html>
