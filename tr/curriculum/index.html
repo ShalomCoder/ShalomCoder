@@ -12,128 +12,232 @@
 
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:Inter,sans-serif;
-    background:#fff;
-    color:#111;
+body {
+    font-family: Inter, Arial, sans-serif;
+    background: #fff;
+    color: #111;
 }
 
-.container{
-    max-width:760px;
-    margin:auto;
-    min-height:100vh;
+.container {
+    max-width: 850px;
+    margin: auto;
+    min-height: 100vh;
 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    padding:48px 28px;
+    padding: 40px 30px;
 }
 
-.logo{
-    font-size:.85rem;
-    font-weight:700;
-    letter-spacing:.25em;
-    text-transform:uppercase;
-    margin-bottom:64px;
+/* Brand */
+
+.logo {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
 }
 
-h1{
-    font-size:3rem;
-    font-weight:700;
-    line-height:1.05;
-    margin-bottom:18px;
+/* Main */
+
+h1 {
+    font-size: clamp(48px, 8vw, 76px);
+    line-height: 0.95;
+    letter-spacing: -0.07em;
+    max-width: 700px;
 }
 
-.description{
-    max-width:520px;
-    color:#666;
-    line-height:1.7;
-    margin-bottom:56px;
+.subtitle {
+    margin-top: 25px;
+    max-width: 520px;
+
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
 }
 
-.meta{
-    display:grid;
-    gap:12px;
-    margin-bottom:56px;
+/* Info */
+
+.info {
+    margin-top: 55px;
+
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.meta div{
-    display:flex;
-    justify-content:space-between;
-    border-bottom:1px solid #eee;
-    padding-bottom:10px;
-    font-size:.95rem;
+.item {
+    padding: 20px 0;
 }
 
-.download{
-    width:max-content;
-    text-decoration:none;
-    color:#111;
-    border:1px solid #111;
-    padding:14px 26px;
-    transition:.2s;
+.item:not(:last-child) {
+    border-right: 1px solid #eaeaea;
+    padding-right: 20px;
 }
 
-.download:hover{
-    background:#111;
-    color:#fff;
+.label {
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: .08em;
 }
 
-footer{
-    margin-top:90px;
-    color:#888;
-    font-size:.85rem;
+.value {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* Button */
+
+.download {
+    margin-top: 45px;
+
+    display: inline-flex;
+    width: fit-content;
+
+    padding: 14px 25px;
+
+    border: 1px solid #111;
+
+    text-decoration: none;
+    color: #111;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: .2s;
+}
+
+.download:hover {
+    background: #111;
+    color: white;
+}
+
+
+/* Footer */
+
+footer {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+
+    color: #888;
+    font-size: 13px;
+}
+
+
+@media(max-width:600px){
+
+    .logo,
+    footer {
+        position: static;
+    }
+
+    .container {
+        gap: 30px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .item:not(:last-child){
+        border-right:none;
+        border-bottom:1px solid #eaeaea;
+    }
+
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<div class="container">
+<div class="logo">
+    ask_vd
+</div>
 
-    <div class="logo">ask_vd</div>
 
-    <h1>Robotics Club Curriculum</h1>
+<main class="container">
 
-    <p class="description">
-        A practical roadmap covering Arduino programming, electronics,
-        robotics, sensors, embedded systems and competition preparation.
+    <h1>
+        Robotics Club<br>
+        Curriculum
+    </h1>
+
+
+    <p class="subtitle">
+        A practical learning roadmap covering Arduino,
+        electronics, programming, sensors and robotics
+        competition preparation.
     </p>
 
-    <div class="meta">
-        <div>
-            <span>Format</span>
-            <span>PDF</span>
+
+    <section class="info">
+
+        <div class="item">
+            <div class="label">
+                Platform
+            </div>
+
+            <div class="value">
+                Arduino UNO
+            </div>
         </div>
 
-        <div>
-            <span>Audience</span>
-            <span>Club Members</span>
+
+        <div class="item">
+            <div class="label">
+                Level
+            </div>
+
+            <div class="value">
+                SHS Robotics
+            </div>
         </div>
 
-        <div>
-            <span>Duration</span>
-            <span>Academic Year</span>
-        </div>
-    </div>
 
-    <a href="curriculum.pdf" download class="download">
-        Download Curriculum
+        <div class="item">
+            <div class="label">
+                Format
+            </div>
+
+            <div class="value">
+                PDF Document
+            </div>
+        </div>
+
+    </section>
+
+
+    <a class="download" href="robotics-curriculum.pdf" download>
+        Download Curriculum →
     </a>
 
-    <footer>
-        Robotics Club
-    </footer>
 
-</div>
+</main>
+
+
+<footer>
+    Robotics Club • 2026
+</footer>
+
 
 </body>
 </html>
