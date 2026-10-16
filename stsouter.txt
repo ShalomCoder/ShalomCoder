@@ -1,4 +1,6 @@
-<html lang="en" class="loaded"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button[not:disabled]:hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel[not:disabled]:hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger[not:disabled]:hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:scroll;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -108,15 +110,10 @@ height: auto;
     border-radius: 10px
 }
 </style>
-  <style>
-  .imageye-selected {
-    outline: 2px solid black !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
-  }
-</style></head>
-  <body data-open="hover" data-menu="horizontal-menu" data-col="2-columns" class="horizontal-layout horizontal-menu 2-columns menu-collapsed">
+  </head>
+  <body data-open="hover" data-menu="horizontal-menu" data-col="2-columns" class="horizontal-layout horizontal-menu 2-columns   menu-expanded">
     <noscript><strong>We're sorry but Application doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
-  <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-static-top navbar-light navbar-border navbar-brand-center" data-nav="brand-center">
+  <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-static-top navbar-light navbar-border navbar-brand-center">
       <div class="navbar-wrapper" style="border-bottom: 3px solid #bf9f62"> 
         <div class="navbar-header">
           <ul class="nav navbar-nav flex-row">
@@ -158,7 +155,7 @@ height: auto;
           </div>
         </div>
       </div>
-    </nav>   <div id="sticky-wrapper" class="sticky-wrapper" style="height: 56px;"><div role="navigation" data-menu="menu-wrapper" class="header-navbar navbar-expand-sm navbar navbar-horizontal navbar-fixed navbar-light navbar-without-dd-arrow navbar-shadow menu-border navbar-brand-center" data-nav="brand-center">
+    </nav>   <div role="navigation" data-menu="menu-wrapper" class="header-navbar navbar-expand-sm navbar navbar-horizontal navbar-fixed navbar-light navbar-without-dd-arrow navbar-shadow menu-border">
       <div data-menu="menu-container" class="navbar-container main-menu-content container center-layout">
         <ul id="main-menu-navigation" data-menu="menu-navigation" class="nav navbar-nav">
           <li class="nav-item"><a href="https://sts.ug.edu.gh/services/welcome" class="nav-link"><i class="ft-home"></i> Welcome</a></li>
@@ -196,7 +193,7 @@ height: auto;
           <li class="nav-item"><a href="https://sts.ug.edu.gh/services/logout" class="nav-link"><i class="ft-lock"></i> Logout</a></li>  
         </ul>
       </div>
-    </div></div>   <div class="container">
+    </div>   <div class="container">
 
  <div class="app-content container center-layout mt-2">
 
@@ -261,12 +258,12 @@ height: auto;
 <div class="row">
     
           
-     <div class="col-sm-12 col-lg-12 col-xs-12">
+     <div class="col-sm-12 col-lg-12 col-xs-12" class="medical-link">
           <a href="https://sts.ug.edu.gh/services/medical-start">
                 <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:8px solid red" id="medical_menu">
                     <div class="card-content">
                         <div class="card-body">
-                            <h4 class="changecolor1 medical-text" style="font-weight: bold;color:red;text-transform: uppercase;">STUDENT MEDICAL EXAMINATION</h4>
+                            <h4 class="changecolor1 medical-text" style="font-weight: bold;color:red;text-transform: uppercase;" >STUDENT MEDICAL EXAMINATION</h4>
                             <h5 id="specialization_type" style="color:red;text-transform:uppercase;"></h5>
                             <h5 id="specialization_response" style="color:red;text-transform:uppercase;"></h5>
                         </div>
@@ -277,7 +274,7 @@ height: auto;
 
 
 
-        <div class="col-sm-12 col-lg-12 col-xs-12">
+        <div class="col-sm-12 col-lg-12 col-xs-12" >
           <a href="" data-toggle="modal" data-target="#medicalbookingmodal" style="display:none" id="bookingmenu">
                 <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:8px solid green">
                     <div class="card-content">
@@ -296,8 +293,8 @@ height: auto;
 
         
         
-        <div class="col-sm-12 col-lg-12 col-xs-12" style="" id="medical_exam_payment_receipt">
-            <a href="https://sts.ug.edu.gh/services/medical/print-payment-receipt">
+        <div class="col-sm-12 col-lg-12 col-xs-12" style="display:none" id="medical_exam_payment_receipt">
+            <a href="https://sts.ug.edu.gh/services/medical/print-payment-receipt"  >
                   <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:8px solid rgb(108, 62, 2)">
                       <div class="card-content">
                           <div class="card-body">
@@ -313,7 +310,7 @@ height: auto;
 
 
         <div class="col-sm-12 col-lg-12 col-xs-12" id="course_specialization" style="display:none;">
-            <a href="https://sts.ug.edu.gh/services/provide-specialization">
+            <a href="https://sts.ug.edu.gh/services/provide-specialization" >
                 <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid purple">
                     <div class="card-content">
                         <div class="card-body">
@@ -342,7 +339,7 @@ height: auto;
 
      <!-- data-toggle="modal" data-target="#ballotmodal" -->
         <div class="col-sm-12 col-lg-12 col-xs-12">
-          <a href="#" id="showballoting" data-toggle="modal" data-target="#ballotmodal" style="display: none;">
+          <a href="#" id="showballoting" data-toggle="modal" data-target="#ballotmodal">
              <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid blue">
                 <div class="card-content">
                     <div class="card-body">
@@ -610,7 +607,7 @@ height: auto;
            </div>
 
             <div class="col-sm-6 col-lg-6 col-xs-12 medical-link">
-             <a href="https://sts.ug.edu.gh/services/medical-start">
+             <a  href="https://sts.ug.edu.gh/services/medical-start">
             <div class="card box-shadow-1 medical roundit overflow-hidden anim animated pulse" style="border:4px solid red;">
                 <div class="card-content">
                     <div class="media align-items-stretch">
@@ -627,7 +624,7 @@ height: auto;
            </div>
 
               <div class="col-sm-6 col-lg-6 col-xs-12">
-               <a href="https://sts.ug.edu.gh/services/emedical">
+               <a href="https://sts.ug.edu.gh/services/emedical" >
             <div class="card roundit overflow-hidden box-shadow-1 anim">
                 <div class="card-content">
                     <div class="media align-items-stretch">
@@ -810,7 +807,7 @@ height: auto;
                                 <i class="ft-watch font-large-2 white"></i>
                             </div>
                             <div class="p-2 media-body">
-                                <h2 class="changecolor">Verify Your Registered Course &amp; Lecturer</h2>
+                                <h2 class="changecolor">Verify Your Registered Course & Lecturer</h2>
                             </div>
                         </div>
                     </div>
@@ -883,8 +880,8 @@ height: auto;
         <p style="text-transform: uppercase;">AGBONGO SHALOM KWAME<br>
         N/A</p>
         <p>Phone Numbers: <br>
-            </p><ul id="phonenumbers"></ul>
-        <p></p>
+            <ul id="phonenumbers"></ul>
+        </p>
                 <div class="btn-group mr-1 mb-1 center">
             <button type="button" class="btn btn-min-width dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #281564;color:white">Options</button>
             <div class="dropdown-menu">
@@ -894,12 +891,12 @@ height: auto;
             </div>
         </div>
         <hr>
-        <a href="https://ienabler.ug.edu.gh/pls/prodi41/w99pkg.mi_login" target="_blank" data-trigger="hover" data-toggle="tooltip" data-original-title="Visit MisWeb" style="color:#281564;padding:3px" class="changecolor"><i class="ft-globe"></i> MisWeb</a><br>
-        <a href="https://portal.office.com/" style="color:#281564;padding:3px" target="_blank" data-trigger="hover" data-toggle="tooltip" data-original-title="Visit Student Mail" class="changecolor"><i class="ft-mail"></i> Student Mail</a><br>
-        <a href="http://balme.ug.edu.gh/" style="color:#281564;padding:3px" target="_blank" data-trigger="hover" data-toggle="tooltip" data-original-title="Visit Library" class="changecolor"><i class="ft-book"></i> Library</a><br>
-        <a href="http://sakai.ug.edu.gh/" style="color:#281564;padding:3px" target="_blank" data-trigger="hover" data-toggle="tooltip" data-original-title="Visit Sakai" class="changecolor"><i class="ft-folder"></i> Sakai</a><br>
-         <a href="https://www.ug.edu.gh/students" style="color:#281564;padding:3px" target="_blank" data-trigger="hover" data-toggle="tooltip" data-original-title="Visit Student Portal" class="changecolor"><i class="ft-clipboard"></i> Student Portal</a><br>
-         <a href="https://sts.ug.edu.gh/timetable" style="color:#281564;padding:3px" target="_blank" data-trigger="hover" data-toggle="tooltip" data-original-title="Visit Online Timetable" class="changecolor"><i class="ft-clipboard"></i> Timetable</a>
+        <a href="https://ienabler.ug.edu.gh/pls/prodi41/w99pkg.mi_login" target='_blank' data-trigger='hover' data-toggle="tooltip" data-original-title="Visit MisWeb" style="color:#281564;padding:3px" class="changecolor"><i class="ft-globe"></i> MisWeb</a><br>
+        <a href="https://portal.office.com/" style="color:#281564;padding:3px" target='_blank' data-trigger='hover' data-toggle="tooltip" data-original-title="Visit Student Mail" class="changecolor"><i class="ft-mail"></i> Student Mail</a><br>
+        <a href="http://balme.ug.edu.gh/" style="color:#281564;padding:3px" target='_blank' data-trigger='hover' data-toggle="tooltip" data-original-title="Visit Library" class="changecolor"><i class="ft-book"></i> Library</a><br>
+        <a href="http://sakai.ug.edu.gh/" style="color:#281564;padding:3px" target='_blank' data-trigger='hover' data-toggle="tooltip" data-original-title="Visit Sakai" class="changecolor"><i class="ft-folder"></i> Sakai</a><br>
+         <a href="https://www.ug.edu.gh/students" style="color:#281564;padding:3px" target='_blank' data-trigger='hover' data-toggle="tooltip" data-original-title="Visit Student Portal" class="changecolor"><i class="ft-clipboard"></i> Student Portal</a><br>
+         <a href="https://sts.ug.edu.gh/timetable" style="color:#281564;padding:3px" target='_blank' data-trigger='hover' data-toggle="tooltip" data-original-title="Visit Online Timetable" class="changecolor"><i class="ft-clipboard"></i> Timetable</a>
     </div>
 </div>
 
@@ -917,11 +914,11 @@ height: auto;
             <div class="modal-header" style="background: #281564;color:white">
               <label class="modal-title text-text-bold-600" id="myModalLabel33">PICK A DATE</label>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" style="color:white">×</span>
+                <span aria-hidden="true" style="color:white">&times;</span>
               </button>
             </div>
             <form method="POST" action="https://sts.ug.edu.gh/services/savepickaday" id="pickadayform">
-              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+              <input type="hidden" name="_token" value="e91GP6Ar9O7u15awKaOsgOG9pczM4xUH1a3Z12Lj">
                 <div class="modal-body">
                 <p>ID Cards Collection</p>
                   <div class="row">
@@ -955,30 +952,30 @@ height: auto;
             <div class="modal-header" style="background: #281564;color:white">
               <label class="modal-title text-text-bold-600" id="myModalLabel33">GHANA CARD/PHONE NUMBER VERIFICATION/EMAILS UPDATE</label>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" style="color:white">×</span>
+                <span aria-hidden="true" style="color:white">&times;</span>
               </button>
             </div>
             <form method="POST" id="govform">
-              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+              <input type="hidden" name="_token" value="e91GP6Ar9O7u15awKaOsgOG9pczM4xUH1a3Z12Lj">
                 <div class="modal-body">
                   <div class="row">
                     <div class="col-sm-6">
                        <label>Student ID: </label>
                       <div class="form-group">
-                        <input type="text" value="22553484" readonly="" class="form-control">
+                        <input type="text" value="22553484" readonly class="form-control">
                       </div>
                     </div>
                      <div class="col-sm-6">
                        <label>Name: </label>
                       <div class="form-group">
-                        <input type="text" value="AGBONGO SHALOM KWAME" readonly="" class="form-control">
+                        <input type="text" value="AGBONGO SHALOM KWAME" readonly class="form-control">
                       </div>
                     </div>
 
                     <div class="col-sm-6">
                        <label>Ghana Card: </label>
                       <div class="form-group">
-                        <input type="text" name="ghanacard" required="" id="ghanacard" class="form-control">
+                        <input type="text" name="ghanacard" required id="ghanacard" class="form-control">
                       </div>
                     </div>
                     
@@ -1018,11 +1015,11 @@ height: auto;
             <div class="modal-header" style="background: #281564;color:white">
               <label class="modal-title text-text-bold-600" id="myModalLabel33">EMPIRE HOSTEL RANDOM ALLOCATION</label>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" style="color:white">×</span>
+                <span aria-hidden="true" style="color:white">&times;</span>
               </button>
             </div>
             <form method="POST" id="ballotformempire">
-              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+              <input type="hidden" name="_token" value="e91GP6Ar9O7u15awKaOsgOG9pczM4xUH1a3Z12Lj">
                 <div class="modal-body">
                   <div class="row">
                     <div class="col-sm-12">
@@ -1035,7 +1032,7 @@ height: auto;
                       </select>
                       </div>
                     </div>
-                    <div class="col-sm-12" id="showroomcategory" style="display: none;">
+                    <div class="col-sm-12" id="showroomcategory">
 
     <label style="color: red">
         Select the Room Category you would like to be part of - Select All that Applies
@@ -1044,25 +1041,41 @@ height: auto;
     <div class="form-group">
 
         <label style="display:block;">
-            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" class="icheck room_category" name="room_category[]" id="room_2in1A" value="2in1A" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+            <input type="checkbox"
+                   class="icheck room_category"
+                   name="room_category[]"
+                   id="room_2in1A"
+                   value="2in1A">
             &nbsp;&nbsp;2 in 1 with AC Type A
             (<i>GHS 23,400-GHANAIAN STUDENT, GHS 31,400-INTERNATIONAL STUDENT</i>)
         </label>
 
         <label style="display:block;">
-            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" class="icheck room_category" name="room_category[]" id="room_2in1B" value="2in1B" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+            <input type="checkbox"
+                   class="icheck room_category"
+                   name="room_category[]"
+                   id="room_2in1B"
+                   value="2in1B">
             &nbsp;&nbsp;2 in 1 with AC Type B
             (<i>GHS 21,600-GHANAIAN STUDENT, GHS 30,200-INTERNATIONAL STUDENT</i>)
         </label>
 
         <label style="display:block;">
-            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" class="icheck room_category" name="room_category[]" id="room_4in1A" value="4in1A" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+            <input type="checkbox"
+                   class="icheck room_category"
+                   name="room_category[]"
+                   id="room_4in1A"
+                   value="4in1A">
             &nbsp;&nbsp;4 in 1 with No AC Type A
             (<i>GHS 12,400-GHANAIAN STUDENT, GHS 16,600-INTERNATIONAL STUDENT</i>)
         </label>
 
         <label style="display:block;">
-            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" class="icheck room_category" name="room_category[]" id="room_4in1B" value="4in1B" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+            <input type="checkbox"
+                   class="icheck room_category"
+                   name="room_category[]"
+                   id="room_4in1B"
+                   value="4in1B">
            &nbsp;&nbsp; 4 in 1 with No AC Type B
             (<i>GHS 11,400-GHANAIAN STUDENT, GHS15,300-INTERNATIONAL STUDENT</i>)
         </label>
@@ -1099,11 +1112,11 @@ height: auto;
             <div class="modal-header" style="background: #281564;color:white">
               <label class="modal-title text-text-bold-600" id="myModalLabel33">CHOOSE</label>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" style="color:white">×</span>
+                <span aria-hidden="true" style="color:white">&times;</span>
               </button>
             </div>
             <form method="POST" id="ballotform">
-              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+              <input type="hidden" name="_token" value="e91GP6Ar9O7u15awKaOsgOG9pczM4xUH1a3Z12Lj">
                 <div class="modal-body">
                   <div class="row">
                     <div class="col-sm-12">
@@ -1143,11 +1156,11 @@ height: auto;
             <div class="modal-header" style="background: #281564;color:white">
               <label class="modal-title text-text-bold-600" id="myModalLabel33">CHOOSE</label>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" style="color:white">×</span>
+                <span aria-hidden="true" style="color:white">&times;</span>
               </button>
             </div>
             <form method="POST" id="clothform">
-              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+              <input type="hidden" name="_token" value="e91GP6Ar9O7u15awKaOsgOG9pczM4xUH1a3Z12Lj">
                 <div class="modal-body">
                   <div class="row">
                     <div class="col-sm-12">
@@ -1201,7 +1214,7 @@ height: auto;
             <div class="modal-header" style="background: #281564;color:white">
               <label class="modal-title text-text-bold-600" id="myModalLabel333">Collection Points</label>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" style="color:white">×</span>
+                <span aria-hidden="true" style="color:white">&times;</span>
               </button>
             </div>
            
@@ -1238,11 +1251,11 @@ height: auto;
             <div class="modal-header" style="background: #281564;color:white">
               <label class="modal-title text-text-bold-600" id="myModalLabel33">FIRST GENERATION SURVEY</label>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" style="color:white">×</span>
+                <span aria-hidden="true" style="color:white">&times;</span>
               </button>
             </div>
             <form method="POST" action="https://sts.ug.edu.gh/services/savefirstgeneration">
-              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+              <input type="hidden" name="_token" value="e91GP6Ar9O7u15awKaOsgOG9pczM4xUH1a3Z12Lj">
                 <div class="modal-body">
              
                   <div class="row">
@@ -1264,22 +1277,22 @@ height: auto;
                       <div class="form-group">
                           <div class="row" style="margin-bottom:20px">
                             <div class="col-sm-12">
-                            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" value="Mother" name="other_family[]" class="firstgenerationcheckbox" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>&nbsp;&nbsp;&nbsp;Mother
+                            <input type="checkbox" value="Mother" name="other_family[]" class="firstgenerationcheckbox">&nbsp;&nbsp;&nbsp;Mother
                             </div>
                         </div>
                          <div class="row" style="margin-bottom:20px">
                             <div class="col-sm-12">
-                            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" value="Father" name="other_family[]" class="firstgenerationcheckbox" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>&nbsp;&nbsp;&nbsp;Father
+                            <input type="checkbox" value="Father" name="other_family[]" class="firstgenerationcheckbox">&nbsp;&nbsp;&nbsp;Father
                             </div>
                         </div>
                         <div class="row" style="margin-bottom:20px">
                             <div class="col-sm-12">
-                            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" value="Brother" name="other_family[]" class="firstgenerationcheckbox" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>&nbsp;&nbsp;&nbsp;Brother
+                            <input type="checkbox" value="Brother" name="other_family[]" class="firstgenerationcheckbox">&nbsp;&nbsp;&nbsp;Brother
                             </div>
                         </div>
                         <div class="row" style="margin-bottom:20px">
                             <div class="col-sm-12">
-                            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" value="Sister" name="other_family[]" class="firstgenerationcheckbox" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>&nbsp;&nbsp;&nbsp;Sister
+                            <input type="checkbox" value="Sister" name="other_family[]" class="firstgenerationcheckbox">&nbsp;&nbsp;&nbsp;Sister
                             </div>
                         </div>
                       </div>
@@ -1305,11 +1318,11 @@ height: auto;
             <div class="modal-header" style="background: #281564;color:white">
               <label class="modal-title text-text-bold-600" id="myModalLabel33">MEDICAL BOOKING</label>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" style="color:white">×</span>
+                <span aria-hidden="true" style="color:white">&times;</span>
               </button>
             </div>
             <form method="POST" id="medicalbookingform">
-              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+              <input type="hidden" name="_token" value="e91GP6Ar9O7u15awKaOsgOG9pczM4xUH1a3Z12Lj">
                 <div class="modal-body">
              <input type="hidden" name="student_id" value="22553484">
                   
@@ -1319,13 +1332,13 @@ height: auto;
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="highest_edu">Appointment Date [<strong style="color:red;">MONDAY - SATURDAY</strong>]</label>
-                            <input class="form-control required" min="2026-10-16" id="appdate" type="date" name="appdate">
+                            <input class="form-control required" min="2026-10-16" id="appdate" type="date"  name="appdate" />
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="highest_edu">Select From Available Time Slots</label>
-                            <select class="form-control required" name="session" required="" id="bookingslot">
+                            <select class="form-control required" name="session" required id="bookingslot">
 
                                 <option value="">Select an option</option>
                                 <option value="07-08">7AM to 8AM</option>
@@ -1393,13 +1406,20 @@ height: auto;
                         
                     </tr>
                     </thead>
-                    <tbody id="phoneVerificationTableBody"><tr><td colspan="4" class="text-center text-muted">No phone numbers found. Add one below.</td></tr></tbody>
+                    <tbody id="phoneVerificationTableBody">
+                    <tr id="phoneVerificationLoadingRow">
+                        <td colspan="4" class="text-center text-muted">Loading phone numbers...</td>
+                    </tr>
+                    </tbody>
                 </table>
                 </div>
 
                 <hr>
 
-                <button type="button" class="btn btn-primary" id="openAddPhoneModalBtn">
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    id="openAddPhoneModalBtn">
                     <i class="fa fa-plus"></i>
                     Add Another Phone Number (New)
                 </button>
@@ -1423,7 +1443,7 @@ height: auto;
                     <i class="fa fa-plus"></i> Add Phone Number
                 </h5>
                 <button type="button" class="close text-white" id="closeAddPhoneModalBtn">
-                    <span>×</span>
+                    <span>&times;</span>
                 </button>
             </div>
 
@@ -1434,7 +1454,12 @@ height: auto;
                 <div id="addPhoneStep1">
                     <div class="form-group">
                         <label for="newPhoneNumber">Phone Number</label>
-                        <input type="text" class="form-control" id="newPhoneNumber" placeholder="e.g. 0241234567" maxlength="15">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="newPhoneNumber"
+                            placeholder="e.g. 0241234567"
+                            maxlength="15">
                         <small class="form-text text-muted">Enter a valid Ghanaian phone number.</small>
                     </div>
                     <button type="button" class="btn btn-primary" id="sendOtpBtn">
@@ -1449,13 +1474,18 @@ height: auto;
                     </p>
                     <div class="form-group">
                         <label for="otpCode">OTP Code</label>
-                        <input type="text" class="form-control" id="otpCode" placeholder="Enter 6-digit OTP" maxlength="6">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="otpCode"
+                            placeholder="Enter 6-digit OTP"
+                            maxlength="6">
                     </div>
                     <div class="d-flex flex-wrap align-items-center">
                         <button type="button" class="btn btn-success mr-2 mb-2" id="verifyOtpBtn">
                             <i class="fa fa-check"></i> Verify OTP
                         </button>
-                        <button type="button" class="btn btn-outline-secondary mb-2" id="resendOtpBtn" disabled="">
+                        <button type="button" class="btn btn-outline-secondary mb-2" id="resendOtpBtn" disabled>
                             <i class="fa fa-refresh"></i> Resend OTP (<span id="resendOtpCountdown">60</span>s)
                         </button>
                     </div>
@@ -1479,11 +1509,11 @@ height: auto;
                         <div class="modal-header" style="background: #281564;color:white">
                           <label class="modal-title text-text-bold-600" id="myModalLabel33">SUBMIT A COMPLAINT</label>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true" style="color:white">×</span>
+                            <span aria-hidden="true" style="color:white">&times;</span>
                           </button>
                         </div>
                         <form method="POST" action="https://sts.ug.edu.gh/services/sendmailtocollege" id="complaintform">
-                          <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+                          <input type="hidden" name="_token" value="e91GP6Ar9O7u15awKaOsgOG9pczM4xUH1a3Z12Lj">
                             <div class="modal-body">
                               <div class="row">
                                 <div class="col-sm-4">
@@ -1557,11 +1587,11 @@ height: auto;
                         <div class="modal-header" style="background: #281564;color:white">
                           <label class="modal-title text-text-bold-600" id="myModalLabel333">PROGRAMME SELECTION (BIOLOGICAL SCIENCES)</label>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true" style="color:white">×</span>
+                            <span aria-hidden="true" style="color:white">&times;</span>
                           </button>
                         </div>
                         <form method="POST" action="https://sts.ug.edu.gh/services/saveprogramme" id="programmeform">
-                          <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+                          <input type="hidden" name="_token" value="e91GP6Ar9O7u15awKaOsgOG9pczM4xUH1a3Z12Lj">
                                                         <div class="modal-body">
 
                               <div class="row">
@@ -1580,36 +1610,36 @@ height: auto;
                                    <select class="form-control degreeoption" required="required" name="choices">
                                     <option value="">Select Degree Option</option>
                                       
-                                                                          <option value="BSc. Animal Biology and Conservation Science (BSc. Single Major)">BSc. Animal Biology and Conservation Science (BSc. Single Major)</option><option value="BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)">BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)</option><option value="BSc. Biology (BSc. Single Major)">BSc. Biology (BSc. Single Major)</option><option value="BSc. Fisheries Science (BSc. Single Major)">BSc. Fisheries Science (BSc. Single Major)</option><option value="BSc. Food Science (BSc. Single Major)">BSc. Food Science (BSc. Single Major)</option><option value="BSc. Marine Science (BSc. Single Major)">BSc. Marine Science (BSc. Single Major)</option><option value="BSc. Nutrition (BSc. Single Major)">BSc. Nutrition (BSc. Single Major)</option><option value="BSc. Plant and Environmental Biology (BSc. Single Major)">BSc. Plant and Environmental Biology (BSc. Single Major)</option><option value="BSc. Food Sc. and Biochemistry (Combined Major)">BSc. Food Sc. and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Biochemistry (Combined Major)">BSc. Nutrition and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Food Sc. (Combined Major)">BSc. Nutrition and Food Sc. (Combined Major)</option><option value="BSc. Plant Biol. and Biochemistry (Combined Major)">BSc. Plant Biol. and Biochemistry (Combined Major)</option><option value="BSc. Animal Biol. with a minor in Biochemistry">BSc. Animal Biol. with a minor in Biochemistry</option><option value="BSc. Fisheries Sc. with a minor in Marine Sc.">BSc. Fisheries Sc. with a minor in Marine Sc.</option><option value="BSc. Marine Sc. with a minor in Fisheries">BSc. Marine Sc. with a minor in Fisheries.</option></select>
+                                                                          </select>
                                   </div> 
 
 
                                   <label>Degree Option 2: </label>
                                   <div class="form-group">
-                                   <select class="form-control degreeoption" required="required" name="choice2" id="choices2">
+                                   <select class="form-control degreeoption" required="required" name="choice2" id="choices2" >
                                     <option value="">Select Degree Option</option>
-                                                                        <option value="BSc. Animal Biology and Conservation Science (BSc. Single Major)">BSc. Animal Biology and Conservation Science (BSc. Single Major)</option><option value="BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)">BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)</option><option value="BSc. Biology (BSc. Single Major)">BSc. Biology (BSc. Single Major)</option><option value="BSc. Fisheries Science (BSc. Single Major)">BSc. Fisheries Science (BSc. Single Major)</option><option value="BSc. Food Science (BSc. Single Major)">BSc. Food Science (BSc. Single Major)</option><option value="BSc. Marine Science (BSc. Single Major)">BSc. Marine Science (BSc. Single Major)</option><option value="BSc. Nutrition (BSc. Single Major)">BSc. Nutrition (BSc. Single Major)</option><option value="BSc. Plant and Environmental Biology (BSc. Single Major)">BSc. Plant and Environmental Biology (BSc. Single Major)</option><option value="BSc. Food Sc. and Biochemistry (Combined Major)">BSc. Food Sc. and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Biochemistry (Combined Major)">BSc. Nutrition and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Food Sc. (Combined Major)">BSc. Nutrition and Food Sc. (Combined Major)</option><option value="BSc. Plant Biol. and Biochemistry (Combined Major)">BSc. Plant Biol. and Biochemistry (Combined Major)</option><option value="BSc. Animal Biol. with a minor in Biochemistry">BSc. Animal Biol. with a minor in Biochemistry</option><option value="BSc. Fisheries Sc. with a minor in Marine Sc.">BSc. Fisheries Sc. with a minor in Marine Sc.</option><option value="BSc. Marine Sc. with a minor in Fisheries">BSc. Marine Sc. with a minor in Fisheries.</option></select>
+                                                                        </select>
                                   </div> 
 
                                   <label>Degree Option 3: </label>
                                   <div class="form-group">
                                    <select class="form-control degreeoption" required="required" name="choice3" id="choices3">
                                     <option value="">Select Degree Option</option>
-                                                                        <option value="BSc. Animal Biology and Conservation Science (BSc. Single Major)">BSc. Animal Biology and Conservation Science (BSc. Single Major)</option><option value="BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)">BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)</option><option value="BSc. Biology (BSc. Single Major)">BSc. Biology (BSc. Single Major)</option><option value="BSc. Fisheries Science (BSc. Single Major)">BSc. Fisheries Science (BSc. Single Major)</option><option value="BSc. Food Science (BSc. Single Major)">BSc. Food Science (BSc. Single Major)</option><option value="BSc. Marine Science (BSc. Single Major)">BSc. Marine Science (BSc. Single Major)</option><option value="BSc. Nutrition (BSc. Single Major)">BSc. Nutrition (BSc. Single Major)</option><option value="BSc. Plant and Environmental Biology (BSc. Single Major)">BSc. Plant and Environmental Biology (BSc. Single Major)</option><option value="BSc. Food Sc. and Biochemistry (Combined Major)">BSc. Food Sc. and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Biochemistry (Combined Major)">BSc. Nutrition and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Food Sc. (Combined Major)">BSc. Nutrition and Food Sc. (Combined Major)</option><option value="BSc. Plant Biol. and Biochemistry (Combined Major)">BSc. Plant Biol. and Biochemistry (Combined Major)</option><option value="BSc. Animal Biol. with a minor in Biochemistry">BSc. Animal Biol. with a minor in Biochemistry</option><option value="BSc. Fisheries Sc. with a minor in Marine Sc.">BSc. Fisheries Sc. with a minor in Marine Sc.</option><option value="BSc. Marine Sc. with a minor in Fisheries">BSc. Marine Sc. with a minor in Fisheries.</option></select>
+                                                                        </select>
                                   </div> 
 
                                   <label>Degree Option 4: </label>
                                   <div class="form-group">
                                    <select class="form-control degreeoption" required="required" name="choice4" id="choices4">
                                     <option value="">Select Degree Option</option>
-                                                                        <option value="BSc. Animal Biology and Conservation Science (BSc. Single Major)">BSc. Animal Biology and Conservation Science (BSc. Single Major)</option><option value="BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)">BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)</option><option value="BSc. Biology (BSc. Single Major)">BSc. Biology (BSc. Single Major)</option><option value="BSc. Fisheries Science (BSc. Single Major)">BSc. Fisheries Science (BSc. Single Major)</option><option value="BSc. Food Science (BSc. Single Major)">BSc. Food Science (BSc. Single Major)</option><option value="BSc. Marine Science (BSc. Single Major)">BSc. Marine Science (BSc. Single Major)</option><option value="BSc. Nutrition (BSc. Single Major)">BSc. Nutrition (BSc. Single Major)</option><option value="BSc. Plant and Environmental Biology (BSc. Single Major)">BSc. Plant and Environmental Biology (BSc. Single Major)</option><option value="BSc. Food Sc. and Biochemistry (Combined Major)">BSc. Food Sc. and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Biochemistry (Combined Major)">BSc. Nutrition and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Food Sc. (Combined Major)">BSc. Nutrition and Food Sc. (Combined Major)</option><option value="BSc. Plant Biol. and Biochemistry (Combined Major)">BSc. Plant Biol. and Biochemistry (Combined Major)</option><option value="BSc. Animal Biol. with a minor in Biochemistry">BSc. Animal Biol. with a minor in Biochemistry</option><option value="BSc. Fisheries Sc. with a minor in Marine Sc.">BSc. Fisheries Sc. with a minor in Marine Sc.</option><option value="BSc. Marine Sc. with a minor in Fisheries">BSc. Marine Sc. with a minor in Fisheries.</option></select>
+                                                                        </select>
                                   </div> 
 
                                   <label>Degree Option 5: </label>
                                   <div class="form-group">
                                    <select class="form-control degreeoption" required="required" name="choice5" id="choices5">
                                     <option value="">Select Degree Option</option>
-                                                                        <option value="BSc. Animal Biology and Conservation Science (BSc. Single Major)">BSc. Animal Biology and Conservation Science (BSc. Single Major)</option><option value="BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)">BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)</option><option value="BSc. Biology (BSc. Single Major)">BSc. Biology (BSc. Single Major)</option><option value="BSc. Fisheries Science (BSc. Single Major)">BSc. Fisheries Science (BSc. Single Major)</option><option value="BSc. Food Science (BSc. Single Major)">BSc. Food Science (BSc. Single Major)</option><option value="BSc. Marine Science (BSc. Single Major)">BSc. Marine Science (BSc. Single Major)</option><option value="BSc. Nutrition (BSc. Single Major)">BSc. Nutrition (BSc. Single Major)</option><option value="BSc. Plant and Environmental Biology (BSc. Single Major)">BSc. Plant and Environmental Biology (BSc. Single Major)</option><option value="BSc. Food Sc. and Biochemistry (Combined Major)">BSc. Food Sc. and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Biochemistry (Combined Major)">BSc. Nutrition and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Food Sc. (Combined Major)">BSc. Nutrition and Food Sc. (Combined Major)</option><option value="BSc. Plant Biol. and Biochemistry (Combined Major)">BSc. Plant Biol. and Biochemistry (Combined Major)</option><option value="BSc. Animal Biol. with a minor in Biochemistry">BSc. Animal Biol. with a minor in Biochemistry</option><option value="BSc. Fisheries Sc. with a minor in Marine Sc.">BSc. Fisheries Sc. with a minor in Marine Sc.</option><option value="BSc. Marine Sc. with a minor in Fisheries">BSc. Marine Sc. with a minor in Fisheries.</option></select>
+                                                                        </select>
                                   </div> 
                                   
 
@@ -1651,7 +1681,7 @@ height: auto;
                     </div>
                   </div>
 
-  <div class="customizer border-left-blue-grey border-left-lighten-4 d-none d-xl-block"><a href="#" class="customizer-close"><i class="ft-x font-medium-3"></i></a><a href="#" class="customizer-toggle bg-danger" style="background: #281564!important"><i class="ft-settings font-medium-3 fa-spin fa fa-spin fa-fw white"></i></a><div class="customizer-content p-2 ps-container ps-theme-dark" data-ps-id="6e05c4ae-eefd-8bcb-3250-1c7697a2d610">
+  <div class="customizer border-left-blue-grey border-left-lighten-4 d-none d-xl-block"><a href="#" class="customizer-close"><i class="ft-x font-medium-3"></i></a><a href="#" class="customizer-toggle bg-danger" style="background: #281564!important"><i class="ft-settings font-medium-3 fa-spin fa fa-spin fa-fw white" ></i></a><div class="customizer-content p-2">
     <h4 class="text-uppercase mb-0">More</h4>
     <hr>
      <h5 class="mt-1">HandBooks</h5><hr>
@@ -1682,7 +1712,7 @@ height: auto;
                     <strong>Success! </strong>Thank you for your Suggestion
             </div>
             <form role="form" id="suggestionbox">
-                <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+                <input type="hidden" name="_token" value="e91GP6Ar9O7u15awKaOsgOG9pczM4xUH1a3Z12Lj">
                 <div class="form-group">
                     <textarea class="form-control textarea-maxlength" rows="5" placeholder="Drop your suggestions" maxlength="220" name="message" required="required"></textarea>
                 </div>
@@ -1692,14 +1722,14 @@ height: auto;
     </div>
     
     <hr>
-<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+</div>
     </div>  
 
    
 
   
-    <footer class="footer footer-static navbar-shadow col-xs-hidden" style="background-color:#bf9f62;color:white;z-index:100000">
-      <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2 container center-layout"><span class="d-block d-md-inline-block" style="color: white">Copyright  © 2026, All rights reserved. Powered By UGCS</span></p>
+    <footer class="footer footer-static navbar-shadow col-xs-hidden" style=background-color:#bf9f62;color:white;z-index:100000>
+      <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2 container center-layout"><span class="d-block d-md-inline-block" style="color: white">Copyright  &copy; 2026, All rights reserved. Powered By UGCS</span></p>
     </footer>
 
     
@@ -2714,7 +2744,7 @@ function getRoomCategoryName(category) {
         if(res && res.status==="success"){
             if(res.type=='first'){
                 //fireConfetti()
-                swal("HURRAY!!!!   YOUR STUDENT MEDICAL EXAMINATION IS COMPLETED. CLICK TO VIEW YOUR REPORTS.", {
+                swal("HURRAY!!!!   YOUR STUDENT MEDICAL EXAMINATION IS COMPLETED. CLICK TO VIEW YOUR REPORTS.", {
                 buttons: {
                     cancel: "Later",
                     catch: {
@@ -2867,7 +2897,7 @@ fire(0.1, {
 
 <script>
 (function () {
-    var csrfToken = 'KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g';
+    var csrfToken = 'e91GP6Ar9O7u15awKaOsgOG9pczM4xUH1a3Z12Lj';
     var currentPhoneId = null;
     var retriesLeft = 3;
     var resendCooldownTimer = null;
@@ -3623,7 +3653,7 @@ fire(0.1, {
   })
     </script>
 
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PL0XW1LEF4"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PL0XW1LEF4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -3631,5 +3661,5 @@ fire(0.1, {
   gtag('config', 'G-PL0XW1LEF4');
 </script>
 
-  
-<div id="css-inspector-overlay" style="position: absolute; pointer-events: none; z-index: 999999; background: rgba(59, 130, 246, 0.3); border: 2px solid rgb(59, 130, 246); border-radius: 4px; box-shadow: rgba(59, 130, 246, 0.5) 0px 0px 0px 1px; display: none; transition: 0.1s; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif;"></div></body></html>
+  </body>
+</html>
