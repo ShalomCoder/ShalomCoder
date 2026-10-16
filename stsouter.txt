@@ -1,0 +1,3635 @@
+<html lang="en" class="loaded"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button[not:disabled]:hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel[not:disabled]:hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger[not:disabled]:hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:scroll;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Students/Staff Services</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="https://sts.ug.edu.gh/services/assets/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://sts.ug.edu.gh/services/assets/css/vendors.css">
+    <link rel="stylesheet" type="text/css" href="https://sts.ug.edu.gh/services/assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="https://sts.ug.edu.gh/services/assets/css/core/menu/menu-types/horizontal-menu.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://sts.ug.edu.gh/services/assets/css/select2.min.css">
+    <style type="text/css">
+    
+      .footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        text-align: center;
+      }
+    @media  only screen and (max-width: 500px) {
+      .footer{
+        display: none;
+      }
+      #payments{
+        display: none;
+      }
+      .uglogo{
+        width: 100%
+      }
+    }
+     .changecolor11{
+      color: #fff;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-animation: hue 60s infinite linear;
+    animation: hue 60s infinite linear;
+    } 
+    .changecolor{
+      color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+    animation: hue 60s infinite linear;
+    } 
+      @-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  } 
+
+      .tab-content > .tab-pane,
+.pill-content > .pill-pane {
+display: block; 
+height: 0;
+overflow-y: hidden;
+}
+.tab-content > .active,
+.pill-content > .active {
+height: auto;       
+} 
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://sts.ug.edu.gh/services/assets/css/toastrext.css">
+<link rel="stylesheet" type="text/css" href="https://sts.ug.edu.gh/services/assets/css/toastr.css">
+<link rel="stylesheet" type="text/css" href="https://sts.ug.edu.gh/services/assets/css/palette-callout.css">
+<link rel="stylesheet" type="text/css" href="https://sts.ug.edu.gh/services/assets/css/animate.css">
+<link rel="stylesheet" type="text/css" href="https://sts.ug.edu.gh/services/assets/vendors/css/sweetalert.css">
+<link rel="stylesheet" type="text/css" href="https://sts.ug.edu.gh/services/assets/css/bootstrap-datetimepicker.css">
+<link rel="stylesheet" type="text/css" href="https://sts.ug.edu.gh/services/assets/vendors/js/icheck/skins/square/blue.css">
+<style type="text/css">
+    canvas{
+        margin-left: 20px;
+    }
+    .bg-ug{
+       color:white;
+       background: #281564;
+    }
+    .card{
+   border: 1px solid #d6d6d6;
+}
+.card-header{
+  background: #f9f6f1;
+  background:-moz-linear-gradient(top, #f9f6f1 0%, #f2efea 100%); /* FF3.6+ */
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f6f1), color-stop(100%,#f2efea)); /* Chrome,Safari4+ */
+  background:-webkit-linear-gradient(top, #f9f6f1 0%,#f2efea 100%); /* Chrome10+,Safari5.1+ */
+  background:-o-linear-gradient(top, #f9f6f1 0%,#f2efea 100%); /* Opera11.10+ */
+  background:-ms-linear-gradient(top, #f9f6f1 0%,#f2efea 100%); /* IE10+ */
+  background:linear-gradient(top, #f9f6f1 0%,#f2efea 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea')";
+  -webkit-background-clip: padding-box;
+  padding:1.0rem 1.5rem;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.bs-callout-success.callout-transparent{
+    border-color: #bf9f62 !important;
+}
+.roundit{
+    border-radius: 10px
+}
+</style>
+  <style>
+  .imageye-selected {
+    outline: 2px solid black !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+  }
+</style></head>
+  <body data-open="hover" data-menu="horizontal-menu" data-col="2-columns" class="horizontal-layout horizontal-menu 2-columns menu-collapsed">
+    <noscript><strong>We're sorry but Application doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+  <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-static-top navbar-light navbar-border navbar-brand-center" data-nav="brand-center">
+      <div class="navbar-wrapper" style="border-bottom: 3px solid #bf9f62"> 
+        <div class="navbar-header">
+          <ul class="nav navbar-nav flex-row">
+            <li class="nav-item mobile-menu d-md-none mr-auto" style="color:white!important"><a href="https://sts.ug.edu.gh/services/welcome" class="nav-link nav-menu-main menu-toggle hidden-xs" style="color:white!important"><i class="ft-menu font-large-1"></i></a></li>
+            <li class="nav-item"><a href="https://sts.ug.edu.gh/services/welcome" class="navbar-brand">
+             <h2 class="brand-text" style="color:white"><img src="https://sts.ug.edu.gh/services/assets/images/icon.png" style="max-height: 40px"> STS</h2>
+              </a>
+            </li>
+            <li class="nav-item d-md-none"><a data-toggle="collapse" data-target="#navbar-mobile" class="nav-link open-navbar-container"><i class="fa fa-ellipsis-v" style="color:white"></i></a></li>
+          </ul>
+        </div>
+        <div class="navbar-container container center-layout">
+          <div id="navbar-mobile" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav mr-auto float-left">
+              <li class="nav-item d-none d-md-block"><a href="#" class="nav-link nav-menu-main menu-toggle hidden-xs"></a></li>
+            </ul>
+            <ul class="nav navbar-nav float-right">
+              
+             
+              <li id="notif_icon" class="dropdown dropdown-notification nav-item"><a href="https://sts.ug.edu.gh/services/viewnotification" data-toggle="dropdown" class="nav-link nav-link-label"><i class="ficon ft-bell" style="color:white"></i><span class="badge badge-pill badge-default badge-success badge-default badge-up" id="notif_badge" style="display: none">1</span></a>
+                <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right" id="notif_dropdown">
+                  
+                 
+                  
+                </ul>
+              </li>
+           
+              
+              <li class="dropdown dropdown-user nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link"><span class="avatar">
+                                 <img class="profileimage" src="https://sts.ug.edu.gh/services/assets/images/profile.png" alt="avatar" style="max-height: 35px">
+                               
+                <i></i></span><span class="user-name" style="color:white!important">AGBONGO</span></a>
+                <div class="dropdown-menu dropdown-menu-right" style="color:white!important">
+                  <a href="https://sts.ug.edu.gh/services/profile" class="dropdown-item"><i class="ft-message-square"></i> Profile</a>
+                  <div class="dropdown-divider"></div><a href="https://sts.ug.edu.gh/services/logout" class="dropdown-item"><i class="ft-power"></i> Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>   <div id="sticky-wrapper" class="sticky-wrapper" style="height: 56px;"><div role="navigation" data-menu="menu-wrapper" class="header-navbar navbar-expand-sm navbar navbar-horizontal navbar-fixed navbar-light navbar-without-dd-arrow navbar-shadow menu-border navbar-brand-center" data-nav="brand-center">
+      <div data-menu="menu-container" class="navbar-container main-menu-content container center-layout">
+        <ul id="main-menu-navigation" data-menu="menu-navigation" class="nav navbar-nav">
+          <li class="nav-item"><a href="https://sts.ug.edu.gh/services/welcome" class="nav-link"><i class="ft-home"></i> Welcome</a></li>
+          <li data-menu="dropdown" class="dropdown nav-item"><a href="https://sts.ug.edu.gh/services/pay" data-toggle="dropdown" class="dropdown-toggle nav-link"><i class="fa fa-money"></i><span>Make Payment</span></a>
+            <ul class="dropdown-menu">
+              <li data-menu=""><a href="https://sts.ug.edu.gh/services/pay" data-toggle="dropdown" class="dropdown-item">Academic Fees</a>
+              </li>
+              <li data-menu=""><a href="https://sts.ug.edu.gh/services/pay" data-toggle="dropdown" class="dropdown-item">Residential Fees</a>
+              </li>
+                <li data-menu=""><a href="https://sts.ug.edu.gh/services/pay" data-toggle="dropdown" class="dropdown-item">Internship Fees</a>
+              </li>
+            </ul>
+          </li>  
+          <li class="nav-item"><a href="https://sts.ug.edu.gh/services/resit" class="nav-link"><i class="ft-file"></i> Resit Registration</a></li> 
+
+             <li data-menu="dropdown" class="dropdown nav-item"><a href="https://sts.ug.edu.gh/services/pay" data-toggle="dropdown" class="dropdown-toggle nav-link"><i class="ft-list"></i><span>Services</span></a>
+            <ul class="dropdown-menu">
+              <li class=""><a class="dropdown-item evaluationanchor">Course/Lecturer Evaluation</a>
+              </li>
+              <li data-menu=""><a href="https://sts.ug.edu.gh/services/medical" data-toggle="dropdown" class="dropdown-item">Medical Examination</a>
+              </li>
+                <li data-menu=""><a href="https://sts.ug.edu.gh/services/timetable" data-toggle="dropdown" class="dropdown-item">My Exam Schedules</a>
+              </li>
+               <li data-menu=""><a href="https://sts.ug.edu.gh/services/calender" data-toggle="dropdown" class="dropdown-item">Academic Calendar</a>
+              </li>
+                <li class="openComplaintModals"><a href="https://sts.ug.edu.gh/services/complaint/submit" class="dropdown-item openComplaintModalss">Submit a Complaint</a>
+              </li>
+               <li data-menu=""><a href="https://sts.ug.edu.gh/services/faq" data-toggle="dropdown" class="dropdown-item">FAQ</a>
+              </li>
+            </ul>
+          </li> 
+
+          <li class="nav-item"><a href="https://sts.ug.edu.gh/services/history" class="nav-link"><i class="ft-server"></i> Payment History</a></li> 
+                    <li class="nav-item"><a href="https://sts.ug.edu.gh/services/profile" class="nav-link"><i class="ft-user"></i> Profile</a></li> 
+          <li class="nav-item"><a href="https://sts.ug.edu.gh/services/logout" class="nav-link"><i class="ft-lock"></i> Logout</a></li>  
+        </ul>
+      </div>
+    </div></div>   <div class="container">
+
+ <div class="app-content container center-layout mt-2">
+
+     <div class="alert alert-danger border-0 alert-dismissible mb-2" role="alert" id="govalert" style="display: none;padding:20px" data-toggle="modal" data-target="#govmodal">
+                <h1 class="alert-heading">GHANA CARD / PHONE NUMBER UPDATE -  LEVEL 400s ONLY</h1>
+                <h2 id="govupdate">Status: <span style="color:green;font-weight: bold">UPDATE SUCCESSFUL</span></h2>
+      </div>  
+
+ 
+    
+    
+      <div class="alert alert-info border-0 alert-dismissible mb-2" role="alert" id="idcardalert" style="display:none">
+                <h4 class="alert-heading mb-1">ALERT !!!</h4>
+                <p><strong><span id="texttoshow">Your Student ID card is ready for collection at the Collection Point indicated below (Click on Collection Point). Time for collection is 9am-4pm each day. Kindly Click on the button below to book a day for collection</span></strong></p>
+                <p id="idcardextrainfo" style="font-weight:bold;font-size: 18px;color:red"></p>
+                <button class="btn btn-success" id="pickadaybutton"><span id="btntext">Click to Pick a Date</span></button>&nbsp;&nbsp;
+                 <!-- <button class="btn btn-danger" id="collectionpoints">Collection Points</button> -->
+      </div>
+
+      <div class="alert alert-warning border-0 alert-dismissible mb-2" role="alert" id="bookingmenualert" style="display:none">
+        <h4 class="alert-heading mb-1">ALERT !!!</h4>
+        <p><strong>Your SME Investigation Results are Ready. Go Ahead and book for Physician Appointment</strong></p>
+        <button class="btn btn-success" data-toggle="modal" data-target="#medicalbookingmodal">Book Appointment</button>&nbsp;&nbsp;
+     </div>
+
+     <div class="alert alert-danger border-0 alert-dismissible mb-2" role="alert" id="empalert" style="display:none">
+        <h4 class="alert-heading mb-1">New Message !!!</h4>
+        <p><strong>Your Letter from Academic Affairs is ready for download</strong></p>
+        <a class="btn btn-success" href="https://sts.ug.edu.gh/services/emp-letter">Download</a>&nbsp;&nbsp;
+     </div>
+      
+
+       <div class="alert alert-danger border-0 alert-dismissible mb-2" role="alert" id="idcardpayalert" style="display:none">
+                <h4 class="alert-heading mb-1">ALERT !!!</h4>
+                <p><strong><span id="texttoshow1">You are required to pay an amount of 50ghc for your IDcard reprint</span></strong></p>
+                <a class="btn btn-success" id="pickadaybutton" href="https://sts.ug.edu.gh/services/pay/idcard">Click to Pay</a>&nbsp;&nbsp;
+      </div>
+
+
+                         
+               
+      <div class="content-wrapper">
+        <div class="content-header row">
+        
+            <h3 style="color:blue;font-weight: bold;font-size:22px;margin:auto">Having issues with your UG Email? <a href="https://forms.office.com/r/6NJMkAf1xS?embed=true" target="_blank" style="color:red;font-weight: bold;font-size:22px"> Click here to Submit a Complaint</a></h3>
+
+
+        </div>
+         <div class="content-detached content-right">
+        <div class="content-body">
+
+       
+
+<div class="card box-shadow-2 bs-callout-success callout-border-right callout-bordered callout-transparent mt-1 p-1" style="background: #fff">
+                            <h4 class="" style="color:#bf9f62">Good Evening AGBONGO SHALOM KWAME and Welcome To Student Self Service!</h4>
+                            
+                            
+                        </div>
+
+
+
+<div class="row">
+    
+          
+     <div class="col-sm-12 col-lg-12 col-xs-12">
+          <a href="https://sts.ug.edu.gh/services/medical-start">
+                <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:8px solid red" id="medical_menu">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <h4 class="changecolor1 medical-text" style="font-weight: bold;color:red;text-transform: uppercase;">STUDENT MEDICAL EXAMINATION</h4>
+                            <h5 id="specialization_type" style="color:red;text-transform:uppercase;"></h5>
+                            <h5 id="specialization_response" style="color:red;text-transform:uppercase;"></h5>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+
+        <div class="col-sm-12 col-lg-12 col-xs-12">
+          <a href="" data-toggle="modal" data-target="#medicalbookingmodal" style="display:none" id="bookingmenu">
+                <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:8px solid green">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <h4 class="changecolor1" style="font-weight: bold;color:green;text-transform: uppercase;">STUDENT MEDICAL BOOKINGS</h4>
+                            <h5 id="booking_date" style="color:purple;text-transform:uppercase;font-weight: bold;"></h5>
+                            <h5 id="booking_slot" style="color:purple;text-transform:uppercase;font-weight: bold;"></h5>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+      
+
+
+        
+        
+        <div class="col-sm-12 col-lg-12 col-xs-12" style="" id="medical_exam_payment_receipt">
+            <a href="https://sts.ug.edu.gh/services/medical/print-payment-receipt">
+                  <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:8px solid rgb(108, 62, 2)">
+                      <div class="card-content">
+                          <div class="card-body">
+                              <h4 class="changecolor1" style="font-weight: bold;color:rgb(108, 62, 2);text-transform: uppercase;">DOWNLOAD MEDICAL EXAMINATION PAYMENT RECEIPT</h4>
+                              <h5 id="booking_date" style="color:rgb(108, 62, 2);text-transform:uppercase;font-weight: bold;"></h5>
+                              <h5 id="booking_slot" style="color:rgb(108, 62, 2);text-transform:uppercase;font-weight: bold;"></h5>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+          
+
+
+        <div class="col-sm-12 col-lg-12 col-xs-12" id="course_specialization" style="display:none;">
+            <a href="https://sts.ug.edu.gh/services/provide-specialization">
+                <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid purple">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <h3 class="changecolor1" style="font-weight: bold;color:purple;text-transform: uppercase;">SPECIFY COURSE SPECIALIZATION</h3>
+                            <h5 id="specialization_type" style="color:red;text-transform:uppercase;"></h5>
+                            <h5 id="specialization_response" style="color:red;text-transform:uppercase;"></h5>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+   <div class="col-sm-12 col-lg-12 col-xs-12">
+          <a href="" data-toggle="modal" data-target="#clothmodal">
+             <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid green">
+                <div class="card-content">
+                    <div class="card-body">
+                       <h4 class="changecolor1" style="font-weight: bold;color:green;text-transform: uppercase;">UG@75 Cloth Distribution</h4>
+                       <h5 id="clothresponse" style="color:red;text-transform:uppercase;"></h5>
+                    </div>
+                </div>
+            </div>
+          </a>
+      </div>
+
+
+     <!-- data-toggle="modal" data-target="#ballotmodal" -->
+        <div class="col-sm-12 col-lg-12 col-xs-12">
+          <a href="#" id="showballoting" data-toggle="modal" data-target="#ballotmodal" style="display: none;">
+             <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid blue">
+                <div class="card-content">
+                    <div class="card-body">
+                       <h4 class="changecolor1" style="font-weight: bold;color:blue;text-transform: uppercase;">TRADITIONAL/UGEL HALLS - RANDOM ALLOCATION EXERCISE(Expression of Interest)</h4>
+                       <h5 id="response" style="color:red;text-transform:uppercase;"></h5>
+                    </div>
+                </div>
+            </div>
+          </a>
+      </div> 
+
+       <div class="col-sm-12 col-lg-12 col-xs-12" style="display: none;">
+          <a href="#" id="ballotingempire">
+             <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid red">
+                <div class="card-content">
+                    <div class="card-body">
+                       <h4 class="changecolor1" style="font-weight: bold;color:red;text-transform: uppercase;">EMPIRE HOSTEL(NEW) - RANDOM ALLOCATION EXERCISE(Expression of Interest)</h4>
+                       <h5 id="responseempire" style="color:green;text-transform:uppercase;"></h5>
+                    </div>
+                </div>
+            </div>
+          </a>
+      </div> 
+
+
+          
+        <div class="col-sm-12 col-lg-12 col-xs-12">
+              <a href="" data-toggle="modal" data-target="#firstgenerationmodal">
+             <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid orange">
+                <div class="card-content">
+                    <div class="card-body">
+                       <h4 class="changecolor1" style="font-weight: bold;color:orange;text-transform: uppercase;">FIRST GENERATION SURVEY</h4>
+                    </div>
+                </div>
+            </div>
+          </a>
+
+            <a href="https://sts.ug.edu.gh/services/verifygrad" style="display: none;" id="academicrecords">
+             <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid orange">
+                <div class="card-content">
+                    <div class="card-body">
+                       <h4 class="changecolor1" style="font-weight: bold;color:orange;text-transform: uppercase;">NATIONAL SERVICE DATA VERIFICATION</h4>
+                    </div>
+                </div>
+            </div>
+          </a>
+         
+         
+         
+          
+           <a href="https://sts.ug.edu.gh/services/covidintro">
+             <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid green">
+                <div class="card-content">
+                    <div class="card-body">
+                       <h4 class="changecolor1" style="font-weight: bold;color:green;text-transform: uppercase;">COVID-19 Risk Assessment Form</h4>
+                    </div>
+                </div>
+            </div>
+          </a>
+
+           <a href="https://sts.ug.edu.gh/services/psycho/intro">
+             <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid blue">
+                <div class="card-content">
+                    <div class="card-body">
+                       <h4 class="changecolor1" style="font-weight: bold;color:blue;text-transform: uppercase;">PSYCHOSOCIAL ASSESSMENT CHECKLIST</h4>
+                    </div>
+                </div>
+            </div>
+          </a>
+          
+
+         <a href="https://sts.ug.edu.gh/services/hercreg">
+             <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid purple">
+                <div class="card-content">
+                    <div class="card-body">
+                       <h4 class="changecolor1" style="font-weight: bold;color:purple;text-transform: uppercase;">HERC / UGRC REGISTRATION</h4>
+                    </div>
+                </div>
+            </div>
+          </a> 
+
+        <a href="https://sts.ug.edu.gh/services/requestrefund">
+             <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid orange">
+                <div class="card-content">
+                    <div class="card-body">
+                       <h4 class="changecolor1" style="font-weight: bold;color:orange;text-transform: uppercase;">WITHDRAWAL REQUEST FORM</h4>
+                    </div>
+                </div>
+            </div>
+          </a> 
+
+          <a href="https://sts.ug.edu.gh/services/refundrequest">
+             <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid black;">
+                <div class="card-content">
+                    <div class="card-body">
+                       <h4 class="changecolor1" style="font-weight: bold;color:black;text-transform: uppercase;">REQUEST FOR REFUND</h4>
+                    </div>
+                </div>
+            </div>
+          </a> 
+
+          
+          
+           
+
+                               
+        
+
+                      <a href="https://sts.ug.edu.gh/services/matriculation">
+            <div class="card pull-up box-shadow-1 roundit overflow-hidden anim" style="border:2px solid #DF8B0C">
+                <div class="card-content">
+                    <div class="card-body">
+                       <h4 class="changecolor1" style="font-weight: bold;color:#DF8B0C">MATRICULATION REGISTRATION...CLICK HERE TO REGISTER</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        
+
+            </div>
+</div>
+
+
+<div class="row">
+        <div class="col-sm-6 col-lg-6 col-xs-12">
+            <a href="https://sts.ug.edu.gh/services/pay">
+            <div class="card pull-up box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="fa fa-money font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <span id="animationSandbox"><h2 class="changecolor">Pay Academic / Residential Fees</h2></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+
+
+           <div class="col-sm-6 col-lg-6 col-xs-12">
+             <a href="https://sts.ug.edu.gh/services/resit">
+            <div class="card box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="ft-file font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor">Register / Pay For Resit </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </a>
+        </div>
+
+         <div class="col-sm-6 col-lg-6 col-xs-12">
+               <a href="https://sts.ug.edu.gh/services/transcript-land">
+            <div class="card box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="fa fa-money font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor">Request / Pay For Transcript/Attestation</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               </a>
+        </div>
+
+        <div class="col-sm-6 col-lg-6 col-xs-12">
+            <a href="https://sts.ug.edu.gh/services/wes/home">
+         <div class="card box-shadow-1 roundit overflow-hidden anim">
+             <div class="card-content">
+                 <div class="media align-items-stretch">
+                     <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                         <i class="fa fa-money font-large-2 white"></i>
+                     </div>
+                     <div class="p-2 media-body">
+                         <h2 class="changecolor">WES Request</h2>
+                     </div>
+                 </div>
+             </div>
+         </div>
+            </a>
+     </div>
+
+
+         <div class="col-sm-6 col-lg-6 col-xs-12">
+            <a href="https://sts.ug.edu.gh/services/deferment">
+            <div class="card pull-up box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="fa fa-money font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <span id="animationSandbox"><h2 class="changecolor">Submit Deferment Form</h2></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+        
+       
+        <div class="col-sm-6 col-lg-6 col-xs-12">
+            <a href="https://sts.ug.edu.gh/services/internship-payments">
+            <div class="card pull-up box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="fa fa-money font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <span id="animationSandbox"><h2 class="changecolor">Download Internship Letter</h2></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+        
+
+        <div class="col-sm-6 col-lg-6 col-xs-12">
+            <a href="https://sts.ug.edu.gh/services/emp-letter">
+            <div class="card pull-up box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="fa fa-list font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <span id="animationSandbox"><h2 class="changecolor">Download Malpractice Letter</h2></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+
+
+          <div class="col-sm-6 col-lg-6 col-xs-12">
+             <a href="#" id="evaluationanchor1" class="evaluationanchor">
+            <div class="card box-shadow-1 cle roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="ft-package font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor">Course/Lecturer Evaluation </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </a>
+           </div>
+
+            <div class="col-sm-6 col-lg-6 col-xs-12 medical-link">
+             <a href="https://sts.ug.edu.gh/services/medical-start">
+            <div class="card box-shadow-1 medical roundit overflow-hidden anim animated pulse" style="border:4px solid red;">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="ft-heart font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor medical-text">Medical Examination</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </a>
+           </div>
+
+              <div class="col-sm-6 col-lg-6 col-xs-12">
+               <a href="https://sts.ug.edu.gh/services/emedical">
+            <div class="card roundit overflow-hidden box-shadow-1 anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="fa fa-heart font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor">UG Hospital <br>E-Consult</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               </a>
+        </div>
+
+
+          
+             <div class="col-sm-6 col-lg-6 col-xs-12">
+             <a href="https://sts.ug.edu.gh/services/pay/internship">
+            <div class="card box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="fa fa-money font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor">Pay Internship Fee </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </a>
+           </div>
+
+           <div class="col-sm-6 col-lg-6 col-xs-12">
+            <a href="https://sts.ug.edu.gh/services/history">
+            <div class="card box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="ft-server font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor">Payment History</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </a>
+        </div>
+
+        <div class="col-sm-6 col-lg-6 col-xs-12">
+            <a href="#" id="admissionletter">
+            <div class="card box-shadow-1 roundit overflow-hidden anim" id="profilecard">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="ft-server font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor">Download Your Admission Letter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </a>
+        </div>
+
+
+        <div class="col-sm-6 col-lg-6 col-xs-12">
+               <a href="https://sts.ug.edu.gh/services/profile">
+            <div class="card box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="fa fa-money font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor">Outstanding Fees</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               </a>
+        </div>
+
+             <div class="col-sm-6 col-lg-6 col-xs-12">
+             <a href="#">
+            <div class="card box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="ft-target font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor">Meet A Counselor </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </a>
+           </div>
+          
+
+           <div class="col-sm-6 col-lg-6 col-xs-12">
+            <a href="https://sts.ug.edu.gh/services/submit-exam-complaint">
+            <div class="card box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="ft-help-circle font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor">Submit Exams Complaint</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </a>
+        </div>
+
+            <div class="col-sm-6 col-lg-6 col-xs-12">
+            <a href="https://sts.ug.edu.gh/services/complaint/submit" class="openComplaintModals">
+            <div class="card box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="ft-help-circle font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor">Submit a Complaint</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </a>
+        </div>
+
+
+           <div class="col-sm-6 col-lg-6 col-xs-12">
+            <a href="https://sts.ug.edu.gh/services/faq">
+            <div class="card box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="ft-alert-circle font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor">FAQ / Help</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </a>
+        </div>
+
+            <div class="col-sm-6 col-lg-6 col-xs-12">
+                <a href="https://sts.ug.edu.gh/services/timetable">
+                <div class="card box-shadow-1 roundit overflow-hidden anim">
+                    <div class="card-content">
+                        <div class="media align-items-stretch">
+                            <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                                <i class="ft-watch font-large-2 white"></i>
+                            </div>
+                            <div class="p-2 media-body">
+                                <h2 class="changecolor">My Exam Schedules</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xs-12">
+                <a href="https://sts.ug.edu.gh/services/cle-leturer-select">
+                <div class="card box-shadow-1 roundit overflow-hidden anim">
+                    <div class="card-content">
+                        <div class="media align-items-stretch">
+                            <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                                <i class="ft-watch font-large-2 white"></i>
+                            </div>
+                            <div class="p-2 media-body">
+                                <h2 class="changecolor">Verify Your Registered Course &amp; Lecturer</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+           
+
+            <div class="col-sm-6 col-lg-6 col-xs-12" id="cert_booking" style="display:none;">
+                <a href="https://sts.ug.edu.gh/services/request-certificate">
+                <div class="card box-shadow-1 roundit overflow-hidden anim">
+                    <div class="card-content">
+                        <div class="media align-items-stretch">
+                            <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                                <i class="ft-watch font-large-2 white"></i>
+                            </div>
+                            <div class="p-2 media-body">
+                                <h2 class="changecolor">Certificate Booking</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+
+            
+            
+
+
+             <div class="col-sm-6 col-lg-6 col-xs-12" style="display:none;">
+            <a href="https://sts.ug.edu.gh/services/calender">
+            <div class="card box-shadow-1 roundit overflow-hidden anim">
+                <div class="card-content">
+                    <div class="media align-items-stretch">
+                        <div class="p-2 text-center changecolor1" style="background: #281564;color:white;border-right:3px solid #bf9f62;">
+                            <i class="ft-calendar font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 media-body">
+                            <h2 class="changecolor">Academic Calendar</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </a>
+        </div>
+
+           
+
+
+    </div>
+<br><br><br>
+
+
+
+</div>
+</div>
+
+<div ,="," class="sidebar-detached sidebar-left sidebar-sticky">
+          <div class="sidebar"><div class="sidebar-content card d-none d-lg-block">
+             <div class="card-header">
+                    <h4 class="card-title"><i class="ft-user"></i> STUDENTS SERVICES</h4>
+                </div>
+    <div class="card-body">
+        <div class="text-center">
+                             <img class="card-img-top mb-1 img-fluid profileimage" data-src="holder.js/100px180/" src="https://sts.ug.edu.gh/services/assets/images/profile.png" alt="Card image cap" style="max-width: 250px;border:2px solid #ddd;border-radius: 5px">
+                    </div>
+        <h4 class="card-title" style="color:#281564">ID: 22553484</h4>
+        <p style="text-transform: uppercase;">AGBONGO SHALOM KWAME<br>
+        N/A</p>
+        <p>Phone Numbers: <br>
+            </p><ul id="phonenumbers"></ul>
+        <p></p>
+                <div class="btn-group mr-1 mb-1 center">
+            <button type="button" class="btn btn-min-width dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #281564;color:white">Options</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://sts.ug.edu.gh/services/profile">My Profile</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://sts.ug.edu.gh/services/logout">Logout</a>
+            </div>
+        </div>
+        <hr>
+        <a href="https://ienabler.ug.edu.gh/pls/prodi41/w99pkg.mi_login" target="_blank" data-trigger="hover" data-toggle="tooltip" data-original-title="Visit MisWeb" style="color:#281564;padding:3px" class="changecolor"><i class="ft-globe"></i> MisWeb</a><br>
+        <a href="https://portal.office.com/" style="color:#281564;padding:3px" target="_blank" data-trigger="hover" data-toggle="tooltip" data-original-title="Visit Student Mail" class="changecolor"><i class="ft-mail"></i> Student Mail</a><br>
+        <a href="http://balme.ug.edu.gh/" style="color:#281564;padding:3px" target="_blank" data-trigger="hover" data-toggle="tooltip" data-original-title="Visit Library" class="changecolor"><i class="ft-book"></i> Library</a><br>
+        <a href="http://sakai.ug.edu.gh/" style="color:#281564;padding:3px" target="_blank" data-trigger="hover" data-toggle="tooltip" data-original-title="Visit Sakai" class="changecolor"><i class="ft-folder"></i> Sakai</a><br>
+         <a href="https://www.ug.edu.gh/students" style="color:#281564;padding:3px" target="_blank" data-trigger="hover" data-toggle="tooltip" data-original-title="Visit Student Portal" class="changecolor"><i class="ft-clipboard"></i> Student Portal</a><br>
+         <a href="https://sts.ug.edu.gh/timetable" style="color:#281564;padding:3px" target="_blank" data-trigger="hover" data-toggle="tooltip" data-original-title="Visit Online Timetable" class="changecolor"><i class="ft-clipboard"></i> Timetable</a>
+    </div>
+</div>
+
+          </div>
+        </div>
+
+</div>
+</div>
+</div>
+
+
+<div class="modal fade text-left" id="pickadaymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel33" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background: #281564;color:white">
+              <label class="modal-title text-text-bold-600" id="myModalLabel33">PICK A DATE</label>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" style="color:white">×</span>
+              </button>
+            </div>
+            <form method="POST" action="https://sts.ug.edu.gh/services/savepickaday" id="pickadayform">
+              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+                <div class="modal-body">
+                <p>ID Cards Collection</p>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <img src="https://sts.ug.edu.gh/services/assets/images/clock.png" style="width: inherit;">
+                    </div>
+                    <div class="col-sm-8">
+                       <label>Select Date: </label>
+                      <div class="form-group">
+                      <input type="text" class="form-control" name="booked_date" placeholder="Pick A Date" id="pickdate" required="required">
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="modal-footer">
+              <input type="reset" class="btn btn-danger" data-dismiss="modal" value="Cancel">
+              <button type="submit" id="submitbtn" class="btn btn-primary">Save Date <img src="https://sts.ug.edu.gh/services/assets/images/loading.gif" id="loadinggif2" style="max-height: 25px;display: none"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+
+<div class="modal fade text-left" id="govmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel333" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background: #281564;color:white">
+              <label class="modal-title text-text-bold-600" id="myModalLabel33">GHANA CARD/PHONE NUMBER VERIFICATION/EMAILS UPDATE</label>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" style="color:white">×</span>
+              </button>
+            </div>
+            <form method="POST" id="govform">
+              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                       <label>Student ID: </label>
+                      <div class="form-group">
+                        <input type="text" value="22553484" readonly="" class="form-control">
+                      </div>
+                    </div>
+                     <div class="col-sm-6">
+                       <label>Name: </label>
+                      <div class="form-group">
+                        <input type="text" value="AGBONGO SHALOM KWAME" readonly="" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                       <label>Ghana Card: </label>
+                      <div class="form-group">
+                        <input type="text" name="ghanacard" required="" id="ghanacard" class="form-control">
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <label>Mobile Number: </label>
+                       <div class="form-group">
+                       <input type="text" class="form-control" name="phone" id="phonegov" required="required" maxlength="10" minlength="10" placeholder="Eg. 020XXXXXXX">
+                       </div>
+                     </div>
+
+                      <div class="col-sm-6">
+                        <label>Alternate Email(Non-UG Email): </label>
+                       <div class="form-group">
+                       <input type="email" class="form-control" name="email" id="emailgov" required="required">
+                       </div>
+                     </div>
+                  </div>
+
+              </div>
+              <div class="modal-footer">
+              <input type="reset" class="btn btn-danger" data-dismiss="modal" value="Cancel">
+              <button type="submit" id="submitbtn_gov" class="btn btn-primary">Submit <img src="https://sts.ug.edu.gh/services/assets/images/loading.gif" id="loadinggif26" style="max-height: 25px;display: none"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div> 
+
+
+
+
+
+
+  <div class="modal fade text-left" id="ballotmodalempire" tabindex="-1" role="dialog" aria-labelledby="myModalLabel333" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background: #281564;color:white">
+              <label class="modal-title text-text-bold-600" id="myModalLabel33">EMPIRE HOSTEL RANDOM ALLOCATION</label>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" style="color:white">×</span>
+              </button>
+            </div>
+            <form method="POST" id="ballotformempire">
+              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-12">
+                       <label style="color: red">Would you like to be part of the randomised allocation execise for Empire Hostel?: </label>
+                      <div class="form-group">
+                      <select class="form-control" name="response" required="required" id="ballotingresponseempire">
+                        <option value="">--Please Select--</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-12" id="showroomcategory" style="display: none;">
+
+    <label style="color: red">
+        Select the Room Category you would like to be part of - Select All that Applies
+    </label>
+
+    <div class="form-group">
+
+        <label style="display:block;">
+            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" class="icheck room_category" name="room_category[]" id="room_2in1A" value="2in1A" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+            &nbsp;&nbsp;2 in 1 with AC Type A
+            (<i>GHS 23,400-GHANAIAN STUDENT, GHS 31,400-INTERNATIONAL STUDENT</i>)
+        </label>
+
+        <label style="display:block;">
+            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" class="icheck room_category" name="room_category[]" id="room_2in1B" value="2in1B" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+            &nbsp;&nbsp;2 in 1 with AC Type B
+            (<i>GHS 21,600-GHANAIAN STUDENT, GHS 30,200-INTERNATIONAL STUDENT</i>)
+        </label>
+
+        <label style="display:block;">
+            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" class="icheck room_category" name="room_category[]" id="room_4in1A" value="4in1A" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+            &nbsp;&nbsp;4 in 1 with No AC Type A
+            (<i>GHS 12,400-GHANAIAN STUDENT, GHS 16,600-INTERNATIONAL STUDENT</i>)
+        </label>
+
+        <label style="display:block;">
+            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" class="icheck room_category" name="room_category[]" id="room_4in1B" value="4in1B" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+           &nbsp;&nbsp; 4 in 1 with No AC Type B
+            (<i>GHS 11,400-GHANAIAN STUDENT, GHS15,300-INTERNATIONAL STUDENT</i>)
+        </label>
+
+    </div>
+
+</div> 
+                    <div class="col-sm-12">
+                        <label style="color: red">Please Enter your Mobile Number: </label>
+                       <div class="form-group">
+                       <input type="text" class="form-control" name="phone" id="phoneballotingempire" required="required" maxlength="10" minlength="10" placeholder="Eg. 020XXXXXXX">
+                       </div>
+                     </div>
+                  </div>
+
+              </div>
+              <div class="modal-footer">
+              <input type="reset" class="btn btn-danger" data-dismiss="modal" value="Cancel">
+              <button type="submit" id="submitbtn_ballot_empire" class="btn btn-primary">Submit <img src="https://sts.ug.edu.gh/services/assets/images/loading.gif" id="loadinggif255" style="max-height: 25px;display: none"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>  
+
+
+
+
+
+
+  <div class="modal fade text-left" id="ballotmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel333" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background: #281564;color:white">
+              <label class="modal-title text-text-bold-600" id="myModalLabel33">CHOOSE</label>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" style="color:white">×</span>
+              </button>
+            </div>
+            <form method="POST" id="ballotform">
+              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-12">
+                       <label>Would you like to be part of the randomised allocation execise for Traditional/UGEL Halls?: </label>
+                      <div class="form-group">
+                      <select class="form-control" name="response" required="required" id="ballotingresponse">
+                        <option value="">--Please Select--</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-12">
+                        <label>Please Enter your Mobile Number: </label>
+                       <div class="form-group">
+                       <input type="text" class="form-control" name="phone" id="phoneballoting" required="required" maxlength="10" minlength="10" placeholder="Eg. 020XXXXXXX">
+                       </div>
+                     </div>
+                  </div>
+
+              </div>
+              <div class="modal-footer">
+              <input type="reset" class="btn btn-danger" data-dismiss="modal" value="Cancel">
+              <button type="submit" id="submitbtn_ballot" class="btn btn-primary">Submit <img src="https://sts.ug.edu.gh/services/assets/images/loading.gif" id="loadinggif25" style="max-height: 25px;display: none"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>  
+
+
+
+<div class="modal fade text-left" id="clothmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3333" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background: #281564;color:white">
+              <label class="modal-title text-text-bold-600" id="myModalLabel33">CHOOSE</label>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" style="color:white">×</span>
+              </button>
+            </div>
+            <form method="POST" id="clothform">
+              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-12">
+                       <label>Please pick where you would want to pick your UG@75 Cloth: </label>
+                      <div class="form-group">
+                      <select class="form-control" name="clothresponse" required="required">
+                        <option value="">--Please Select--</option>
+                        <option value="Information Centre">Information Centre</option>
+                        <option value="Athletics Oval">Athletics Oval</option>
+                        <option value="Banking Square">Banking Square</option>
+                        <!-- <option value="Fire Service Car Park">Fire Service Car Park</option> -->
+                        <option value="Akuafo Main Hall">Akuafo Main Hall</option>
+                        <option value="Legon Main Hall">Legon Main Hall</option>
+                        <option value="Commonwealth Hall">Commonwealth Hall</option>
+                        <option value="Sarbah Main Hall">Sarbah Main Hall</option>
+                        <option value="Volta Main Hall">Volta Main Hall</option>
+                        <option value="Pent">Pent</option>
+                        <option value="Evandy">Evandy</option>
+                        <option value="TF">TF</option>
+                        <option value="Bani">Bani</option>
+                        <option value="Jubilee Hall">Jubilee Hall</option>
+                        <option value="Hilla Limman Hall">Hilla Limman Hall</option>
+                        <option value="Alexander Kwapong Hall">Alexander Kwapong Hall</option>
+                        <option value="Elizabeth Frances Sey Hall">Elizabeth Frances Sey Hall</option>
+                        <option value="Jean Nelson Aka Hall">Jean Nelson Aka Hall</option>
+                        <option value="Korle Bu Campus">Korle Bu Campus</option>
+                        <option value="Accra City Campus (2 points)">Accra City Campus (2 points)</option>
+                        <option value="Kumasi City Campus">Kumasi City Campus</option>
+                        <option value="Takoradi City Campus">Takoradi City Campus</option>
+                        <option value="All Regional Learning Centres">All Regional Learning Centres</option>
+                      </select>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="modal-footer">
+              <input type="reset" class="btn btn-danger" data-dismiss="modal" value="Cancel">
+              <button type="submit" id="submitbtn_ballot1" class="btn btn-primary">Submit <img src="https://sts.ug.edu.gh/services/assets/images/loading.gif" id="loadinggif251" style="max-height: 25px;display: none"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="modal fade text-left" id="collectionpointsmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel33" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background: #281564;color:white">
+              <label class="modal-title text-text-bold-600" id="myModalLabel333">Collection Points</label>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" style="color:white">×</span>
+              </button>
+            </div>
+           
+                <div class="modal-body">
+                <p>ID Cards Collection</p>
+                  <div class="row">
+                    <div class="col-sm-12">
+                        <table class="table table-bordered">
+                           
+                            <tbody>
+                               
+                               
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">Ok</button>
+              </div>
+        
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <div class="modal fade text-left" id="firstgenerationmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel33" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background: #281564;color:white">
+              <label class="modal-title text-text-bold-600" id="myModalLabel33">FIRST GENERATION SURVEY</label>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" style="color:white">×</span>
+              </button>
+            </div>
+            <form method="POST" action="https://sts.ug.edu.gh/services/savefirstgeneration">
+              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+                <div class="modal-body">
+             
+                  <div class="row">
+                    <div class="col-sm-12">
+                       <label>Are you the first student among your immediate family to have attended University at any level? (immediate family refers to parents, grandparents and siblings): </label>
+                      <div class="form-group">
+                      <select class="form-control" required="required" name="first_attend" id="first_attend">
+                          <option value="">Please Select</option>
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                      </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-12">
+                       <label>Which among your immediate family members have attended University at any level? Select all applicable/Ignore if none </label>
+                      <div class="form-group">
+                          <div class="row" style="margin-bottom:20px">
+                            <div class="col-sm-12">
+                            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" value="Mother" name="other_family[]" class="firstgenerationcheckbox" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>&nbsp;&nbsp;&nbsp;Mother
+                            </div>
+                        </div>
+                         <div class="row" style="margin-bottom:20px">
+                            <div class="col-sm-12">
+                            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" value="Father" name="other_family[]" class="firstgenerationcheckbox" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>&nbsp;&nbsp;&nbsp;Father
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom:20px">
+                            <div class="col-sm-12">
+                            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" value="Brother" name="other_family[]" class="firstgenerationcheckbox" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>&nbsp;&nbsp;&nbsp;Brother
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom:20px">
+                            <div class="col-sm-12">
+                            <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" value="Sister" name="other_family[]" class="firstgenerationcheckbox" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -50%; left: -50%; display: block; width: 200%; height: 200%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>&nbsp;&nbsp;&nbsp;Sister
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="modal-footer">
+              <input type="reset" class="btn btn-danger" data-dismiss="modal" value="Cancel">
+              <button type="submit" id="submitbtn" class="btn btn-primary">Submit <img src="https://sts.ug.edu.gh/services/assets/images/loading.gif" id="loadinggif22" style="max-height: 25px;display: none"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <div class="modal fade text-left" id="medicalbookingmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel33" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background: #281564;color:white">
+              <label class="modal-title text-text-bold-600" id="myModalLabel33">MEDICAL BOOKING</label>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" style="color:white">×</span>
+              </button>
+            </div>
+            <form method="POST" id="medicalbookingform">
+              <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+                <div class="modal-body">
+             <input type="hidden" name="student_id" value="22553484">
+                  
+                   <div class="row">
+                    <p style="color:red;text-align:center;font-weight:bold;font-size:20px">Your SME Investigation Results are Ready. Go Ahead and book for Physician Appointment</p>
+                <div class="col-md-6">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="highest_edu">Appointment Date [<strong style="color:red;">MONDAY - SATURDAY</strong>]</label>
+                            <input class="form-control required" min="2026-10-16" id="appdate" type="date" name="appdate">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="highest_edu">Select From Available Time Slots</label>
+                            <select class="form-control required" name="session" required="" id="bookingslot">
+
+                                <option value="">Select an option</option>
+                                <option value="07-08">7AM to 8AM</option>
+                                <option value="08-09">8AM to 9AM</option>
+                                <option value="09-10">9AM to 10AM</option>
+                                <option value="10-11">10AM to 11AM</option>
+                                <option value="11-12">11AM to 12PM</option>
+                                <option value="12-01">12PM to 1PM</option>
+                                <option value="01-02">1PM to 2PM</option>
+                                <option value="02-03">2PM to 3PM</option>
+                                 <option value="03-04">3PM to 4PM</option>
+                                  <option value="04-05">4PM to 5PM</option>
+                                   <option value="05-06">5PM to 6PM</option>
+                                    <option value="06-07">6PM to 7PM</option>
+                                     <option value="07-08">7PM to 8PM</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  
+
+              </div>
+              <div class="modal-footer">
+              <input type="reset" class="btn btn-danger" data-dismiss="modal" value="Cancel">
+              <button type="submit" id="submitbtn222" class="btn btn-primary">Submit <img src="https://sts.ug.edu.gh/services/assets/images/loading.gif" id="loadinggif222" style="max-height: 25px;display: none"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+<div class="modal fade" id="phoneVerificationModal" tabindex="-1" role="dialog" aria-labelledby="phoneVerificationModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header bg-ug text-white">
+                <h5 class="modal-title" id="phoneVerificationModalLabel">
+                    <i class="fa fa-phone"></i> Confirm Your Phone Number(s)
+                </h5>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="alert alert-info">
+                    <strong>Please confirm your phone numbers.</strong><br>
+                    • Click <strong>"Yes, Mine"</strong> if the number belongs to you.<br>
+                    • Click <strong>"Not Mine"</strong> if it does not belong to you.<br>
+                    • You may also add new phone number.<br>
+                    • Send Email to itservices@ug.edu.gh with your StudentID and Phone Number if you are unable to add your Phone Number.
+                </div>
+
+                <div id="phoneVerificationAlert" class="alert d-none" role="alert"></div>
+                <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-light">
+                    <tr>
+                        <th width="30%">Phone Number</th>
+                        <th width="40%">Action</th>
+                        <th width="15%">Verified</th>
+                        <th width="15%">Active</th>
+                        
+                    </tr>
+                    </thead>
+                    <tbody id="phoneVerificationTableBody"><tr><td colspan="4" class="text-center text-muted">No phone numbers found. Add one below.</td></tr></tbody>
+                </table>
+                </div>
+
+                <hr>
+
+                <button type="button" class="btn btn-primary" id="openAddPhoneModalBtn">
+                    <i class="fa fa-plus"></i>
+                    Add Another Phone Number (New)
+                </button>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="closePhoneVerificationModalBtn">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Add Phone Modal -->
+<div class="modal fade" id="addPhoneModal" tabindex="-1" role="dialog" aria-labelledby="addPhoneModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header bg-ug text-white">
+                <h5 class="modal-title" id="addPhoneModalLabel">
+                    <i class="fa fa-plus"></i> Add Phone Number
+                </h5>
+                <button type="button" class="close text-white" id="closeAddPhoneModalBtn">
+                    <span>×</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <div id="addPhoneAlert" class="alert d-none" role="alert"></div>
+
+                <div id="addPhoneStep1">
+                    <div class="form-group">
+                        <label for="newPhoneNumber">Phone Number</label>
+                        <input type="text" class="form-control" id="newPhoneNumber" placeholder="e.g. 0241234567" maxlength="15">
+                        <small class="form-text text-muted">Enter a valid Ghanaian phone number.</small>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="sendOtpBtn">
+                        <i class="fa fa-paper-plane"></i> Send OTP
+                    </button>
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+
+                <div id="addPhoneStep2" style="display: none;">
+                    <p class="text-muted mb-3">
+                        An OTP has been sent to <strong id="otpPhoneDisplay"></strong>. Enter it below to verify.
+                    </p>
+                    <div class="form-group">
+                        <label for="otpCode">OTP Code</label>
+                        <input type="text" class="form-control" id="otpCode" placeholder="Enter 6-digit OTP" maxlength="6">
+                    </div>
+                    <div class="d-flex flex-wrap align-items-center">
+                        <button type="button" class="btn btn-success mr-2 mb-2" id="verifyOtpBtn">
+                            <i class="fa fa-check"></i> Verify OTP
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary mb-2" id="resendOtpBtn" disabled="">
+                            <i class="fa fa-refresh"></i> Resend OTP (<span id="resendOtpCountdown">60</span>s)
+                        </button>
+                    </div>
+                    <small class="form-text text-muted">
+                        Resend attempts remaining: <span id="retriesLeftDisplay">3</span>
+                    </small>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+   
+    <div class="modal fade text-left" id="reportIssueForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel33" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header" style="background: #281564;color:white">
+                          <label class="modal-title text-text-bold-600" id="myModalLabel33">SUBMIT A COMPLAINT</label>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="color:white">×</span>
+                          </button>
+                        </div>
+                        <form method="POST" action="https://sts.ug.edu.gh/services/sendmailtocollege" id="complaintform">
+                          <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-sm-4">
+                                  <img src="https://sts.ug.edu.gh/services/assets/images/complaint.jpg" style="width: inherit;">
+                                </div>
+                                <div class="col-sm-8">
+                                  <label>Type of issue: </label>
+                                  <div class="form-group">
+                                   <select class="form-control issuetype" required="required" name="type">
+                                    <option value="">Please Select Issue Type</option>
+                                     <option value="Missing Grade">Missing Grade</option>
+                                     <option value="Course Not Showing">Course Not Showing</option>
+                                     <option value="Cant Register Course">Can't Register Course</option>
+                                     <option value="Other">Other</option>
+                                   </select>
+                                  </div>
+
+                                    <div class="showcoursefield" style="display: none">
+                                   <label>Course Code: </label>
+                                  <div class="form-group">
+                                    <select class="form-control" name="coursecode[]" id="searchmycourses" multiple="multiple" style="width: 100%">
+                                    </select>
+                                  </div>
+                                  </div>
+
+                                    <div class="shownotshowingcoursefield" style="display: none">
+                                   <label>Course Code / Title: </label>
+                                  <div class="form-group">
+                                    <input class="form-control" name="coursecodetitle" id="coursecodetitle">
+                                  </div>
+                                  </div>
+
+                                  <label>Additional Info: </label>
+                                  <div class="form-group">
+                                   <textarea name="additional" id="additional" class="form-control textarea-maxlength" placeholder="Additional Info" maxlength="150" rows="5"></textarea>
+                                  </div>
+
+                                   <label>Phone Number: </label>
+                                  <div class="form-group">
+                                  <input type="text" maxlength="10" class="form-control" name="phone" placeholder="Enter Phone Number">
+                                  </div>
+
+                                  <h4 class="changecolor" id="sendingmessage" style="display: none">We are sending an email to the college on your behalf. Please wait.. <img src="https://sts.ug.edu.gh/services/assets/images/loader.gif" style="max-width: 100px"></h4>
+                                  <div class="alert alert-success mb-2" role="alert" id="successmessage" style="display: none">
+                                    <strong>Success!</strong> An email has been successfully sent your college..They will work on it and get back to you. Keep checking your UGMail for response.Thank you
+                                  </div>
+                                   <div class="alert alert-danger mb-2" role="alert" id="errormessage" style="display: none">
+                                    <strong>Error!</strong> Sorry, an error occured whiles sending email to your college.. Please try Again.
+                                  </div>
+                                  
+                                 
+                                  
+                                </div>
+                              </div>
+                          
+                          </div>
+                          <div class="modal-footer">
+                          <input type="reset" class="btn btn-danger" data-dismiss="modal" value="Cancel">
+                          <button type="submit" class="btn btn-primary">Submit Complaint <img src="https://sts.ug.edu.gh/services/assets/images/loading.gif" id="loadinggif" style="max-height: 25px;display: none"></button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+    
+
+
+<div class="modal fade text-left" id="programmeselection" tabindex="-1" role="dialog" aria-labelledby="myModalLabel333" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header" style="background: #281564;color:white">
+                          <label class="modal-title text-text-bold-600" id="myModalLabel333">PROGRAMME SELECTION (BIOLOGICAL SCIENCES)</label>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="color:white">×</span>
+                          </button>
+                        </div>
+                        <form method="POST" action="https://sts.ug.edu.gh/services/saveprogramme" id="programmeform">
+                          <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+                                                        <div class="modal-body">
+
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <h5 class="text-center">SCHOOL OF BIOLOGICAL SCIENCES</h5>      
+                                  <h5 class="text-center">COLLEGE OF BASIC AND APPLIED SCIENCES, UNIVERSITY OF GHANA</h5> <h5 class="text-center">REGISTRATION FOR AVAILABLE DEGREE OPTIONS AT LEVEL 200</h5>
+                                  <h5 class="text-center">2026/2027 ACADEMIC YEAR</h5> 
+                                  <p style="color:red;text-align: center;" class="text-center">Note : *Psychology is not available to students who did not chose this option at level 100</p>
+                                  <p style="color:red;text-align: center;" class="text-center">Deadline: Tuesday, 6 October 2026, at 6:00 PM</p>        
+                                </div>
+                                
+                                <div class="col-sm-12">
+                                  
+                                  <label>Degree Option 1: </label>
+                                  <div class="form-group">
+                                   <select class="form-control degreeoption" required="required" name="choices">
+                                    <option value="">Select Degree Option</option>
+                                      
+                                                                          <option value="BSc. Animal Biology and Conservation Science (BSc. Single Major)">BSc. Animal Biology and Conservation Science (BSc. Single Major)</option><option value="BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)">BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)</option><option value="BSc. Biology (BSc. Single Major)">BSc. Biology (BSc. Single Major)</option><option value="BSc. Fisheries Science (BSc. Single Major)">BSc. Fisheries Science (BSc. Single Major)</option><option value="BSc. Food Science (BSc. Single Major)">BSc. Food Science (BSc. Single Major)</option><option value="BSc. Marine Science (BSc. Single Major)">BSc. Marine Science (BSc. Single Major)</option><option value="BSc. Nutrition (BSc. Single Major)">BSc. Nutrition (BSc. Single Major)</option><option value="BSc. Plant and Environmental Biology (BSc. Single Major)">BSc. Plant and Environmental Biology (BSc. Single Major)</option><option value="BSc. Food Sc. and Biochemistry (Combined Major)">BSc. Food Sc. and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Biochemistry (Combined Major)">BSc. Nutrition and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Food Sc. (Combined Major)">BSc. Nutrition and Food Sc. (Combined Major)</option><option value="BSc. Plant Biol. and Biochemistry (Combined Major)">BSc. Plant Biol. and Biochemistry (Combined Major)</option><option value="BSc. Animal Biol. with a minor in Biochemistry">BSc. Animal Biol. with a minor in Biochemistry</option><option value="BSc. Fisheries Sc. with a minor in Marine Sc.">BSc. Fisheries Sc. with a minor in Marine Sc.</option><option value="BSc. Marine Sc. with a minor in Fisheries">BSc. Marine Sc. with a minor in Fisheries.</option></select>
+                                  </div> 
+
+
+                                  <label>Degree Option 2: </label>
+                                  <div class="form-group">
+                                   <select class="form-control degreeoption" required="required" name="choice2" id="choices2">
+                                    <option value="">Select Degree Option</option>
+                                                                        <option value="BSc. Animal Biology and Conservation Science (BSc. Single Major)">BSc. Animal Biology and Conservation Science (BSc. Single Major)</option><option value="BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)">BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)</option><option value="BSc. Biology (BSc. Single Major)">BSc. Biology (BSc. Single Major)</option><option value="BSc. Fisheries Science (BSc. Single Major)">BSc. Fisheries Science (BSc. Single Major)</option><option value="BSc. Food Science (BSc. Single Major)">BSc. Food Science (BSc. Single Major)</option><option value="BSc. Marine Science (BSc. Single Major)">BSc. Marine Science (BSc. Single Major)</option><option value="BSc. Nutrition (BSc. Single Major)">BSc. Nutrition (BSc. Single Major)</option><option value="BSc. Plant and Environmental Biology (BSc. Single Major)">BSc. Plant and Environmental Biology (BSc. Single Major)</option><option value="BSc. Food Sc. and Biochemistry (Combined Major)">BSc. Food Sc. and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Biochemistry (Combined Major)">BSc. Nutrition and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Food Sc. (Combined Major)">BSc. Nutrition and Food Sc. (Combined Major)</option><option value="BSc. Plant Biol. and Biochemistry (Combined Major)">BSc. Plant Biol. and Biochemistry (Combined Major)</option><option value="BSc. Animal Biol. with a minor in Biochemistry">BSc. Animal Biol. with a minor in Biochemistry</option><option value="BSc. Fisheries Sc. with a minor in Marine Sc.">BSc. Fisheries Sc. with a minor in Marine Sc.</option><option value="BSc. Marine Sc. with a minor in Fisheries">BSc. Marine Sc. with a minor in Fisheries.</option></select>
+                                  </div> 
+
+                                  <label>Degree Option 3: </label>
+                                  <div class="form-group">
+                                   <select class="form-control degreeoption" required="required" name="choice3" id="choices3">
+                                    <option value="">Select Degree Option</option>
+                                                                        <option value="BSc. Animal Biology and Conservation Science (BSc. Single Major)">BSc. Animal Biology and Conservation Science (BSc. Single Major)</option><option value="BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)">BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)</option><option value="BSc. Biology (BSc. Single Major)">BSc. Biology (BSc. Single Major)</option><option value="BSc. Fisheries Science (BSc. Single Major)">BSc. Fisheries Science (BSc. Single Major)</option><option value="BSc. Food Science (BSc. Single Major)">BSc. Food Science (BSc. Single Major)</option><option value="BSc. Marine Science (BSc. Single Major)">BSc. Marine Science (BSc. Single Major)</option><option value="BSc. Nutrition (BSc. Single Major)">BSc. Nutrition (BSc. Single Major)</option><option value="BSc. Plant and Environmental Biology (BSc. Single Major)">BSc. Plant and Environmental Biology (BSc. Single Major)</option><option value="BSc. Food Sc. and Biochemistry (Combined Major)">BSc. Food Sc. and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Biochemistry (Combined Major)">BSc. Nutrition and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Food Sc. (Combined Major)">BSc. Nutrition and Food Sc. (Combined Major)</option><option value="BSc. Plant Biol. and Biochemistry (Combined Major)">BSc. Plant Biol. and Biochemistry (Combined Major)</option><option value="BSc. Animal Biol. with a minor in Biochemistry">BSc. Animal Biol. with a minor in Biochemistry</option><option value="BSc. Fisheries Sc. with a minor in Marine Sc.">BSc. Fisheries Sc. with a minor in Marine Sc.</option><option value="BSc. Marine Sc. with a minor in Fisheries">BSc. Marine Sc. with a minor in Fisheries.</option></select>
+                                  </div> 
+
+                                  <label>Degree Option 4: </label>
+                                  <div class="form-group">
+                                   <select class="form-control degreeoption" required="required" name="choice4" id="choices4">
+                                    <option value="">Select Degree Option</option>
+                                                                        <option value="BSc. Animal Biology and Conservation Science (BSc. Single Major)">BSc. Animal Biology and Conservation Science (BSc. Single Major)</option><option value="BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)">BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)</option><option value="BSc. Biology (BSc. Single Major)">BSc. Biology (BSc. Single Major)</option><option value="BSc. Fisheries Science (BSc. Single Major)">BSc. Fisheries Science (BSc. Single Major)</option><option value="BSc. Food Science (BSc. Single Major)">BSc. Food Science (BSc. Single Major)</option><option value="BSc. Marine Science (BSc. Single Major)">BSc. Marine Science (BSc. Single Major)</option><option value="BSc. Nutrition (BSc. Single Major)">BSc. Nutrition (BSc. Single Major)</option><option value="BSc. Plant and Environmental Biology (BSc. Single Major)">BSc. Plant and Environmental Biology (BSc. Single Major)</option><option value="BSc. Food Sc. and Biochemistry (Combined Major)">BSc. Food Sc. and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Biochemistry (Combined Major)">BSc. Nutrition and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Food Sc. (Combined Major)">BSc. Nutrition and Food Sc. (Combined Major)</option><option value="BSc. Plant Biol. and Biochemistry (Combined Major)">BSc. Plant Biol. and Biochemistry (Combined Major)</option><option value="BSc. Animal Biol. with a minor in Biochemistry">BSc. Animal Biol. with a minor in Biochemistry</option><option value="BSc. Fisheries Sc. with a minor in Marine Sc.">BSc. Fisheries Sc. with a minor in Marine Sc.</option><option value="BSc. Marine Sc. with a minor in Fisheries">BSc. Marine Sc. with a minor in Fisheries.</option></select>
+                                  </div> 
+
+                                  <label>Degree Option 5: </label>
+                                  <div class="form-group">
+                                   <select class="form-control degreeoption" required="required" name="choice5" id="choices5">
+                                    <option value="">Select Degree Option</option>
+                                                                        <option value="BSc. Animal Biology and Conservation Science (BSc. Single Major)">BSc. Animal Biology and Conservation Science (BSc. Single Major)</option><option value="BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)">BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)</option><option value="BSc. Biology (BSc. Single Major)">BSc. Biology (BSc. Single Major)</option><option value="BSc. Fisheries Science (BSc. Single Major)">BSc. Fisheries Science (BSc. Single Major)</option><option value="BSc. Food Science (BSc. Single Major)">BSc. Food Science (BSc. Single Major)</option><option value="BSc. Marine Science (BSc. Single Major)">BSc. Marine Science (BSc. Single Major)</option><option value="BSc. Nutrition (BSc. Single Major)">BSc. Nutrition (BSc. Single Major)</option><option value="BSc. Plant and Environmental Biology (BSc. Single Major)">BSc. Plant and Environmental Biology (BSc. Single Major)</option><option value="BSc. Food Sc. and Biochemistry (Combined Major)">BSc. Food Sc. and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Biochemistry (Combined Major)">BSc. Nutrition and Biochemistry (Combined Major)</option><option value="BSc. Nutrition and Food Sc. (Combined Major)">BSc. Nutrition and Food Sc. (Combined Major)</option><option value="BSc. Plant Biol. and Biochemistry (Combined Major)">BSc. Plant Biol. and Biochemistry (Combined Major)</option><option value="BSc. Animal Biol. with a minor in Biochemistry">BSc. Animal Biol. with a minor in Biochemistry</option><option value="BSc. Fisheries Sc. with a minor in Marine Sc.">BSc. Fisheries Sc. with a minor in Marine Sc.</option><option value="BSc. Marine Sc. with a minor in Fisheries">BSc. Marine Sc. with a minor in Fisheries.</option></select>
+                                  </div> 
+                                  
+
+
+
+
+
+
+
+
+
+
+
+
+                               
+
+                                  
+
+                                  <h4 class="changecolor" id="onsave" style="display: none">We are saving your information...Please Wait.. <img src="https://sts.ug.edu.gh/services/assets/images/loader.gif" style="max-width: 100px"></h4>
+                                  <div class="alert alert-success mb-2" role="alert" id="onsuccess" style="display: none">
+                                    <strong>Success!</strong> Your Information has been saved successfully
+                                  </div>
+                                   <div class="alert alert-danger mb-2" role="alert" id="onerror" style="display: none">
+                                    <strong>Error!</strong> Sorry, an error occured whiles saving your information. Please try Again.
+                                  </div>
+                                  
+                                 
+                                  
+                                </div>
+                              </div>
+                          
+                          </div>
+                          <div class="modal-footer">
+                          <input type="reset" class="btn btn-danger" data-dismiss="modal" value="Cancel">
+                          <button type="submit" id="psubmitbtn" class="btn btn-primary">Save Info. <img src="https://sts.ug.edu.gh/services/assets/images/loading.gif" id="bsloadinggif" style="max-height: 25px;display: none"></button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+  <div class="customizer border-left-blue-grey border-left-lighten-4 d-none d-xl-block"><a href="#" class="customizer-close"><i class="ft-x font-medium-3"></i></a><a href="#" class="customizer-toggle bg-danger" style="background: #281564!important"><i class="ft-settings font-medium-3 fa-spin fa fa-spin fa-fw white"></i></a><div class="customizer-content p-2 ps-container ps-theme-dark" data-ps-id="6e05c4ae-eefd-8bcb-3250-1c7697a2d610">
+    <h4 class="text-uppercase mb-0">More</h4>
+    <hr>
+     <h5 class="mt-1">HandBooks</h5><hr>
+     <div class="row">
+        
+    <ul>
+        <li><a target="_blank" href="http://www.ug.edu.gh/sites/default/files/aad/Humanities%20handbook%202017%20%28website%29-min.pdf">College of Humanities</a></li>
+        <li><a target="_blank" href="http://www.ug.edu.gh/sites/default/files/aad/humanities%20handbook%202015.pdf">College of Education</a></li>
+        <li><a target="_blank" href="http://www.ug.edu.gh/sites/default/files/aad/chs%20handbbook%202017%20%28website%29-min.pdf">College of Health Sciences</a></li>
+        <li><a target="_blank" href="http://www.ug.edu.gh/sites/default/files/aad/science%20handbook%202017%20%28website%29-min.pdf">College of Basic and Applied Sciences</a></li>
+    </ul>
+        <hr>
+     </div>
+    <hr>
+    <h5 class="mt-1">Suggestion Box</h5>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="alert bg-danger alert-dismissible mb-2" role="alert" id="suggestionerror" style="display: none;">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                    <strong>Oops! </strong>Sorry we couldn't save your suggestion.Please try again
+            </div>
+            <div class="alert bg-success alert-dismissible mb-2" role="alert" id="suggestionsuccess" style="display: none;">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                    <strong>Success! </strong>Thank you for your Suggestion
+            </div>
+            <form role="form" id="suggestionbox">
+                <input type="hidden" name="_token" value="KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g">
+                <div class="form-group">
+                    <textarea class="form-control textarea-maxlength" rows="5" placeholder="Drop your suggestions" maxlength="220" name="message" required="required"></textarea>
+                </div>
+                <button class="btn" type="submit" disabled="disabled" style="background: #281564;color:white">Submit Your Suggestion <img src="https://sts.ug.edu.gh/services/assets/images/loading.gif" id="sloadinggif" style="max-height: 25px;display: none"></button>
+            </form>
+        </div>
+    </div>
+    
+    <hr>
+<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+    </div>  
+
+   
+
+  
+    <footer class="footer footer-static navbar-shadow col-xs-hidden" style="background-color:#bf9f62;color:white;z-index:100000">
+      <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2 container center-layout"><span class="d-block d-md-inline-block" style="color: white">Copyright  © 2026, All rights reserved. Powered By UGCS</span></p>
+    </footer>
+
+    
+
+        <script src="https://sts.ug.edu.gh/services/assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+   
+    <script type="text/javascript" src="https://sts.ug.edu.gh/services/assets/vendors/js/ui/jquery.sticky.js"></script>
+    <script src="https://sts.ug.edu.gh/services/assets/js/core/app-menu.js" type="text/javascript"></script>
+    <script src="https://sts.ug.edu.gh/services/assets/js/core/app.js" type="text/javascript"></script>
+    <script src="https://sts.ug.edu.gh/services/assets/js/core/bootstrap-maxlength.js" type="text/javascript"></script>
+     
+    <script src="https://sts.ug.edu.gh/services/assets/js/scripts/customizer.js" type="text/javascript"></script>
+    
+    <script type="text/javascript" src="https://sts.ug.edu.gh/services/assets/js/core/toastr.min.js"></script>
+<script src="https://sts.ug.edu.gh/services/assets/js/core/sweetalert.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://sts.ug.edu.gh/services/assets/js/core/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="https://sts.ug.edu.gh/services/assets/js/core/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="https://sts.ug.edu.gh/services/assets/vendors/js/icheck/icheck.js"></script>
+<script type="text/javascript" src="https://sts.ug.edu.gh/services/js/blockui.js"></script>
+<script src="https://sts.ug.edu.gh/services/assets/js/core/jquery.inputmask.bundle.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+<script type="text/javascript">
+    //$('.medical').addClass('border-danger border-darken-4');
+    $('.anim').mouseenter(function(){
+        $(this).addClass('box-shadow-2').addClass('animated').addClass('pulse');
+    }).mouseleave(function(){
+        $(this).removeClass('box-shadow-2').removeClass('animated').removeClass('pulse')
+    })
+
+
+    $('.icheck').iCheck({
+    checkboxClass: 'icheckbox_square-blue',
+    radioClass: 'iradio_square-blue'
+});
+
+
+(function() {
+
+    $.ajax({
+        url: "https://sts.ug.edu.gh/services/empire-balloting",
+        type: "GET",
+        dataType: "json",
+
+        beforeSend: function() {
+            // Optional loading indicator
+        },
+
+        success: function(res) {
+
+            if (res.status === 'success') {
+
+                var data = res.data;
+
+                /*
+                 * Reset form first
+                 */
+              //  $('#ballotformempire')[0].reset();
+
+                /*
+                 * Clear all iCheck checkboxes
+                 */
+               // $('.room_category').iCheck('uncheck');
+
+                /*
+                 * No previous submission
+                 */
+                if (!data) {
+
+                    $('#ballotingresponseempire').val('');
+                    $('#phoneballotingempire').val('');
+
+                    $('#showroomcategory').hide();
+
+                    //$('#ballotmodalempire').modal('show');
+
+                    return;
+                }
+
+
+             
+             
+
+        
+
+                /*
+                 * Update the response displayed
+                 * on the main card
+                 */
+                updateEmpireResponse(data);
+
+                /*
+                 * Open modal
+                 */
+               // $('#ballotmodalempire').modal('show');
+
+            } else {
+
+    
+
+            }
+
+        },
+
+        error: function(xhr) {
+
+        }
+
+    });
+})()
+
+$('#ballotingempire').on('click', function(e) {
+
+    e.preventDefault();
+
+    $.ajax({
+        url: "https://sts.ug.edu.gh/services/empire-balloting",
+        type: "GET",
+        dataType: "json",
+
+        beforeSend: function() {
+            // Optional loading indicator
+        },
+
+        success: function(res) {
+
+            if (res.status === 'success') {
+
+                var data = res.data;
+
+                /*
+                 * Reset form first
+                 */
+                $('#ballotformempire')[0].reset();
+
+                /*
+                 * Clear all iCheck checkboxes
+                 */
+                $('.room_category').iCheck('uncheck');
+
+                /*
+                 * No previous submission
+                 */
+                if (!data) {
+
+                    $('#ballotingresponseempire').val('');
+                    $('#phoneballotingempire').val('');
+
+                    $('#showroomcategory').hide();
+
+                    $('#ballotmodalempire').modal('show');
+
+                    return;
+                }
+
+                /*
+                 * Populate response
+                 */
+                $('#ballotingresponseempire').val(data.response);
+
+                /*
+                 * Populate phone
+                 */
+                $('#phoneballotingempire').val(data.phone);
+
+                /*
+                 * Populate room categories
+                 *
+                 * Database value:
+                 * 2in1A,2in1B,4in1A
+                 */
+                if (data.room_category) {
+
+                    var categories = data.room_category.split(',');
+
+                    $.each(categories, function(index, category) {
+
+                        category = $.trim(category);
+
+                        $('.room_category[value="' + category + '"]')
+                            .iCheck('check');
+
+                    });
+                }
+
+                /*
+                 * Show/hide room category depending
+                 * on response
+                 */
+                if (data.response === 'Yes') {
+                    $('#showroomcategory').show();
+                } else {
+                    $('#showroomcategory').hide();
+                }
+
+                /*
+                 * Update the response displayed
+                 * on the main card
+                 */
+                updateEmpireResponse(data);
+
+                /*
+                 * Open modal
+                 */
+                $('#ballotmodalempire').modal('show');
+
+            } else {
+
+                swal(
+                    'Notice',
+                    'You are not eligible for the Empire Hostel random allocation exercise.',
+                    'warning'
+                );
+
+            }
+
+        },
+
+        error: function(xhr) {
+
+            console.log(xhr.responseText);
+
+            swal(
+                'Error',
+                'Unable to load your balloting information.',
+                'error'
+            );
+
+        }
+
+    });
+
+});
+
+$('#ballotingresponseempire').on('change', function() {
+
+    if ($(this).val() === 'Yes') {
+
+        $('#showroomcategory').slideDown();
+
+    } else {
+
+        $('#showroomcategory').slideUp();
+
+        /*
+         * Clear selected room categories
+         */
+        $('.room_category').iCheck('uncheck');
+    }
+
+});
+
+$('#ballotformempire').on('submit', function(e) {
+
+    e.preventDefault();
+
+    var response = $('#ballotingresponseempire').val();
+
+    /*
+     * Validate response
+     */
+    if (!response) {
+
+        swal(
+            'Required',
+            'Please select whether you would like to participate.',
+            'warning'
+        );
+
+        return;
+    }
+
+    /*
+     * If Yes, require at least one room category
+     */
+    if (response === 'Yes') {
+
+        var selectedCategories = [];
+
+        $('.room_category:checked').each(function() {
+            selectedCategories.push($(this).val());
+        });
+
+        if (selectedCategories.length === 0) {
+
+            swal(
+                'Required',
+                'Please select at least one room category.',
+                'warning'
+            );
+
+            return;
+        }
+    }
+
+    /*
+     * Disable submit button
+     */
+    $('#submitbtn_ballot_empire').prop('disabled', true);
+
+    $('#loadinggif255').show();
+
+    $.ajax({
+
+        url: "https://sts.ug.edu.gh/services/empire-save-balloting",
+
+        type: "POST",
+
+        data: $(this).serialize(),
+
+        dataType: "json",
+
+        success: function(res) {
+
+            if (res.status === 'success') {
+
+                var data = res.data;
+
+                /*
+                 * Update modal with saved information
+                 */
+                $('#ballotingresponseempire').val(data.response);
+
+                $('#phoneballotingempire').val(data.phone);
+
+                /*
+                 * Update room categories
+                 */
+                $('.room_category').iCheck('uncheck');
+
+                if (data.room_category) {
+
+                    var categories = data.room_category.split(',');
+
+                    $.each(categories, function(index, category) {
+
+                        category = $.trim(category);
+
+                        $('.room_category[value="' + category + '"]')
+                            .iCheck('check');
+
+                    });
+                }
+
+                /*
+                 * Update the H5 on the main card
+                 */
+                updateEmpireResponse(data);
+
+                /*
+                 * Close modal
+                 */
+                $('#ballotmodalempire').modal('hide');
+
+                swal(
+                    'Saved',
+                    'Your Empire Hostel balloting response has been saved successfully.',
+                    'success'
+                );
+
+            } else {
+
+                swal(
+                    'Error',
+                    'Your response could not be saved.',
+                    'error'
+                );
+            }
+
+        },
+
+        error: function(xhr) {
+
+            console.log(xhr.responseText);
+
+            swal(
+                'Error',
+                'An error occurred while saving your response.',
+                'error'
+            );
+
+        },
+
+        complete: function() {
+
+            $('#submitbtn_ballot_empire').prop('disabled', false);
+
+            $('#loadinggif255').hide();
+
+        }
+
+    });
+
+});
+
+function updateEmpireResponse(data) {
+
+    var html = '';
+
+    if (data.response === 'Yes') {
+
+        html += '<strong>Response: YES</strong>';
+
+        if (data.room_category) {
+
+            var categories = data.room_category.split(',');
+
+            html += '<br>';
+
+            html += '<small>Room Categories: ';
+
+            $.each(categories, function(index, category) {
+
+                category = $.trim(category);
+
+                if (index > 0) {
+                    html += ', ';
+                }
+
+                html += getRoomCategoryName(category);
+            });
+
+            html += '</small>';
+        }
+
+    } else {
+
+        html = '<strong>Response: NO</strong>';
+
+    }
+
+    $('#responseempire').html(html);
+}
+
+function getRoomCategoryName(category) {
+
+    var names = {
+
+        '2in1A': '2 in 1 AC Type A',
+
+        '2in1B': '2 in 1 AC Type B',
+
+        '4in1A': '4 in 1 No AC Type A',
+
+        '4in1B': '4 in 1 No AC Type B'
+
+    };
+
+    return names[category] || category;
+}
+    
+</script>
+<script type="text/javascript">
+
+  $.get('https://sts.ug.edu.gh/services/fetch-phone-numbers',function(res){
+          if(res && res.status=='success'){
+              $('#phonenumbers').html('')
+               res.phones.forEach(item=>{
+                $('#phonenumbers').append(`<li>${item.phone}</li>`)
+               })
+          }
+        })
+
+// gov codes here
+ $.get('https://sts.ug.edu.gh/services/gov_scholarship',function(res){
+        if(res && res.status=='success'){
+               
+                 if(res.data==null){
+                     $('#govalert').hide() 
+                     $('#govmodal').modal('hide')
+                }else{
+                    
+                     $('#govalert').show() 
+                     if(res.data.created_at == null){
+                      $('#govmodal').modal('show')
+                      $('#govupdate').hide()
+                     }else{
+                         $('#govmodal').modal('hide')
+                         $('#govupdate').show()
+                     }
+                     $('#ghanacard').val(res.data.ghanacard || '')
+                     $('#phonegov').val(res.data.phone || '')
+                     $('#emailgov').val(res.data.email || '')
+                }
+                
+            }else{
+                $('#govmodal').hide() 
+            }
+        }).fail(function(){
+           
+        })
+
+
+//end
+    
+    $('#ballotingresponse').change(function(){
+        if($(this).val()==='Yes'){
+            $('#showroomcategory').show()
+            $('#room_category').attr('required','required')
+        }else{
+            $('#showroomcategory').hide()
+            $('#room_category').removeAttr('required')
+            $('#room_category').val('')
+        }
+    })
+
+    $(document).ready(function(){
+        // $('#ghanacard').inputmask("GHA-999999999-9");
+
+        // $('#ghanacard').inputmask({
+        //     mask: ["GHA-999999999-9", "USA-999999999-*", "NGA-999999999-*"],
+        //     greedy: false,
+        //     placeholder: "___-_________-_",
+        //     casing: "upper"
+        // });
+
+        $('#ghanacard').on('input', function () {
+            let value = $(this).val().toUpperCase();
+            value = value.replace(/[^A-Z0-9-]/g, '');
+            let raw = value.replace(/-/g, '');
+            raw = raw.substring(0, 13);
+            let formatted = '';
+
+            for (let i = 0; i < raw.length; i++) {
+                if (i === 3 || i === 12) {
+                    formatted += '-';
+                }
+                formatted += raw[i];
+            }
+
+            $(this).val(formatted);
+        });
+
+        // $('#ghanacard').keyup(function(){
+        //    var raw = $(this).val().toUpperCase().replace(/[^A-Z0-9]/g, '');
+
+        //     // Auto-insert dashes: GHA-XXXXXXXXX-X
+        //     var formatted = '';
+        //     for (var i = 0; i < raw.length && i < 14; i++) {
+        //         if (i === 3 || i === 12) formatted += '-';
+        //         formatted += raw[i];
+        //     }
+        //     $(this).val(formatted)
+        // });
+       
+          $('#govform').submit(function(e){
+         e.preventDefault()
+        //   if( !$('#ghanacard').inputmask("isComplete")){
+        //     alert('Invalid Ghana Card Number.Please enter a correct Ghana Card Number')
+        //     return
+        // }
+         if($('#phonegov').val()==''){
+            alert("Please enter a correct Phone Number")
+            return
+         }
+          if($('#emailgov').val()==''){
+            alert("Please enter a correct Alternate Email")
+            return
+         }
+         if(isNaN($('#phonegov').val())){
+            alert("Please enter a correct Phone Number")
+            return
+         }
+         $('#loadinggif26').show();
+         $('#submitbtn_gov').attr('disabled','disabled')
+         $.post("https://sts.ug.edu.gh/services/gov_scholarship_update",$('#govform').serialize(),function(res){
+              $('#loadinggif26').hide();
+              $('#submitbtn_gov').removeAttr('disabled')
+             if(res && res.status=='success'){
+               $('#ghanacard').val(res.data.ghanacard || '')
+               $('#phonegov').val(res.data.phone || '')
+               $('#emailgov').val(res.data.email || '')
+                  swal('Alert','Your Information has been logged successfully','success')
+                
+                  $('#govalert').show() 
+                  $('#govmodal').modal('hide')
+                  $('#govupdate').show()
+             }else{
+                  swal('Alert',res.message,'info')
+             }
+
+         }).fail(function(){
+               $('#loadinggif26').hide();
+              $('#submitbtn_gov').removeAttr('disabled')
+             swal('Alert','Your request failed, Please try again','info')
+         })
+       })
+
+
+
+
+
+       $('#ballotform').submit(function(e){
+         e.preventDefault()
+         if($('#phoneballoting').val()==''){
+            alert("Please enter a correct Phone Number")
+            return
+         }
+         if(isNaN($('#phoneballoting').val())){
+            alert("Please enter a correct Phone Number")
+            return
+         }
+         $('#loadinggif25').show();
+         $('#submitbtn_ballot').attr('disabled','disabled')
+         $.post("https://sts.ug.edu.gh/services/save-balloting",$('#ballotform').serialize(),function(res){
+              $('#loadinggif25').hide();
+              $('#submitbtn_ballot').removeAttr('disabled')
+             if(res && res.status=='success'){
+                 $('select[name="response"]').val(res.data.response)
+                 $('#room_category').val(res.data.room_category)
+                  swal('Alert','Your Information has been logged successfully','success')
+                  $('#response').text('Response: '+res.data.response + '  ' + (res.data.room_category || ''))
+                  $('#showballoting').show() 
+                  $('#ballotmodal').modal('hide')
+             }else{
+                  swal('Alert','Your request failed, Please make sure you have paid your school fees.','info')
+             }
+
+         }).fail(function(){
+               $('#loadinggif25').hide();
+              $('#submitbtn_ballot').removeAttr('disabled')
+             swal('Alert','Your request failed, Please try again','info')
+         })
+       })
+
+
+            $('#clothform').submit(function(e){
+        e.preventDefault()
+        $('#loadinggif251').show();
+        $('#submitbtn_ballot1').attr('disabled','disabled')
+        $.post("https://sts.ug.edu.gh/services/save-clothes",$('#clothform').serialize(),function(res){
+             $('#loadinggif251').hide();
+             $('#submitbtn_ballot1').removeAttr('disabled')
+            if(res && res.status=='success'){
+                $('select[name="clothresponse"]').val(res.data.response)
+                 swal('Alert','Your Information has been logged successfully','success')
+                 $('#clothresponse').text('Response: '+res.data.response)
+                $('#clothmodal').modal('hide')
+            }else{
+                 swal('Alert',res.message,'info')
+                  $('#clothmodal').modal('hide')
+                 $('select[name="clothresponse"]').val('')
+            }
+
+        }).fail(function(){
+              $('#loadinggif251').hide();
+             $('#submitbtn_ballot1').removeAttr('disabled')
+            swal('Alert','Your request failed, Please try again','info')
+        })
+      })
+
+        $.get('https://sts.ug.edu.gh/services/balloting',function(res){
+        if(res && res.status=='success'){
+               
+                 if(res.data==null){
+                     $('#showballoting').show() 
+                   $('#ballotmodal').modal('show')
+                }else{
+                     $('#showballoting').show() 
+                     $('select[name="response"]').val(res.data.response || '')
+                     $('#room_category').val(res.data.room_category || '')
+                     $('#phoneballoting').val(res.data.phone || '')
+                      $('#response').text('Response: '+res.data.response + '  ' + (res.data.room_category || ''))
+                }
+                
+            }else{
+                $('#showballoting').hide() 
+            }
+        }).fail(function(){
+           
+        })
+
+        $.get('https://sts.ug.edu.gh/services/get-clothes',function(res){
+
+        if(res && res.status=='success'){
+            if(res.data != null && typeof res.data.response !== 'undefined'){
+              $('select[name="clothresponse"]').val(res.data.response || '') 
+            }     
+        }
+        if(res.data != null){
+             $('#clothresponse').text('Response: '+res.data.response)  
+        }
+        if(res.data != null && res.data.status==='picked'){
+            $('select[name="clothresponse"]').attr('disabled','disabled')
+            $('#submitbtn_ballot1').attr('disabled','disabled')
+
+        }
+
+        }).fail(function(){
+           
+        })
+
+        $.get("https://sts.ug.edu.gh/services/check-emp-letter",{student_id:"22553484"},function(res){
+       
+            if(res && res.data !== null){
+                $('#empalert').show()
+            }
+        })
+
+        $.get("https://sts.ug.edu.gh/services/telecel-simcard-pick",{student_id:"22553484"},function(res){
+       
+            if(res && res.data !== null){
+                
+            }
+        })
+
+
+
+
+        $('#collectionpoints').click(function(){
+            $('#collectionpointsmodal').modal('show')
+        })
+      $('#pickdate').datetimepicker({
+        format: 'YYYY-MM-DD',
+        minDate:new Date('April 22, 2024'),
+        disabledDates: [ ],
+        daysOfWeekDisabled: [0, 6],
+     
+        }).keydown(false);
+      $('#pickadaybutton').click(function(){
+          $('#pickadaymodal').modal('show');
+      });
+        $.get("https://sts.ug.edu.gh/services/fetchevaluationcourses",function(response){
+           if(response.status==='success' && response.enable==='YES'){
+            if(response.coursesnotevaluated > 0){
+                $('.cle').addClass('border-danger border-darken-4');
+                toastr.error('You have '+response.coursesnotevaluated+' course(s) left to be evaluated.. Please Go to The evaluation page to evaluate them', 'ALERT', {positionClass: 'toast-bottom-full-width', containerId: 'toast-bottom-full-width',timeOut:0,extendedTimeOut:0},{timeOut:0,extendedTimeOut:0,tapToDismiss: false});
+
+                // $('#info').append('<h4 class="" style="color:red;">No. of Course(s) Pending For Evaluation</h4><hr><input type="text" readonly="readonly" value="'+response.coursesnotevaluated+'" class="knob responsive" data-thickness=".15" data-width="150" data-height="150" data-inputColor="#281564" data-readOnly="true" data-fgColor="#ff0000" style="margin-left:-114px">');
+
+                //  $('.knob').knob({
+                //     min: 0,
+                //     rtl:true,
+                //     max: response.courses.length,
+                // })
+            }
+           }
+        }).fail(function(){
+
+        });
+
+        // id cards javascript function
+        function checkforIDCard(){
+            $.get("https://sts.ug.edu.gh/services/checkforidcard",function(res){
+            if(res && res.status=='success'){
+                if(res.check && res.check.upload_label != null ){
+                    $('#idcardextrainfo').html(
+                        `
+                        YOUR BATCH NO IS <span style="color:blue">${res.check.upload_label || 'N/A'}</span><br>
+                        YOUR COLLECTION POINT IS <span style="color:blue">${res.check.pick_up_point || 'N/A'}</span>
+                        `
+                    )
+                }
+                if(res.date !== ''){
+                    $('#texttoshow').text("Date You have selected for your ID card Collection is "+res.date);
+                    $('#btntext').text('Change Date');
+                }else{
+                    $('#texttoshow').text("Your Student ID card is ready for collection at the Collection Point indicated below. Time for collection is 9am-4pm each day. Kindly Click on the button below to book a day for collection.");
+
+                    $('#btntext').text('Click to Pick a Date');
+                }
+                $('#idcardalert').show();
+
+                if(res.check.status=='REQUIRES_REPRINT'){
+                    $('#idcardpayalert').show();
+                     $('#idcardalert').hide();
+                    
+                }
+            }
+          }).fail(function(){});
+        }
+
+        checkforIDCard();
+
+        $('#pickadayform').submit(function(e){
+       e.preventDefault();
+       $('#loadinggif2').show();
+       $('#submitbtn').attr('disabled','disabled');
+       $.post("https://sts.ug.edu.gh/services/saveidcarddate",$(this).serialize(),function(res){
+        $('#loadinggif2').hide();
+        $('#submitbtn').removeAttr('disabled');
+            if(res && res.status==='success'){
+                $('#pickadaymodal').modal('hide');
+                swal('Success','The Date you picked has been successfully saved','success');
+                $('#texttoshow').text("Date You have selected for your ID card Collection is "+res.date);
+                $('#btntext').text('Change Date');
+
+            }else if(res && res.status==='full'){
+              swal('Alert','Sorry.. The quota for the date you\'ve booked is full.. Choose another date','info');
+              $('#btntext').text('Change Date');
+            }else{
+                swal('Error','Oops..Something went wrong somwhere.Please try again','error');
+            }
+       }).fail(function(){
+        $('#loadinggif2').hide();
+        $('#submitbtn').removeAttr('disabled');
+           swal('Error','Oops..Something went wrong somwhere.Please try again','error');
+       })
+   })
+    })
+</script>
+<script type="text/javascript">
+    $.get('https://sts.ug.edu.gh/services/fillrediswithinfo',function(res){
+        //console.log(res);
+    }).fail(function(){
+        console.log("filling redis failed");
+    })
+</script>
+<script type="text/javascript">
+    
+     </script>
+<script type="text/javascript">
+  $.get("https://sts.ug.edu.gh/services/checkacademicrecords",function(res){
+    if(res && res.status==='success'){
+      $('#academicrecords').show();
+    }else{
+       $('#academicrecords').hide();
+    }
+  }).fail(function(){
+     $('#academicrecords').hide();
+  })
+</script>
+
+<script type="text/javascript">
+    $.get("https://sts.ug.edu.gh/services/check-specialization-list",function(res){
+        if(res && res.status==='success'){
+            if(res.data === true){
+                $('#course_specialization').show();
+            }else{
+                $('#course_specialization').hide();
+            }
+        }else{
+            $('#course_specialization').hide();
+        }
+    }).fail(function(){
+        $('#course_specialization').hide();
+    })
+</script>
+
+<script type="text/javascript">
+    $('.firstgenerationcheckbox').iCheck({
+    checkboxClass: 'icheckbox_square-blue',
+    radioClass: 'iradio_square-blue',
+    increaseArea: '50' 
+    });
+    $.get('https://sts.ug.edu.gh/services/firstgeneration',function(res){
+       if(res && res.data==null){
+        // show modal
+        //$('#firstgenerationmodal').modal('show')
+       }
+       else{
+         $('#firstgenerationmodal').modal('hide')
+         $('#first_attend').val(res.data.first_attend)
+         if(res.data.other_family !="null"){
+            var other_family = JSON.parse(res.data.other_family)
+            other_family.forEach(item=>{
+                $(`input[value="${item}"]`).iCheck('check')
+            })
+         }
+        // hide modal
+       }
+    }).fail(function(){
+        console.log("filling redis failed");
+    })
+
+    $('#admissionletter').click(function(e){
+        e.preventDefault();
+           $('#profilecard').block({
+            message: '<div class="semibold pt-1 pb-1" style="background:#281564;color:white"><span class="ft-refresh-cw icon-spin text-left"></span>&nbsp; Fetching...</div>',
+            overlayCSS: {
+                backgroundColor: '#fff',
+                opacity: 0.8,
+                cursor: 'wait'
+            },
+            centerX: 0,
+            centerY: 0,
+            showOverlay: false,
+            css: {
+                border: 0,
+                backgroundColor: 'transparent',
+                 top: '10px',
+                left: '35%',
+                padding: '10px 15px',
+            }
+        });
+
+        $.get("https://sts.ug.edu.gh/services/retrieve-admission-letter",function(res){
+             $('#profilecard').unblock();
+            if(res && res.status=='success'){
+                window.open(res.url,'_blank');
+            }else{
+               swal('Alert','Sorry.. We couldnt retrieve your admission letter. Please try again later','info'); 
+            }
+        }).fail(function(){
+             $('#profilecard').unblock();
+            swal('Error','Sorry.. We couldnt retrieve your admission letter. Please try again later','error');
+        })
+    })
+</script>
+<script type="text/javascript">
+
+     var select_appointment_date = document.getElementById("appdate");
+        var blocked_days = [
+            new Date("2024-03-29").toLocaleDateString(),
+            new Date("2024-03-30").toLocaleDateString(),
+            new Date("2024-03-31").toLocaleDateString(),
+            new Date("2024-04-01").toLocaleDateString(),
+            new Date("2024-04-11").toLocaleDateString(),
+        ]
+        // Add an event listener for changes to the date input
+        select_appointment_date.addEventListener("input", function() {
+            // Parse the selected date
+            var selectedDate = new Date(this.value);
+            
+            var formatedDate = new Date(this.value).toLocaleDateString()
+            
+            // Check if the selected date is a Sunday (day index 0)
+            if (selectedDate.getDay() === 0) {
+                // If it's a Sunday, clear the input value
+                this.value = '';
+                // Optionally, provide a message to inform the user
+                swal('Oops, Error',"You cannot book appointment for this date. Please select another date",'error');
+                // alert("");
+            }
+
+            //for the easter break
+            if(blocked_days.includes(formatedDate)){
+                this.value = '';
+                // Optionally, provide a message to inform the user
+                // swal('Oops, Error',"Selected Date NOT available. We'll be on break from March 29 to April 1, 2024. Please select a different date",'error');
+                swal('Oops, Error',"Selected Date NOT available. We'll be on break on  April 11, 2024. Please select a different date",'error');
+            }
+        });
+    $.get("https://sts.ug.edu.gh/services/check-medical-booking",{student_id:"22553484"},function(res){
+        if(res && res.data){
+            if(res.data.booked_date==null){
+              $('#medicalbookingmodal').modal('show')
+           }else{
+            $('#appdate').val(res.data.booked_date)
+            $('#booking_date').text('Date: ' + moment(res.data.booked_date).format("Do MMM YYYY"))
+             $('#booking_slot').text('Time Slot: ' + res.data.slot)
+             $('#bookingslot').val(res.data.slot)
+           }
+           $('#bookingmenu').show()
+           $('#bookingmenualert').show()
+        }
+    })
+
+    $('#medicalbookingform').submit(function(e){
+        e.preventDefault();
+        var appdate_val = $('#appdate').val();
+        var appdate_slot = $('#bookingslot').val();
+        if(appdate_val==='' || appdate_slot===''){
+            alert('Please select Date and Slot to continue');
+            return
+        }
+         $('#loadinggif222').show();
+        $('#submitbtn222').attr('disabled','disabled')
+        $.post("https://sts.ug.edu.gh/services/save-medical-booking",$('#medicalbookingform').serialize(),function(res){
+             $('#loadinggif222').hide();
+              $('#submitbtn222').removeAttr('disabled')
+             if(res && res.data){
+            if(res.data.booked_date==null){
+              $('#medicalbookingmodal').modal('show')
+           }else{
+            $('#appdate').val(res.data.booked_date)
+            $('#booking_date').text('Date: ' + moment(res.data.booked_date).format("Do MMM YYYY"))
+             $('#booking_slot').text('Time Slot: ' + res.data.slot)
+             $('#bookingslot').val(res.data.slot)
+              $('#medicalbookingmodal').modal('hide')
+           }
+           $('#bookingmenu').show()
+           swal('Success','Booking Successful','success');
+        }else if(res && res.status){
+             swal('Alert',res.message,'info');
+        }else{
+             swal('Alert','Booking not Successful.. Please try again','info');
+        }
+        }).fail(function(){
+              $('#loadinggif222').hide();
+              $('#submitbtn222').removeAttr('disabled')
+        })
+    })
+
+
+    $.get("https://sts.ug.edu.gh/services/medical/payment-status-check",function(res){
+        if(res && res.status===true){
+            $("#medical_exam_payment_receipt").show();
+        }else{
+            $("#medical_exam_payment_receipt").hide();
+        }
+    }).fail(function(){
+        $("#medical_exam_payment_receipt").hide();
+    })
+
+
+    // for check student graduation status
+    $.get("https://sts.ug.edu.gh/services/cert-grad-status",function(res){
+        if(res && res.status==='success' && res.graduated == true){
+            $("#cert_booking").show();
+        }else{
+            $("#cert_booking").hide();
+        }
+    }).fail(function(){
+        $("#cert_booking").hide();
+    })
+
+
+
+    // check if the student has completed the medical exams and the report is ready
+    $.get("https://sts.ug.edu.gh/services/medical-exam-status",function(res){
+        if(res && res.status==="success"){
+            if(res.type=='first'){
+                //fireConfetti()
+                swal("HURRAY!!!!   YOUR STUDENT MEDICAL EXAMINATION IS COMPLETED. CLICK TO VIEW YOUR REPORTS.", {
+                buttons: {
+                    cancel: "Later",
+                    catch: {
+                    text: "View Report",
+                    value: true,
+                    },
+                
+                },
+                })
+                .then((value) => {
+                   if(value){
+                    window.location.href="https://sts.ug.edu.gh/services/medical-exams-report"
+                   }
+                });
+                
+            }
+            
+            $('#bookingmenualert').hide()
+            $('.medical-link > a').attr('href',"https://sts.ug.edu.gh/services/medical-exams-report")
+            $('.medical-text').text("Download Medical Report")     
+            $('#bookingmenu').hide()
+           
+        }else{
+           
+        }
+    }).fail(function(){
+       
+    })
+
+
+
+      // check if the student has completed the medical exams and the report is ready
+    $.get("https://sts.ug.edu.gh/services/medical-legacy-status",function(res){
+        if(res && res.status==="success"){
+              
+            $('#medical_menu').hide()
+           
+        }else{
+           
+        }
+    }).fail(function(){
+       
+    })
+
+
+
+    //end
+</script>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-messaging.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyB_Uf3SGPD7NZdSF3bIxc0LC3_jrmEcrLk",
+    authDomain: "stsapp-b20bb.firebaseapp.com",
+    projectId: "stsapp-b20bb",
+    storageBucket: "stsapp-b20bb.firebasestorage.app",
+    messagingSenderId: "975532971787",
+    appId: "1:975532971787:web:a294dc6bb62647d1df340e",
+    measurementId: "G-PL0XW1LEF4"
+};
+
+const app = initializeApp(firebaseConfig);
+const messaging = getMessaging(app);
+
+// Ask user for permission
+export const requestPermission = async () => {
+  try {
+    const permission = await Notification.requestPermission();
+    if (permission === 'granted') {
+      //console.log('Notification permission granted.');
+      const token = await getToken(messaging, {
+        vapidKey: 'BC2kr9aNx-Ns-Z7BV927XvH_Xv2jfF0arv-XniXTs1N4YiTuPZmEqVbS1N2I-2erAhh56hYgATKEfvxGq-Gqvpc'
+      });
+     // console.log('FCM Token:', token);
+      $.get("https://sts.ug.edu.gh/services/save-device-token",{student_id:"22553484",token:token},function(res){})
+      // Save this token to your server
+    } else {
+      //console.error('Permission not granted for Notification');
+    }
+  } catch (err) {
+    //console.error('An error occurred while retrieving token.', err);
+  }
+};
+
+requestPermission()
+
+// Listen for foreground messages
+onMessage(messaging, (payload) => {
+ // console.log('Message received in foreground:', payload);
+});
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('firebase-messaging-sw.js')
+    .then((registration) => {
+    //  console.log('Service Worker registered with scope:', registration.scope);
+    }).catch((err) => {
+    //  console.error('Service Worker registration failed:', err);
+    });
+}
+
+</script>
+
+<script>
+    function fireConfetti(){
+        const count = 200,
+  defaults = {
+    origin: { y: 0.7 },
+  };
+
+function fire(particleRatio, opts) {
+  confetti(
+    Object.assign({}, defaults, opts, {
+      particleCount: Math.floor(count * particleRatio),
+    })
+  );
+}
+
+fire(0.25, {
+  spread: 26,
+  startVelocity: 55,
+});
+
+fire(0.2, {
+  spread: 60,
+});
+
+fire(0.35, {
+  spread: 100,
+  decay: 0.91,
+  scalar: 0.8,
+});
+
+fire(0.1, {
+  spread: 120,
+  startVelocity: 25,
+  decay: 0.92,
+  scalar: 1.2,
+});
+
+fire(0.1, {
+  spread: 120,
+  startVelocity: 45,
+});
+    }
+    //fireConfetti()
+</script> 
+
+<script>
+(function () {
+    var csrfToken = 'KBqJQJ9aIFRCh1SEXglKPeMkAcjsxlkgO4OqAL8g';
+    var currentPhoneId = null;
+    var retriesLeft = 3;
+    var resendCooldownTimer = null;
+    var resendCooldownSeconds = 60;
+
+    function showAlert($el, message, type) {
+        $el.removeClass('d-none alert-success alert-danger alert-info alert-warning')
+            .addClass('alert-' + type)
+            .text(message);
+    }
+
+    function hideAlert($el) {
+        $el.addClass('d-none').text('');
+    }
+
+    function badgeHtml(value, trueLabel, falseLabel) {
+        if (parseInt(value, 10) === 1) {
+            return '<span class="badge badge-success">' + trueLabel + '</span>';
+        }
+        return '<span class="badge badge-secondary">' + falseLabel + '</span>';
+    }
+
+    function hasUnverifiedPhones(phones) {
+        return phones.some(function (phone) {
+            return parseInt(phone.verified, 10) !== 1 && parseInt(phone.active, 10) === 1;
+        });
+    }
+
+    function canCloseModal(phones) {
+        if (!phones.length) {
+            return true;
+        }
+
+        return phones.every(function (phone) {
+            return parseInt(phone.verified, 10) === 1 || parseInt(phone.active, 10) === 0;
+        });
+    }
+
+    function updateCloseButton(phones) {
+        var $btn = $('#closePhoneVerificationModalBtn');
+        $btn.prop('disabled', false);
+        return
+        if (canCloseModal(phones)) {
+            $btn.prop('disabled', false);
+        } else {
+            $btn.prop('disabled', true);
+        }
+    }
+
+    function renderPhoneTable(phones) {
+        var $tbody = $('#phoneVerificationTableBody');
+        $tbody.empty();
+
+        if (!phones.length) {
+            $tbody.append(
+                '<tr><td colspan="4" class="text-center text-muted">No phone numbers found. Add one below.</td></tr>'
+            );
+            updateCloseButton(phones);
+            return;
+        }
+
+        phones.forEach(function (phone) {
+            var verified = parseInt(phone.verified, 10) === 1;
+            var active = parseInt(phone.active, 10) === 1;
+            var actions = '';
+
+            if (!verified && active) {
+                actions =
+                    '<button type="button" class="btn btn-success mr-1 confirm-phone-btn" data-id="' + phone.id + '" data-answer="yes">' +
+                    '<i class="fa fa-check"></i> Yes, Mine</button>' +
+                    '<button type="button" class="btn btn-danger confirm-phone-btn" data-id="' + phone.id + '" data-answer="no">' +
+                    '<i class="fa fa-times"></i> Not Mine</button>';
+            } else if (verified) {
+                actions = '<span class="text-success"><i class="fa fa-check-circle"></i> Confirmed</span>';
+            } else {
+                actions = '<span class="text-muted">Inactive</span>';
+            }
+
+            $tbody.append(
+                '<tr data-phone-id="' + phone.id + '">' +
+                '<td>' + phone.phone + '</td>' +
+                '<td>' + actions + '</td>' +
+                '<td>' + badgeHtml(phone.verified, 'Yes', 'No') + '</td>' +
+                '<td>' + badgeHtml(phone.active, 'Yes', 'No') + '</td>' +
+               
+                '</tr>'
+            );
+        });
+
+        updateCloseButton(phones);
+    }
+
+    function loadPhoneNumbers(autoShow) {
+        autoShow = autoShow !== false;
+
+        $.ajax({
+            url: 'https://sts.ug.edu.gh/services/phones/number-verification',
+            method: 'GET',
+            dataType: 'json',
+            success: function (response) {
+                if (!response.status) {
+                    return;
+                }
+
+                renderPhoneTable(response.phones || []);
+
+                var phones = response.phones || [];
+                if (autoShow && (!phones.length || hasUnverifiedPhones(phones))) {
+                   // $('#phoneVerificationModal').modal('show');
+                }
+            },
+            error: function () {
+                $('#phoneVerificationTableBody').html(
+                    '<tr><td colspan="4" class="text-center text-danger">Unable to load phone numbers.</td></tr>'
+                );
+            }
+        });
+    }
+
+    function resetAddPhoneModal() {
+        currentPhoneId = null;
+        retriesLeft = 3;
+        clearResendCooldown();
+        $('#newPhoneNumber').val('');
+        $('#otpCode').val('');
+        $('#otpPhoneDisplay').text('');
+        $('#retriesLeftDisplay').text('3');
+        $('#addPhoneStep1').show();
+        $('#addPhoneStep2').hide();
+        hideAlert($('#addPhoneAlert'));
+        $('#resendOtpBtn').prop('disabled', true);
+    }
+
+    function clearResendCooldown() {
+        if (resendCooldownTimer) {
+            clearInterval(resendCooldownTimer);
+            resendCooldownTimer = null;
+        }
+    }
+
+    function startResendCooldown(seconds) {
+        var $btn = $('#resendOtpBtn');
+        var $countdown = $('#resendOtpCountdown');
+        var remaining = seconds || resendCooldownSeconds;
+
+        clearResendCooldown();
+        $btn.prop('disabled', true);
+        $countdown.text(remaining);
+
+        resendCooldownTimer = setInterval(function () {
+            remaining -= 1;
+            $countdown.text(remaining);
+
+            if (remaining <= 0) {
+                clearResendCooldown();
+                if (retriesLeft > 0) {
+                    $btn.prop('disabled', false);
+                }
+                $countdown.text('0');
+            }
+        }, 1000);
+    }
+
+    function showOtpStep(phoneNumber, phoneId, remainingRetries, startCooldown) {
+        currentPhoneId = phoneId;
+        retriesLeft = typeof remainingRetries === 'number' ? remainingRetries : 3;
+        $('#otpPhoneDisplay').text(phoneNumber);
+        $('#retriesLeftDisplay').text(retriesLeft);
+        $('#addPhoneStep1').hide();
+        $('#addPhoneStep2').show();
+
+        if (startCooldown) {
+            startResendCooldown(resendCooldownSeconds);
+        } else {
+            clearResendCooldown();
+            $('#resendOtpBtn').prop('disabled', retriesLeft <= 0);
+            $('#resendOtpCountdown').text('0');
+        }
+    }
+
+    $(document).ready(function () {
+        loadPhoneNumbers(true);
+
+        $('#openAddPhoneModalBtn').on('click', function () {
+            resetAddPhoneModal();
+            $('#addPhoneModal').modal('show');
+        });
+
+        $('#closeAddPhoneModalBtn').on('click', function () {
+            $('#addPhoneModal').modal('hide');
+        });
+
+        $('#closePhoneVerificationModalBtn').on('click', function () {
+            $('#phoneVerificationModal').modal('hide');
+        });
+
+        $(document).on('click', '.confirm-phone-btn', function () {
+            var $btn = $(this);
+            var phoneId = $btn.data('id');
+            var answer = $btn.data('answer');
+
+            $btn.prop('disabled', true);
+
+            $.ajax({
+                url: 'https://sts.ug.edu.gh/services/phones/confirm',
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    _token: csrfToken,
+                    id: phoneId,
+                    answer: answer
+                },
+                success: function (response) {
+                    if (response.status) {
+                        showAlert($('#phoneVerificationAlert'), response.message || 'Updated successfully.', 'success');
+                        loadPhoneNumbers(false);
+
+                        if (response.showAddPhone) {
+                            resetAddPhoneModal();
+                          //  $('#addPhoneModal').modal('show');
+                        }
+                    }
+                },
+                error: function () {
+                    showAlert($('#phoneVerificationAlert'), 'Unable to update phone number.', 'danger');
+                },
+                complete: function () {
+                    $btn.prop('disabled', false);
+                }
+            });
+        });
+
+        $('#sendOtpBtn').on('click', function () {
+            var phone = $('#newPhoneNumber').val().trim();
+            var $btn = $(this);
+
+            if (!phone) {
+                showAlert($('#addPhoneAlert'), 'Please enter a phone number.', 'warning');
+                return;
+            }
+
+            hideAlert($('#addPhoneAlert'));
+            $btn.prop('disabled', true);
+
+            $.ajax({
+                url: 'https://sts.ug.edu.gh/services/phones/add',
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    _token: csrfToken,
+                    phone: phone
+                },
+                success: function (response) {
+                    if (response.status) {
+                        showOtpStep(phone, response.phone_id, response.retries_left, false);
+                        showAlert($('#addPhoneAlert'), response.message, 'success');
+                    } else {
+                        showAlert($('#addPhoneAlert'), response.message || 'Unable to send OTP.', 'danger');
+                    }
+                },
+                error: function (xhr) {
+                    var message = 'Unable to send OTP.';
+                    if (xhr.responseJSON && xhr.responseJSON.message) {
+                        message = xhr.responseJSON.message;
+                    }
+                    showAlert($('#addPhoneAlert'), message, 'danger');
+                },
+                complete: function () {
+                    $btn.prop('disabled', false);
+                }
+            });
+        });
+
+        $('#resendOtpBtn').on('click', function () {
+            if (!currentPhoneId || retriesLeft <= 0) {
+                return;
+            }
+
+            var $btn = $(this);
+            $btn.prop('disabled', true);
+
+            $.ajax({
+                url: 'https://sts.ug.edu.gh/services/phones/send-otp',
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    _token: csrfToken,
+                    phone_id: currentPhoneId
+                },
+                success: function (response) {
+                    if (response.status) {
+                        retriesLeft = response.retries_left;
+                        $('#retriesLeftDisplay').text(retriesLeft);
+                        showAlert($('#addPhoneAlert'), response.message, 'success');
+                        startResendCooldown(resendCooldownSeconds);
+
+                        if (retriesLeft <= 0) {
+                            $btn.prop('disabled', true);
+                        }
+                    } else {
+                        if (typeof response.retries_left === 'number') {
+                            retriesLeft = response.retries_left;
+                            $('#retriesLeftDisplay').text(retriesLeft);
+                        }
+
+                        showAlert($('#addPhoneAlert'), response.message || 'Unable to resend OTP.', 'danger');
+
+                        if (response.cooldown) {
+                            startResendCooldown(response.cooldown);
+                        } else if (retriesLeft <= 0) {
+                            $btn.prop('disabled', true);
+                        }
+                    }
+                },
+                error: function () {
+                    showAlert($('#addPhoneAlert'), 'Unable to resend OTP.', 'danger');
+                    if (retriesLeft > 0) {
+                        startResendCooldown(resendCooldownSeconds);
+                    }
+                }
+            });
+        });
+
+        $('#verifyOtpBtn').on('click', function () {
+            var otp = $('#otpCode').val().trim();
+            var $btn = $(this);
+
+            if (!currentPhoneId) {
+                showAlert($('#addPhoneAlert'), 'Please request an OTP first.', 'warning');
+                return;
+            }
+
+            if (!otp) {
+                showAlert($('#addPhoneAlert'), 'Please enter the OTP code.', 'warning');
+                return;
+            }
+
+            $btn.prop('disabled', true);
+
+            $.ajax({
+                url: 'https://sts.ug.edu.gh/services/phones/verify-otp',
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    _token: csrfToken,
+                    phone_id: currentPhoneId,
+                    otp: otp
+                },
+                success: function (response) {
+                    if (response.status) {
+                        $('#addPhoneModal').modal('hide');
+                        resetAddPhoneModal();
+                        showAlert($('#phoneVerificationAlert'), response.message || 'Phone number verified.', 'success');
+                        loadPhoneNumbers(false);
+                    } else {
+                        showAlert($('#addPhoneAlert'), response.message || 'Invalid OTP.', 'danger');
+                    }
+                },
+                error: function () {
+                    showAlert($('#addPhoneAlert'), 'Unable to verify OTP.', 'danger');
+                },
+                complete: function () {
+                    $btn.prop('disabled', false);
+                }
+            });
+        });
+
+        $('#addPhoneModal').on('hidden.bs.modal', function () {
+            resetAddPhoneModal();
+        });
+    });
+})();
+</script>
+
+     <script src="https://sts.ug.edu.gh/services/assets/js/core/select2.full.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $('.issuetype').change(function(){
+        if($(this).val()=='Missing Grade'){
+          $('.showcoursefield').show();
+          $('.shownotshowingcoursefield').hide();
+          $('#searchmycourses').attr('required','required');
+          $('#coursecodetitle').removeAttr('required')
+        }else if ($(this).val()=='Course Not Showing'){
+          $('.showcoursefield').hide();
+          $('#searchmycourses').removeAttr('required');
+           $('.shownotshowingcoursefield').show();
+            $('#coursecodetitle').attr('required','required')
+        }
+        else{
+          $('.showcoursefield').hide();
+           $('.shownotshowingcoursefield').hide();
+          $('#searchmycourses').removeAttr('required');
+          $('#coursecodetitle').removeAttr('required')
+          $('#additional').attr('required','required');
+        }
+      })
+         // // (BSc. Single Major)
+          var build = '<option value="BSc. Animal Biology and Conservation Science (BSc. Single Major)">BSc. Animal Biology and Conservation Science (BSc. Single Major)</option>';
+          build+='<option value="BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)">BSc. Biochemistry, Cell and Molecular Biology (BSc. Single Major)</option>';
+          build+='<option value="BSc. Biology (BSc. Single Major)">BSc. Biology (BSc. Single Major)</option>';
+          build+='<option value="BSc. Fisheries Science (BSc. Single Major)">BSc. Fisheries Science (BSc. Single Major)</option>';
+          build+='<option value="BSc. Food Science (BSc. Single Major)">BSc. Food Science (BSc. Single Major)</option>';
+          build+='<option value="BSc. Marine Science (BSc. Single Major)">BSc. Marine Science (BSc. Single Major)</option>';
+          build+='<option value="BSc. Nutrition (BSc. Single Major)">BSc. Nutrition (BSc. Single Major)</option>';
+          build+='<option value="BSc. Plant and Environmental Biology (BSc. Single Major)">BSc. Plant and Environmental Biology (BSc. Single Major)</option>';
+
+          //old build that was used 2023 academic year
+         /* var build = '<option value="BSc. Animal Biology and Conservation Science">BSc. Animal Biology and Conservation Science</option>';
+          build+='<option value="BSc. Biochemistry, Cell and Molecular Biology">BSc. Biochemistry, Cell and Molecular Biology</option>';
+          build+='<option value="BSc. Biology">BSc. Biology</option>';
+          build+='<option value="BSc. Fisheries Science">BSc. Fisheries Science</option>';
+          build+='<option value="BSc. Food Science">BSc. Food Science</option>';
+          build+='<option value="BSc. Marine Science">BSc. Marine Science</option>';
+          // build+='<option value="Microbiology (BSc. Single Major)">Microbiology (BSc. Single Major)</option>';
+          build+='<option value="BSc. Nutrition">BSc. Nutrition</option>';
+          build+='<option value="BSc. Plant and Environmental Biology">BSc. Plant and Environmental Biology</option>';
+          build+='<option value="BSc. Food Sc. and Biochemistry">BSc. Food Sc. and Biochemistry</option>';
+          build+='<option value="BSc. Nutrition and Biochemistry">BSc. Nutrition and Biochemistry</option>';
+          build+='<option value="BSc. Nutrition and Food Sc.">BSc. Nutrition and Food Sc.</option>';
+          build+='<option value="BSc. Plant Biol. and Biochemistry">BSc. Plant Biol. and Biochemistry</option>';
+          build+='<option value="BSc. Animal Biol. with a minor in Biochemistry">BSc. Animal Biol. with a minor in Biochemistry</option>';
+          build+='<option value="BSc. Fisheries Sc. with a minor in Marine Sc.">BSc. Fisheries Sc. with a minor in Marine Sc.</option>';
+          build+='<option value="BSc. Marine Sc.  with a minor in Fisheries">BSc. Marine Sc.  with a minor in Fisheries</option>';
+          // build+='<option value="Psychology (BSc. Single Major)">Psychology (BSc. Single Major)</option>';*/
+
+          // // (BSc. Combined Major)
+          // build += '<option value="Animal Biol. and Chemistry (BSc. Combined Major)">Animal Biol. and Chemistry (BSc. Combined Major)</option>';
+          // build+='<option value="Biochemistry and Chemistry (BSc. Combined Major)">Biochemistry and Chemistry (BSc. Combined Major)</option>';
+           build+='<option value="BSc. Food Sc. and Biochemistry (Combined Major)">BSc. Food Sc. and Biochemistry (Combined Major)</option>';
+          // build+='<option value="Food Sc. and Chemistry (BSc. Combined Major)">Food Sc. and Chemistry (BSc. Combined Major)</option>';
+           build+='<option value="BSc. Nutrition and Biochemistry (Combined Major)">BSc. Nutrition and Biochemistry (Combined Major)</option>';
+           build+='<option value="BSc. Nutrition and Food Sc. (Combined Major)">BSc. Nutrition and Food Sc. (Combined Major)</option>';
+           build+='<option value="BSc. Plant Biol. and Biochemistry (Combined Major)">BSc. Plant Biol. and Biochemistry (Combined Major)</option>';
+           build+='<option value="BSc. Animal Biol. with a minor in Biochemistry">BSc. Animal Biol. with a minor in Biochemistry</option>';
+
+           build+='<option value="BSc. Fisheries Sc. with a minor in Marine Sc.">BSc. Fisheries Sc. with a minor in Marine Sc.</option>';
+           build+='<option value="BSc. Marine Sc. with a minor in Fisheries">BSc. Marine Sc. with a minor in Fisheries.</option>';
+ 
+          // (BSc. Major with a Minor)
+          // build += '<option value="Animal Biol. with Biochemistry (BSc. Major with a Minor)">Animal Biol. with Biochemistry (BSc. Major with a Minor)</option>';
+          // build+='<option value="Fisheries Sc. with Marine Sc. (BSc. Major with a Minor)">Fisheries Sc. with Marine Sc. (BSc. Major with a Minor)</option>';
+          // build+='<option value="Fisheries Sc. with Biochemistry (BSc. Major with a Minor)">Fisheries Sc. with Biochemistry (BSc. Major with a Minor)</option>';
+          // build+='<option value="Fisheries Sc. with Food Sc. (BSc. Major with a Minor)">Fisheries Sc. with Food Sc. (BSc. Major with a Minor)</option>';
+          // build+='<option value="Fisheries Sc. with Nutrition (BSc. Major with a Minor)">Fisheries Sc. with Nutrition (BSc. Major with a Minor)</option>';
+          // build+='<option value="Marine Sc. with Biochemistry (BSc. Major with a Minor)">Marine Sc. with Biochemistry (BSc. Major with a Minor)</option>';
+          // build+='<option value="Marine Sc. with Fisheries (BSc. Major with a Minor)">Marine Sc. with Fisheries (BSc. Major with a Minor)</option>';
+          // build+='<option value="Marine Sc. with Plant Biology (BSc. Major with a Minor)">Marine Sc. with Plant Biology (BSc. Major with a Minor)</option>';
+
+          $('.degreeoption').append(build)
+
+          // validations here
+          $('select[name="choices"]').change(function(){
+            var value = $(this).val();
+            if(value !== '' && (value===$('select[name="choice2"]').val() || value===$('select[name="choice3"]').val() || value===$('select[name="choice4"]').val() || value===$('select[name="choice5"]').val())){
+              swal('Alert','You have already selected this option.. Choose another','info');
+              $('select[name="choices"]').val('');
+            }else if(value==='Psychology (BSc. Single Major)'){
+              //console.log(value)
+              $('select[name="choice2"]').removeAttr('required').attr('disabled','disabled');
+              $('select[name="choice3"]').removeAttr('required').attr('disabled','disabled');
+              $('select[name="choice4"]').removeAttr('required').attr('disabled','disabled');
+              $('select[name="choice5"]').removeAttr('required').attr('disabled','disabled');
+            }else{
+              $('select[name="choice2"]').attr('required','required');
+              $('select[name="choice3"]').attr('required','required');
+              $('select[name="choice4"]').attr('required','required');
+              $('select[name="choice5"]').attr('required','required');
+            }
+          })
+
+           $('select[name="choice2"]').change(function(){
+            var value = $(this).val();
+            if(value !== '' && (value===$('select[name="choices"]').val() || value===$('select[name="choice3"]').val() || value===$('select[name="choice4"]').val() || value===$('select[name="choice5"]').val())){
+              swal('Alert','You have already selected this option.. Choose another','info');
+              $('select[name="choice2"]').val('');
+            }
+          })
+           $('select[name="choice3"]').change(function(){
+            var value = $(this).val();
+            if(value !== '' && (value===$('select[name="choices"]').val() || value===$('select[name="choice2"]').val() || value===$('select[name="choice4"]').val() || value===$('select[name="choice5"]').val())){
+              swal('Alert','You have already selected this option.. Choose another','info');
+              $('select[name="choice3"]').val('');
+            }
+          })
+           $('select[name="choice4"]').change(function(){
+            var value = $(this).val();
+            if(value !== '' && (value===$('select[name="choices"]').val() || value===$('select[name="choice3"]').val() || value===$('select[name="choice2"]').val() || value===$('select[name="choice5"]').val())){
+              swal('Alert','You have already selected this option.. Choose another','info');
+              $('select[name="choice4"]').val('');
+            }
+          })
+           $('select[name="choice5"]').change(function(){
+            var value = $(this).val();
+            if(value !== '' && (value===$('select[name="choices"]').val() || value===$('select[name="choice3"]').val() || value===$('select[name="choice4"]').val() || value===$('select[name="choice2"]').val())){
+              swal('Alert','You have already selected this option.. Choose another','info');
+              $('select[name="choice5"]').val('');
+            }
+          })
+
+            
+             
+      // $('.degreeoption').change(function(){
+      //   if($(this).val()=='BSc. Single Major'){
+      //     $('#choices').html('<option value="">Select Programme</option>');
+      //     var build = '<option value="Animal Biol. and Conservation Sc.">Animal Biol. and Conservation Sc.</option>';
+      //     build+='<option value="Biochemistry, Cell and Molec. Biol.">Biochemistry, Cell and Molec. Biol.</option>';
+      //     build+='<option value="Biology">Biology</option>';
+      //     build+='<option value="Fisheries Science">Fisheries Science</option>';
+      //     build+='<option value="Food Science">Food Science </option>';
+      //     build+='<option value="Marine Science">Marine Science </option>';
+      //     build+='<option value="Microbiology">Microbiology</option>';
+      //     build+='<option value="Nutrition">Nutrition</option>';
+      //     build+='<option value="Plant and Environmental Biol.">Plant and Environmental Biol.</option>';
+      //     build+='<option value="Psychology">Psychology</option>';
+      //      $('#choices').append(build);
+
+      //   }else if($(this).val()=='BSc. Combined Major'){
+      //      $('#choices').html('<option value="">Select Programme</option>');
+      //     var build = '<option value="Animal Biol. and Chemistry">Animal Biol. and Chemistry</option>';
+      //     build+='<option value="Food Sc. and Biochemistry">Food Sc. and Biochemistry</option>';
+      //     build+='<option value="Food Sc. and Chemistry">Food Sc. and Chemistry</option>';
+      //     build+='<option value="Nutrition and Biochemistry">Nutrition and Biochemistry</option>';
+      //     build+='<option value="Nutrition and Food Sc.">Nutrition and Food Sc.</option>';
+      //     build+='<option value="Plant Biol. and Biochemistry">Plant Biol. and Biochemistry</option>';
+      //     build+='<option value="Plant Biol. and Chemistry">Plant Biol. and Chemistry</option>';
+      //      $('#choices').append(build);
+      //   }else{
+
+      //      $('#choices').html('<option value="">Select Programme</option>');
+      //     var build = '<option value="Animal Biol. with Biochemistry">Animal Biol. with Biochemistry</option>';
+      //     build+='<option value="Fisheries Sc. with Marine Sc.">Fisheries Sc. with Marine Sc.</option>';
+      //     build+='<option value="Fisheries Sc. with Biochemistry">Fisheries Sc. with Biochemistry</option>';
+      //     build+='<option value="Fisheries Sc. with Food Sc.">Fisheries Sc. with Food Sc.</option>';
+      //     build+='<option value="Fisheries Sc. with Nutrition">Fisheries Sc. with Nutrition</option>';
+      //     build+='<option value="Marine Sc. with Biochemistry">Marine Sc. with Biochemistry</option>';
+      //     build+='<option value="Marine Sc. with Fisheries">Marine Sc. with Fisheries</option>';
+      //     build+='<option value="Marine Sc. with Plant Biology">Marine Sc. with Plant Biology</option>';
+      //      $('#choices').append(build);
+      //   }
+      // })
+
+      $('#complaintform').submit(function(e){
+        e.preventDefault();
+        $('#errormessage, #successmessage').hide();
+        $('#loadinggif').show();
+        $('#sendingmessage').show();
+        $.post('https://sts.ug.edu.gh/services/sendmailtocollege',$('#complaintform').serialize(),function(response){
+          $('#sendingmessage, #loadinggif').hide();
+             if(response.status=='success'){
+              $('#successmessage').show();
+              $('#complaintform')[0].reset();
+             }else{
+              $('#errormessage').show();
+             }
+        }).fail(function(){
+           $('#loadinggif').hide();
+           $('#sendingmessage').hide();
+           $('#errormessage').show();
+        })
+      })
+
+      $('#programmeselection').on('shown.bs.modal', function (e) {
+         $('#onsuccess, #onerror, #onsave').hide();
+    })
+
+       $('#programmeform').submit(function(e){
+        e.preventDefault();
+        $('#onsuccess, #onerror').hide();
+        $('#bsloadinggif').show();
+        $('#onsave').show();
+        $('#psubmitbtn').attr('disabled','disabled');
+        $.post('https://sts.ug.edu.gh/services/saveprogramme',$('#programmeform').serialize(),function(response){
+           $('#psubmitbtn').removeAttr('disabled');
+          $('#onsave, #bsloadinggif').hide();
+             if(response.status=='success'){
+              $('#onsuccess').show();
+               // $('.selectedoptions').html('Your Preferred Option : '+$('#degreeoption').val());
+               $('.selectedchoices').html('Your Preferred Programme : '+
+                $('select[name="choices"]').val() +','+
+                $('select[name="choice2"]').val() +','+
+                $('select[name="choice3"]').val() +','+
+                $('select[name="choice4"]').val() +','+
+                $('select[name="choice5"]').val()
+
+                );
+               $('#programmeform')[0].reset();
+               $('#programmeselection').modal('hide');
+               swal('Success','Your Choices has been saved Successfully. Thank you','success');
+             }else if(response.status=='repeated'){
+               swal('Error','Sorry, you cannot select same Programme twice','error');
+             }else if(response.status=='closed'){
+               swal('Alert','Sorry, Registration is closed','info');
+             }else{
+              $('#onerror').show();
+             }
+        }).fail(function(){
+           $('#psubmitbtn').removeAttr('disabled');
+           $('#bsloadinggif').hide();
+           $('#onsave').hide();
+           $('#onerror').show();
+        })
+      })
+    </script>
+   <script type="text/javascript">
+    $('#loading').show();
+    // document.addEventListener('contextmenu', event => event.preventDefault());
+   </script>
+   <script type="text/javascript">
+     $('#suggestionbox').submit(function(e){
+      e.preventDefault();
+      $('#sloadinggif').show();
+      $.post('https://sts.ug.edu.gh/services/suggestions',$(this).serialize(),function(res){
+        $('#sloadinggif').hide();
+        if(res && res.status=='success'){
+          $('#suggestionsuccess').show();
+          $('#suggestionbox')[0].reset();
+        }else{
+          $('#suggestionerror').show();
+        }   
+      }).fail(function(){
+        $('#sloadinggif').hide();
+        $('#suggestionerror').show();
+      })
+     })
+   </script>
+   <script type="text/javascript">
+     $(function(){
+      $('[data-toggle="popover"]').popover();
+     })
+   </script>
+   <script>
+  $(function() {
+    $('.profileimage').bind('contextmenu', function(e) {
+    return false;
+     });
+      $(document).on('click','.evaluationanchor',function(e){
+            e.preventDefault();
+            if('YES'=='YES'){
+                window.location.href="https://sts.ug.edu.gh/services/evaluation"
+            }else{
+               // swal('Alert','Course Lecuture Evaluation Not Enable Yet','info');
+                toastr.info('Course/Lecturer Evaluation is not enabled yet');
+            }
+        })
+
+    $(document).on('click','.openComplaintModal',function(e){
+      e.preventDefault();
+      $('#reportIssueForm').modal('show');
+      pullCoursesForComplaint();
+    })
+
+    pullCoursesForComplaint = function(){
+         var courses = [];
+   $.get("https://sts.ug.edu.gh/services/fetchcoursesforcomplaints",function(response){
+    console.log(response);
+    var data = response.data;
+    var html = '';
+    for(var i=0;i<data.length;i++){
+       html +='<option value="'+data[i].course_code+'">'+data[i].course_code+' - '+data[i].course_title+'</option>';
+        //courses.push(data[i].course_code);
+    }
+    $('#searchmycourses').html(html);
+    $("#searchmycourses").select2();
+    $('.searchmycourses22').html(html);
+    $(".searchmycourses22").select2();
+   });
+    }
+
+    //pullCoursesForComplaint();
+ 
+    
+  });
+  
+  </script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+// var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+// (function(){
+// var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+// s1.async=true;
+// s1.src='https://embed.tawk.to/68c036df0e49f131d3b5669f/1j4ndcm9c';
+// s1.charset='UTF-8';
+// s1.setAttribute('crossorigin','*');
+// s0.parentNode.insertBefore(s1,s0);
+// })();
+</script>
+<!--End of Tawk.to Script-->
+
+  
+      <script type="text/javascript">
+      $.get('https://sts.ug.edu.gh/services/fetchimage',function(res){
+       if(res.status==='success'){
+          $('.profileimage').attr('src',res.stdimage);
+       }
+      }).fail(function(){
+
+      })
+    </script>
+  
+  <script>
+            //check notification here
+     $.get("https://sts.ug.edu.gh/services/fetchnotification",function(r){
+
+     var rp = r.data;
+    var html = '';
+    if(rp.length==0){
+        $('#notif_badge').hide()
+    }else{
+        $('#notif_badge').show()
+     $('#notif_icon').show()
+     $('#notif_badge').text(rp.length)
+     $('#notif_dropdown').html(`
+    <li class="dropdown-menu-header">
+    <h6 class="dropdown-header m-0"><span class="grey darken-2">Notification</span><span class="notification-tag badge badge-default badge-success float-right m-0"></span></h6>
+    </li>
+     `)
+     var counterr = 0;
+    for(var i=0;i<rp.length;i++){
+        if(rp[i].viewed===1) {
+            continue
+        }
+        counterr++
+         $('#notif_dropdown').append(`
+         <li class="scrollable-container media-list"><a href="https://sts.ug.edu.gh/services/viewnotification">
+                      <div class="media">
+                        <div class="media-left align-self-center"><i class="ft-plus-square icon-bg-circle bg-cyan"></i></div>
+                        <div class="media-body">
+                          <h6 class="media-heading">${rp[i].title}<br></h6>
+                          <p class="notification-text font-small-3 text-muted">${rp[i].body}</p>
+                        </div>
+                      </div></a>
+                    </li>
+         `)
+    }
+    if(counterr==0){
+        $('#notif_badge').hide()
+         $('#notif_dropdown').html(`
+          <li class="scrollable-container media-list"><a href="https://sts.ug.edu.gh/services/viewnotification">
+                      <div class="media">
+                        <div class="media-left align-self-center"><i class="ft-plus-square icon-bg-circle bg-cyan"></i></div>
+                        <div class="media-body">
+                          <h6 class="media-heading">My Notifications<br></h6>
+                        </div>
+                      </div></a>
+                    </li>
+         
+         `)
+    }
+}
+
+  }).fail(function(){
+  console.log('Notification fetched failed')
+  })
+    </script>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PL0XW1LEF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PL0XW1LEF4');
+</script>
+
+  
+<div id="css-inspector-overlay" style="position: absolute; pointer-events: none; z-index: 999999; background: rgba(59, 130, 246, 0.3); border: 2px solid rgb(59, 130, 246); border-radius: 4px; box-shadow: rgba(59, 130, 246, 0.5) 0px 0px 0px 1px; display: none; transition: 0.1s; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif;"></div></body></html>
