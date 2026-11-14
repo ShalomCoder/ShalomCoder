@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p id="message">Redirecting...</p>
+    <script>
+      const message = document.getElementById("message");
+      const target = new URLSearchParams(window.location.search).get("url");
+
+      try {
+        const destination = new URL(target);
+
+        if (destination.protocol !== "http:" && destination.protocol !== "https:") {
+          throw new Error("Unsupported URL protocol");
+        }
+
+        window.location.replace(destination.href);
+      } catch {
+        message.textContent = "A valid URL is required. Use this page with ?url=https%3A%2F%2Fexample.com";
+      }
+    </script>
+  </body>
+</html>
